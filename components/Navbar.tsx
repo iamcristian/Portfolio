@@ -15,7 +15,7 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed w-full flex flex-row justify-between md:justify-around items-center h-12 text-base top-0 px-5 md:px-10">
+    <header className="fixed w-full flex flex-row justify-between md:justify-around items-center h-12 text-base top-0 px-5 md:px-10 text-black dark:text-white  bg-white dark:bg-neutral-800 transition-colors duration-1000">
       <Link href={"/"} className="w-1/2 md:w-1/4">
         Cristian Arando
       </Link>
@@ -23,7 +23,7 @@ export const Navbar = () => {
       <nav
         className={`${
           !menuOpen && "hidden md:flex"
-        } fixed top-12 left-0 md:static  w-4/6 h-3/4 flex flex-col md:flex-row justify-center items-center gap-10 text-base md:text-sm`}
+        } fixed top-12 left-0 md:static w-4/6 h-3/4 flex flex-col md:flex-row justify-center items-center gap-10 text-base md:text-sm`}
       >
         <Link href="#home">Home</Link>
         <Link href="#about">About</Link>

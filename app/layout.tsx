@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} dark dark:bg-black dark:text-white bg-white text-black transition-colors duration-1000 ease-in-out`}
+        className={`${inter.className} dark`}
       >
         <ConfigProvider>
           <Navbar />

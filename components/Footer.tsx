@@ -5,7 +5,7 @@ import { GrGithub, GrLinkedin } from "react-icons/gr";
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-col justify-center items-center gap-10 h-full text-base py-10">
+    <footer className="flex flex-col justify-center items-center gap-10 h-full text-base py-10 bg-white text-black dark:bg-black dark:text-white transition-colors duration-1000">
       <h3 className="text-2xl">Cristian Arando</h3>
       <section className="flex gap-10">
         <Link href="#about">About</Link>
