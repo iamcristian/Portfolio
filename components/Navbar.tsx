@@ -8,10 +8,12 @@ import { FaMoon } from "react-icons/fa";
 import { IoIosSunny } from "react-icons/io";
 import { MdMenu } from "react-icons/md";
 
+
 export const Navbar = () => {
   const { theme, toggleTheme, language, toggleLanguage } =
     useContext(ConfigContext);
-
+  
+  
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -22,13 +24,13 @@ export const Navbar = () => {
 
       <nav
         className={`${
-          !menuOpen && "hidden"
-        } fixed top-12 left-0 bg-neutral-600 w-4/6 h-3/4  flex flex-col md:flex-row justify-center items-center gap-10 md:gap-5 text-base md:text-sm`}
+          !menuOpen && "hidden md:flex"
+        } fixed top-12 left-0 md:static  w-4/6 h-3/4 flex flex-col md:flex-row justify-center items-center gap-10 text-base md:text-sm`}
       >
         <Link href="#home">Home</Link>
         <Link href="#about">About</Link>
         <Link href="#skills">Skills</Link>
-        <Link href="#projects">Projects</Link>
+        <Link href="#projects">Experience</Link>
         <Link href="#contact">Contact</Link>
       </nav>
 
