@@ -8,16 +8,14 @@ import { FaMoon } from "react-icons/fa";
 import { IoIosSunny } from "react-icons/io";
 import { MdMenu } from "react-icons/md";
 
-
 export const Navbar = () => {
   const { theme, toggleTheme, language, toggleLanguage } =
     useContext(ConfigContext);
-  
-  
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed w-full flex flex-row justify-between md:justify-around items-center h-12 text-base top-0 px-5 md:px-10 bg-white dark:bg-black dark:text-white">
+    <header className="fixed w-full flex flex-row justify-between md:justify-around items-center h-12 text-base top-0 px-5 md:px-10">
       <Link href={"/"} className="w-1/2 md:w-1/4">
         Cristian Arando
       </Link>
