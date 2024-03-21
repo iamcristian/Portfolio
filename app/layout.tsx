@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { GlobalStateProvider } from "@/context/GlobalStateContext";
+import { ConfigProvider } from "@/context/ConfigContext";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
@@ -40,11 +40,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <GlobalStateProvider>
+      <body className={`${inter.className} dark`}>
+        <ConfigProvider>
           <Navbar />
           {children}
-        </GlobalStateProvider>
+        </ConfigProvider>
         <Footer />
       </body>
     </html>
