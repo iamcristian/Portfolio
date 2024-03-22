@@ -46,13 +46,13 @@ export const Navbar = () => {
         {theme === "light" ? (
           <FaMoon
             className="cursor-pointer"
-            size={"1.8rem"}
+            size={"1.5rem"}
             onClick={toggleTheme}
           />
         ) : (
           <IoIosSunny
             className="cursor-pointer"
-            size={"1.8rem"}
+            size={"1.5rem"}
             color="yellow"
             onClick={toggleTheme}
           />

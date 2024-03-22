@@ -34,7 +34,7 @@ export const TabTable = () => {
 
   return (
     <>
-      <div className="flex justify-center space-x-4 gap-4">
+      <div className="flex justify-center space-x-4 gap-4 flex-wrap">
         {tabs.map((tab: string) => (
           <ButtonTab
             key={tab}
