@@ -1,12 +1,12 @@
-import { About } from "@/components/About";
-import { Hero } from "@/components/Hero";
-import { Projects } from "@/components/Projects";
-import { Skills } from "@/components/Skills";
+import { About } from "@/components/About/About";
+import { Home } from "@/components/Home/Home";
+import { Projects } from "@/components/Projects/Projects";
+import { Skills } from "@/components/Skills/Skills";
 
-export default function Home() {
+export default function MainPage() {
   return (
     <main>
-      <Hero />
+      <Home />
       <About />
       <Skills />
       <Projects />

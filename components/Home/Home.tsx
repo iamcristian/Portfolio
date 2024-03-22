@@ -1,9 +1,7 @@
-import React from "react";
-
-export const Hero = () => {
+export const Home = () => {
   return (
     <section className="section-page" id="home">
-      Hero
+      Home
     </section>
   );
 };

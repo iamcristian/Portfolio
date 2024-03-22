@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ConfigProvider } from "@/context/ConfigContext";
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
+import { Navbar } from "@/components/Navbar/Navbar";
+import { Footer } from "@/components/Footer/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: "500",
+  weight: "700",
 });
 
 export const metadata: Metadata = {
@@ -43,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} dark`}>
+      <body className={`${poppins.className} dark text-xs md:text-sm`}>
         <ConfigProvider>
           <Navbar />
           {children}

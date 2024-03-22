@@ -15,7 +15,7 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed w-full flex flex-row justify-between md:justify-around items-center h-12 text-base top-0 px-5 md:px-10 text-black dark:text-white bg-white dark:bg-neutral-800 transition-colors duration-1000">
+    <header className="fixed w-full flex flex-row justify-between md:justify-around items-center h-12 top-0 px-5 sm:px-8 md:px-[8%] xl:px-[20%] text-black dark:text-white bg-white dark:bg-black border-b-2 border-b-black dark:border-b-white transition-colors duration-1000">
       <Link href={"/"} className="w-1/2 md:w-1/4">
         Cristian Arando
       </Link>
@@ -23,20 +23,39 @@ export const Navbar = () => {
       <nav
         className={`${
           menuOpen ? "translate-x-0" : "-translate-x-full"
-        } fixed top-12 left-0 md:static w-4/6 h-3/4 flex flex-col md:flex-row justify-center items-center gap-10 text-base md:text-sm transition-transform duration-1000 md:translate-x-0 md:flex`}
+        } fixed top-12 left-0 md:static w-4/6 h-3/4 flex flex-col md:flex-row justify-center items-center gap-10 transition-transform duration-1000 md:translate-x-0 md:flex`}
       >
-        <Link href="#home">Home</Link>
-        <Link href="#about">About</Link>
-        <Link href="#skills">Skills</Link>
-        <Link href="#projects">Experience</Link>
-        <Link href="#contact">Contact</Link>
+        <Link className="md:hover:underline" href="#home">
+          Home
+        </Link>
+        <Link className="md:hover:underline" href="#about">
+          About
+        </Link>
+        <Link className="md:hover:underline" href="#skills">
+          Skills
+        </Link>
+        <Link className="md:hover:underline" href="#projects">
+          Experience
+        </Link>
+        <Link className="md:hover:underline" href="#contact">
+          Contact
+        </Link>
       </nav>
 
       <div className="flex gap-3 w-1/2 md:w-1/4 justify-end items-center">
         {theme === "light" ? (
-          <FaMoon size={20} onClick={toggleTheme} />
+          <FaMoon
+            className="cursor-pointer"
+            size={"1.8rem"}
+            onClick={toggleTheme}
+          />
         ) : (
-          <IoIosSunny size={20} onClick={toggleTheme} />
+          <IoIosSunny
+            className="cursor-pointer"
+            size={"1.8rem"}
+            color="yellow"
+            onClick={toggleTheme}
+          />
         )}
         <button className="uppercase mr-5 md:mr-0" onClick={toggleLanguage}>
           {language}
@@ -44,7 +63,7 @@ export const Navbar = () => {
         {menuOpen ? (
           <CgClose
             size={20}
-            className="md:hidden"
+            className="md:hidden cursor-pointer"
             onClick={() => {
               setMenuOpen(!menuOpen);
             }}
@@ -52,7 +71,7 @@ export const Navbar = () => {
         ) : (
           <MdMenu
             size={20}
-            className="md:hidden"
+            className="md:hidden cursor-pointer"
             onClick={() => {
               setMenuOpen(!menuOpen);
             }}
