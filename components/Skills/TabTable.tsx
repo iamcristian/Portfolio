@@ -2,11 +2,24 @@
 
 import { useState } from "react";
 import { ButtonTab } from "./ButtonTab";
-import { BackendSkills, DatabasesSkills, FrontendSkills, LanguagesProgrammingSkills, SoftSkills, TestingSkills } from "./TabContent";
+import {
+  BackendSkills,
+  DatabasesSkills,
+  FrontendSkills,
+  LanguagesProgrammingSkills,
+  SoftSkills,
+  TestingSkills,
+} from "./TabContent";
+import { useAppContext } from "@/context/ConfigContext";
 
-const tabs = ["languages programming", "frontend", "backend", "databases", "testing", "soft skills"];
+import esTranslations from "../../translations/es.json";
+import enTranslations from "../../translations/en.json";
 
 export const TabTable = () => {
+  const { language } = useAppContext();
+  const translations = language === "es" ? esTranslations : enTranslations;
+  const { tabs } = translations.skills as { tabs: string[] };
+
   const [selectedTab, setSelectedTab] = useState("languages programming");
 
   const handleTabChange = (tab: string) => {
@@ -15,17 +28,17 @@ export const TabTable = () => {
 
   const getTabContent = () => {
     switch (selectedTab) {
-      case "languages programming":
+      case tabs[0]:
         return <LanguagesProgrammingSkills />;
-      case "frontend":
+      case tabs[1]:
         return <FrontendSkills />;
-      case "backend":
+      case tabs[2]:
         return <BackendSkills />;
-      case "databases":
+      case tabs[3]:
         return <DatabasesSkills />;
-      case "testing":
+      case tabs[4]:
         return <TestingSkills />;
-      case "soft skills":
+      case tabs[5]:
         return <SoftSkills />;
       default:
         return null;

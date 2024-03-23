@@ -1,0 +1,46 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title": "Bienvenido a nuestro sitio web",
+    "subtitle": "Somos un equipo de profesionales",
+    "button": "Aprende más"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "subtitle": "Somos un equipo de profesionales",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec",
+    "button": "Aprende más"
+  },
+  "skills": {
+    "title": "Mis habilidades",
+    "tabs": [
+      "lenguajes de programación",
+      "frontend",
+      "backend",
+      "bases de datos",
+      "pruebas",
+      "habilidades blandas"
+    ]
+  },
+  "experience": {
+    "title": "Mi experiencia",
+    "subtitle": "Tenemos una amplia gama de proyectos",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec",
+    "button": "Aprende más"
+  },
+  "contact": {
+    "title": "Contáctame",
+    "subtitle": "Estamos aquí para ayudarte",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec",
+    "button": "Aprende más"
+  },
+  "footer": {
+    "end": "Hecho por Cristian Arando"
+  }
+}

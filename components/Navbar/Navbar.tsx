@@ -1,16 +1,21 @@
 "use client";
 
-import { ConfigContext } from "@/context/ConfigContext";
+import { useAppContext } from "@/context/ConfigContext";
 import Link from "next/link";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { CgClose } from "react-icons/cg";
 import { FaMoon } from "react-icons/fa";
 import { IoIosSunny } from "react-icons/io";
 import { MdMenu } from "react-icons/md";
 
+import esTranslations from "../../translations/es.json";
+import enTranslations from "../../translations/en.json";
+
 export const Navbar = () => {
-  const { theme, toggleTheme, language, toggleLanguage } =
-    useContext(ConfigContext);
+  const { theme, toggleTheme, language, toggleLanguage } = useAppContext();
+
+  const translations = language === "es" ? esTranslations : enTranslations;
+  const { home, about, contact, experience, skills } = translations.navbar;
 
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -26,19 +31,19 @@ export const Navbar = () => {
         } fixed top-12 left-0 md:static w-4/6 h-3/4 flex flex-col md:flex-row justify-center items-center gap-10 transition-transform duration-1000 md:translate-x-0 md:flex`}
       >
         <Link className="md:hover:underline" href="#home">
-          Home
+          {home}
         </Link>
         <Link className="md:hover:underline" href="#about">
-          About
+          {about}
         </Link>
         <Link className="md:hover:underline" href="#skills">
-          Skills
+          {skills}
         </Link>
         <Link className="md:hover:underline" href="#projects">
-          Experience
+          {experience}
         </Link>
         <Link className="md:hover:underline" href="#contact">
-          Contact
+          {contact}
         </Link>
       </nav>
 
@@ -57,7 +62,7 @@ export const Navbar = () => {
             onClick={toggleTheme}
           />
         )}
-        <button className="uppercase mr-5 md:mr-0" onClick={toggleLanguage}>
+        <button className="uppercase mr-5 md:mr-0 w-2" onClick={toggleLanguage}>
           {language}
         </button>
         {menuOpen ? (

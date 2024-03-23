@@ -2,17 +2,17 @@
 export const LanguagesProgrammingSkills = () => {
   return (
     <div className="text-sm font-mono">
-      
+      tab1
     </div>
   );
 };
 
 export const FrontendSkills = () => {
-  return <div></div>;
+  return <div>2</div>;
 };
 
 export const BackendSkills = () => {
-  return <div></div>;
+  return <div>3</div>;
 };
 
 export const DatabasesSkills = () => {
@@ -26,7 +26,6 @@ export const TestingSkills = () => {
 export const SoftSkills = () => {
   return (
     <div>
-      {/* Aquí puedes añadir iconos para habilidades blandas si lo deseas */}
     </div>
   );
 };

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useState } from "react";
 
 type Theme = "light" | "dark";
 type Language = "en" | "es";
@@ -12,7 +12,7 @@ interface ConfigContextProps {
   toggleLanguage: () => void;
 }
 
-export const ConfigContext = createContext<ConfigContextProps>({
+const ConfigContext = createContext<ConfigContextProps>({
   theme: "dark",
   toggleTheme: () => {},
   language: "en",
@@ -46,4 +46,8 @@ export const ConfigProvider = ({ children }: { children: React.ReactNode }) => {
   return (
     <ConfigContext.Provider value={value}>{children}</ConfigContext.Provider>
   );
+};
+
+export const useAppContext = () => {
+  return useContext(ConfigContext);
 };
