@@ -27,7 +27,7 @@ export const Navbar = () => {
 
       <nav
         className={`${menuOpen ? "translate-x-0" : "-translate-x-full"
-          } fixed top-12 left-0 md:static  w-4/6 h-3/4 flex flex-col md:flex-row justify-center items-center gap-10 md:translate-x-0 md:flex text-black dark:text-white bg-slate-50 dark:bg-slate-800 md:bg-white md:dark:bg-black transition-colors duration-700`}
+          } fixed top-12 left-0 md:static  w-4/6 h-3/4 flex flex-col md:flex-row justify-center items-center gap-10 md:translate-x-0 md:flex text-black dark:text-white bg-slate-50 dark:bg-slate-800 md:bg-white md:dark:bg-black transition-all duration-700`}
       >
         <Link className="md:hover:underline" href="#home">
           {home}

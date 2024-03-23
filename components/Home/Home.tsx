@@ -39,15 +39,15 @@ export const Home = () => {
       </p>
 
       <div className="flex gap-5">
-        <button className="flex items-center gap-2 text-xs rounded-lg border border-black dark:border-white p-2 dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800">
+        <button className="flex items-center gap-2 text-xs rounded-lg border border-black dark:border-white p-2 dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-black dark:text-white transition-colors duration-700">
           <GrMail size={20} />
           Contact me
         </button>
-        <button className="flex items-center gap-2 text-xs rounded-lg border p-2 border-black dark:border-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800">
+        <button className="flex items-center gap-2 text-xs rounded-lg border p-2 border-black dark:border-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-black dark:text-white transition-colors duration-700">
           <GrLinkedin size={20} />
           Linkedin
         </button>
-        <button className="flex items-center gap-2 text-xs rounded-lg border p-2 bg-slate-900 hover:bg-slate-700 text-white dark:bg-sky-700 dark:hover:bg-sky-600 border-black dark:border-solid">
+        <button className="flex items-center gap-2 text-xs rounded-lg border p-2 bg-slate-900 hover:bg-slate-700 text-white dark:bg-sky-700 dark:hover:bg-sky-600 border-black dark:border-solid transition-colors duration-700">
           <GrDownload size={20} />
           Download CV
         </button>
