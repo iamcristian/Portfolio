@@ -7,11 +7,11 @@ import { Footer } from "@/components/Footer/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: "700",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
-  title: "Cristian Arando | Portfolio",
+  title: "Cristian Arando | Portfolio | Software Developer",
   description:
     "Welcome to my portfolio! I showcase my projects and skills in web development.",
   keywords: [
@@ -43,7 +43,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} dark text-xs md:text-sm`}>
+      <body
+        className={`${poppins.className} dark text-xs md:text-sm`}
+      >
         <ConfigProvider>
           <Navbar />
           {children}

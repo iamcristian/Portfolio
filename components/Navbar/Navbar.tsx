@@ -20,7 +20,7 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed w-full flex flex-row justify-between md:justify-around items-center h-12 top-0 px-5 sm:px-8 md:px-[8%] xl:px-[20%] text-black dark:text-white bg-white dark:bg-black border-b-2 border-b-black dark:border-b-white transition-colors duration-1000">
+    <header className="fixed w-full flex flex-row justify-between md:justify-around items-center h-12 lg:h-20 top-0 px-5 sm:px-8 md:px-[8%] xl:px-[20%] text-black dark:text-white bg-white font-bold dark:bg-black border-b-2 border-b-black dark:border-b-white transition-colors duration-1000">
       <Link href={"/"} className="w-1/2 md:w-1/4">
         Cristian Arando
       </Link>
@@ -28,7 +28,7 @@ export const Navbar = () => {
       <nav
         className={`${
           menuOpen ? "translate-x-0" : "-translate-x-full"
-        } fixed top-12 left-0 md:static w-4/6 h-3/4 flex flex-col md:flex-row justify-center items-center gap-10 transition-transform duration-1000 md:translate-x-0 md:flex`}
+        } fixed top-12 left-0 md:static  w-4/6 h-3/4 flex flex-col md:flex-row justify-center items-center gap-10 transition-transform duration-1000 md:translate-x-0 md:flex`}
       >
         <Link className="md:hover:underline" href="#home">
           {home}
@@ -50,15 +50,14 @@ export const Navbar = () => {
       <div className="flex gap-3 w-1/2 md:w-1/4 justify-end items-center">
         {theme === "light" ? (
           <FaMoon
-            className="cursor-pointer"
-            size={"1.5rem"}
+            className="cursor-pointer text-sky-700"
+            size={"1.2rem"}
             onClick={toggleTheme}
           />
         ) : (
           <IoIosSunny
-            className="cursor-pointer"
-            size={"1.5rem"}
-            color="yellow"
+            className="cursor-pointer text-sky-300"
+            size={"1.2rem"}
             onClick={toggleTheme}
           />
         )}

@@ -4,6 +4,6 @@
 
 @layer components {
   .section-page {
-    @apply h-screen w-full pt-14 md:pt-20 px-5 sm:px-8 md:px-[8%] xl:px-[20%] bg-white text-black dark:bg-black dark:text-white transition-colors duration-1000;
+    @apply h-screen w-full py-16 md:pt-20 px-5 sm:px-8 md:px-[8%] xl:px-[20%] bg-white text-black dark:bg-black dark:text-white transition-colors duration-1000;
   }
 }
