@@ -7,9 +7,12 @@
     "contact": "Contáctame"
   },
   "home": {
-    "title": "Bienvenido a nuestro sitio web",
-    "subtitle": "Somos un equipo de profesionales",
-    "button": "Aprende más"
+    "presentation": "¡Hola! 👋, soy",
+    "job": "Desarrollador de Software",
+    "situation": "Estudiante de Ingeniería de Sistemas y Desarrollador de Software",
+    "description": "de Cochabamba, Bolivia. Especializado en el desarrollo de aplicaciones web.",
+    "contactMe": "Contáctame",
+    "downloadCV": "Descargar CV"
   },
   "about": {
     "title": "Sobre mí",

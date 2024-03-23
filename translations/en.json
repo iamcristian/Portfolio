@@ -7,9 +7,12 @@
     "contact": "Contact Me"
   },
   "home": {
-    "title": "Welcome to our website",
-    "subtitle": "We are a team of professionals",
-    "button": "Learn more"
+    "presentation": "Hello! 👋, I am",
+    "job": "Software Developer",
+    "situation": "Systems Engineering Student and Software Developer",
+    "description": "from Cochabamba, Bolivia. Specialized in web application development.",
+    "contactMe": "Contact Me",
+    "downloadCV": "Download CV"
   },
   "about": {
     "title": "About Me",
