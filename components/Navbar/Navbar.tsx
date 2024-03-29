@@ -20,7 +20,7 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed w-full flex flex-row justify-between md:justify-around items-center h-12 lg:h-20 top-0 px-5 sm:px-8 md:px-[8%] xl:px-[20%] text-black dark:text-white bg-white font-bold dark:bg-black border-b-2 border-b-black dark:border-b-white transition-colors duration-700">
+    <header className="sticky w-full flex flex-row justify-between md:justify-around items-center h-12 lg:h-20 top-0 px-5 sm:px-8 md:px-[8%] xl:px-[20%] text-black dark:text-white bg-white font-bold dark:bg-black border-b-2 border-b-black dark:border-b-white transition-colors duration-700">
       <Link href={"/"} className="w-1/2 md:w-1/4">
         Cristian Arando
       </Link>

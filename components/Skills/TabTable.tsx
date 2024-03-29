@@ -20,7 +20,7 @@ export const TabTable = () => {
   const translations = language === "es" ? esTranslations : enTranslations;
   const { tabs } = translations.skills as { tabs: string[] };
 
-  const [selectedTab, setSelectedTab] = useState("languages programming");
+  const [selectedTab, setSelectedTab] = useState("programming languages");
 
   const handleTabChange = (tab: string) => {
     setSelectedTab(tab);
