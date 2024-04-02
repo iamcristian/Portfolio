@@ -61,7 +61,7 @@ export const Navbar = () => {
           />
         )}
         <button className="uppercase mr-5 md:mr-0 w-2" onClick={toggleLanguage}>
-          {language}
+          {language==="es" ? "en" : "es"}
         </button>
         {menuOpen ? (
           <CgClose

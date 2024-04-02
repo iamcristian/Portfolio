@@ -13,8 +13,8 @@ export const Skills = () => {
   const { title } = translations.skills;
 
   return (
-    <section className="section-page flex flex-col justify-start" id="skills">
-      <h2 className="mb-4">
+    <section className="section-page flex flex-col justify-start h-full" id="skills">
+      <h2 className="mb-8">
         <GiSkills size={"1.5rem"} className="inline-block" /> {title}
       </h2>
       <TabTable />

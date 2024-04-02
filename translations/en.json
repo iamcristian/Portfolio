@@ -16,9 +16,14 @@
   },
   "about": {
     "title": "About Me",
-    "subtitle": "We are a team of professionals",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec",
-    "button": "Learn more"
+    "content": "As a fullstack developer, I combine my ability to code both frontend and backend, along with a solid understanding of user needs. I am always looking for challenges that allow me to create innovative and exciting products, while improving my skills in the process.",
+    "experience": "Experience",
+    "years": "2+ Years Working",
+    "completed": "Completed",
+    "projects": "15+ Projects",
+    "certifications": "Certifications",
+    "count": "5+ Certifications",
+    "contact": "Contact Me"
   },
   "skills": {
     "title": "My Skills",

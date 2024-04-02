@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ButtonTab } from "./ButtonTab";
 import {
   BackendSkills,
@@ -20,7 +20,11 @@ export const TabTable = () => {
   const translations = language === "es" ? esTranslations : enTranslations;
   const { tabs } = translations.skills as { tabs: string[] };
 
-  const [selectedTab, setSelectedTab] = useState("programming languages");
+  const [selectedTab, setSelectedTab] = useState(tabs[0]);
+
+  useEffect(() => {
+    setSelectedTab(tabs[0]);
+  }, [language, tabs]);
 
   const handleTabChange = (tab: string) => {
     setSelectedTab(tab);

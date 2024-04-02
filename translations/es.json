@@ -16,9 +16,14 @@
   },
   "about": {
     "title": "Sobre mí",
-    "subtitle": "Somos un equipo de profesionales",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec",
-    "button": "Aprende más"
+    "content": "Como desarrollador fullstack, combino mi habilidad para codificar tanto en frontend como en backend, junto con una sólida comprensión de las necesidades del usuario. Siempre estoy buscando desafíos que me permitan crear productos innovadores y emocionantes, mientras mejoro mis habilidades en el proceso.",
+    "experience": "Experiencia",
+    "years": "+2 años trabajando",
+    "completed": "Completado",
+    "projects": "+15 Proyectos",
+    "certifications": "Certificaciones",
+    "count": "+5 Certificaciones",
+    "contact": "Contáctame"
   },
   "skills": {
     "title": "Mis habilidades",
