@@ -1,31 +1,31 @@
 "use client";
 
-import { GiSuitcase } from "react-icons/gi";
+import { GiRollingSuitcase } from "react-icons/gi";
+import { ProjectCard } from "./ProjectCard";
+import { useAppContext } from "@/context/ConfigContext";
 
 import esTranslations from "../../translations/es.json";
 import enTranslations from "../../translations/en.json";
-import { useAppContext } from "@/context/ConfigContext";
-import { ExperienceCard } from "./ExperienceCard";
 
-export const Experience = () => {
+export const Projects = () => {
   const { language } = useAppContext();
   const translations = language === "es" ? esTranslations : enTranslations;
 
-  const { title, experienceList } = translations.experience;
+  const { title, projectsList } = translations.projects;
 
   return (
     <section
       className="section-page h-full flex flex-col justify-start"
-      id="experience"
+      id="projects"
     >
       <h2 className="mb-4">
-        <GiSuitcase size={"1.5rem"} className="inline-block" />
+        <GiRollingSuitcase size={"1.5rem"} className="inline-block" />
         {title}
       </h2>
 
       <div className="grid grid-cols-1 gap-4 lg:mx-32">
-        {experienceList.map((experience) => (
-          <ExperienceCard key={experience.title} {...experience} />
+        {projectsList.map((project) => (
+          <ProjectCard key={project.title} {...project} />
         ))}
       </div>
     </section>

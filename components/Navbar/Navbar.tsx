@@ -15,19 +15,20 @@ export const Navbar = () => {
   const { theme, toggleTheme, language, toggleLanguage } = useAppContext();
 
   const translations = language === "es" ? esTranslations : enTranslations;
-  const { home, about, contact, experience, skills } = translations.navbar;
+  const { home, about, contact, experience, skills, projects } = translations.navbar;
 
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky w-full flex flex-row justify-between md:justify-around items-center h-12 lg:h-20 top-0 px-5 sm:px-8 md:px-[8%] xl:px-[20%] text-black dark:text-white bg-white font-bold dark:bg-black border-b-2 border-b-black dark:border-b-white transition-colors duration-700">
+    <header className="sticky md:fixed w-full flex flex-row justify-between md:justify-around items-center h-12 lg:h-20 top-0 px-5 sm:px-8 md:px-[8%] xl:px-[20%] text-black dark:text-white bg-white font-bold dark:bg-black border-b-2 border-b-black dark:border-b-white transition-colors duration-700">
       <Link href={"/"} className="w-1/2 md:w-1/4">
         Cristian Arando
       </Link>
 
       <nav
-        className={`${menuOpen ? "translate-x-0" : "-translate-x-full"
-          } fixed top-12 left-0 md:static  w-4/6 h-3/4 flex flex-col md:flex-row justify-center items-center gap-10 md:translate-x-0 md:flex text-black dark:text-white bg-slate-50 dark:bg-slate-800 md:bg-white md:dark:bg-black transition-all duration-700`}
+        className={`${
+          menuOpen ? "translate-x-0" : "-translate-x-full"
+        } fixed top-12 left-0 md:static  w-4/6 h-3/4 flex flex-col md:flex-row justify-center items-center gap-10 md:translate-x-0 md:flex text-black dark:text-white bg-slate-50 dark:bg-slate-800 md:bg-white md:dark:bg-black transition-all duration-700`}
       >
         <Link className="md:hover:underline" href="#home">
           {home}
@@ -38,8 +39,11 @@ export const Navbar = () => {
         <Link className="md:hover:underline" href="#skills">
           {skills}
         </Link>
-        <Link className="md:hover:underline" href="#projects">
+        <Link className="md:hover:underline" href="#experience">
           {experience}
+        </Link>
+        <Link className="md:hover:underline" href="#projects">
+          {projects}
         </Link>
         <Link className="md:hover:underline" href="#contact">
           {contact}
@@ -61,7 +65,7 @@ export const Navbar = () => {
           />
         )}
         <button className="uppercase mr-5 md:mr-0 w-2" onClick={toggleLanguage}>
-          {language==="es" ? "en" : "es"}
+          {language === "es" ? "en" : "es"}
         </button>
         {menuOpen ? (
           <CgClose

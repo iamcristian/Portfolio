@@ -16,7 +16,7 @@ export const Home = () => {
     translations.home;
   return (
     <section
-      className="section-page flex flex-col justify-center pb-0 h-[80vh] font-medium md:justify-center"
+      className="section-page flex flex-col justify-center pb-0 h-[80vh] md:h-screen md:pb-0 md:pt-0 font-medium md:justify-center"
       id="home"
     >
       <div className="flex gap-4 mb-4 items-center">

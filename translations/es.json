@@ -2,9 +2,10 @@
   "navbar": {
     "home": "Inicio",
     "about": "Sobre Mí",
-    "skills": "Mis Habilidades",
-    "experience": "Mi Experiencia",
-    "contact": "Contáctame"
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "contact": "Contacto",
+    "projects": "Proyectos"
   },
   "home": {
     "presentation": "¡Hola! 👋, soy",
@@ -37,10 +38,58 @@
     ]
   },
   "experience": {
-    "title": "Mi experiencia",
-    "subtitle": "Tenemos una amplia gama de proyectos",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec",
-    "button": "Aprende más"
+    "title": "Mi Experiencia",
+    "experienceList": [
+      {
+        "title": "Pasante de Desarrollador Full Stack",
+        "date": "Septiembre - Diciembre 2023",
+        "company": "DTIC - Departamento de Tecnologías de Información y Comunicación UMSS, Cochabamba",
+        "text": [
+          "Contribuí a un equipo que desarrollaba una aplicación web para monitorear y gestionar el sistema de acreditación universitaria del Mercosur",
+          "Asistí en el análisis de requisitos, documentación, modelado de datos y desarrollo",
+          "Tecnologías utilizadas: React (Frontend), Yii2 (Backend), PostgreSQL (Base de datos)"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Mis Proyectos",
+    "projectsList": [
+      {
+        "title": "Black Jack 21",
+        "date": "Julio 2023",
+        "description": "Desarrollo guiado con el Curso de JavaScript Moderno de Fernando Herrera",
+        "repository": "https://github.com/iamcristian/js-vite-blackjack",
+        "text": [
+          "Desarrollé una aplicación web Black Jack 21 utilizando tecnologías modernas de JavaScript",
+          "Implementé la lógica del juego, algoritmos para el jugador de la computadora, CSS para estilos de mazo de cartas y tablero",
+          "Utilicé prácticas modernas de JavaScript adheridas a los estándares ES6."
+        ]
+      },
+      {
+        "title": "Sistema de Gestión de Torneos Deportivos",
+        "date": "Septiembre - Diciembre 2022",
+        "description": "Desarrollador Full Stack para el Curso de Ingeniería de Software en la Universidad",
+        "repository": "https://github.com/iamcristian/Torneo-Internacional-Maxi-Basquet",
+        "text": [
+          "Diseñé y desarrollé un sistema de gestión de torneos deportivos integral",
+          "Participé en el análisis, desarrollo y utilicé el marco de Django y PostgreSQL",
+          "Desarrollé componentes como tabla de posiciones, creación de torneos, página de inicio, gestión de equipos y creación de credenciales de miembros del equipo"
+        ]
+      },
+      {
+        "title": "Aplicación Web para Ejercicios Físicos y Mentales para Adultos Mayores",
+        "date": "Marzo - Junio 2022",
+        "description": "Desarrollador para el Curso de Ingeniería de Software en la Universidad",
+        "repository": "https://github.com/borisumss/LongOldLivePlus",
+        "text": [
+          "Conceptualicé y desarrollé una aplicación web para ejercicios físicos y mentales personalizados para adultos mayores",
+          "Contribuí al análisis de requisitos, modelado de sistemas y desarrollo",
+          "Desarrollé usando JavaScript Vanilla conectado con Firebase",
+          "Las tareas incluyeron la creación de ejercicios, el inicio de rutinas de ejercicio físico y el seguimiento de rutinas completadas"
+        ]
+      }
+    ]
   },
   "contact": {
     "title": "Contáctame",

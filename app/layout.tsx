@@ -43,12 +43,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${poppins.className} dark text-xs md:text-sm`}
-      >
+      <body className={`${poppins.className} dark text-xs md:text-sm`}>
         <ConfigProvider>
           <Navbar />
           {children}
+          <hr style={{ borderColor: "rgb(47 47 47)" }} />
           <Footer />
         </ConfigProvider>
       </body>

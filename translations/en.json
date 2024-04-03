@@ -1,10 +1,11 @@
 {
   "navbar": {
     "home": "Home",
-    "about": "About Me",
-    "skills": "My Skills",
-    "experience": "My Experience",
-    "contact": "Contact Me"
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact",
+    "projects": "Projects"
   },
   "home": {
     "presentation": "Hello! 👋, I am",
@@ -38,9 +39,57 @@
   },
   "experience": {
     "title": "My Experience",
-    "subtitle": "We have a wide range of projects",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec",
-    "button": "Learn more"
+    "experienceList": [
+      {
+        "title": "Full Stack Developer Intern",
+        "date": "September - December 2023",
+        "company": "DTIC - Department of Information and Communication Technologies UMSS, Cochabamba",
+        "text": [
+          "Contributed to a team developing a web application for monitoring and managing the Mercosur university accreditation system",
+          "Assisted in requirement analysis, documentation, data modeling, and development",
+          "Technologies used: React (Frontend), Yii2 (Backend), PostgreSQL (Database)"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "My Projects",
+    "projectsList": [
+      {
+        "title": "Black Jack 21",
+        "date": "July 2023",
+        "description": "Guided development with Fernando Herrera's Modern JavaScript Course",
+        "repository": "https://github.com/iamcristian/js-vite-blackjack",
+        "text": [
+          "Developed a Black Jack 21 web application using modern JavaScript technologies",
+          "Implemented game logic, algorithms for the computer player, CSS for card deck and board styles",
+          "Utilized modern JavaScript practices adhering to ES6 standards."
+        ]
+      },
+      {
+        "title": "Sports Tournament Management System",
+        "date": "September - December 2022",
+        "description": "Full Stack Developer for Software Engineering Course at University",
+        "repository": "https://github.com/iamcristian/Torneo-Internacional-Maxi-Basquet",
+        "text": [
+          "Designed and developed a comprehensive sports tournament management system",
+          "Involved in analysis, development, and utilized Django framework and PostgreSQL",
+          "Developed components such as standings table, tournament creation, landing page, team management, and team member credential creation"
+        ]
+      },
+      {
+        "title": "Web Application for Physical and Mental Exercises for Older Adults",
+        "date": "March - June 2022",
+        "description": "Developer for Software Engineering Course at University",
+        "repository": "https://github.com/borisumss/LongOldLivePlus",
+        "text": [
+          "Conceptualized and developed a web application for tailored physical and mental exercises for older adults",
+          "Contributed to requirement analysis, system modeling, and development",
+          "Developed using Vanilla JavaScript connected with Firebase",
+          "Tasks included creating exercises, starting physical exercise routines, and tracking completed routines"
+        ]
+      }
+    ]
   },
   "contact": {
     "title": "Contact Me",
