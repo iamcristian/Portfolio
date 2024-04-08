@@ -25,10 +25,18 @@ export const Footer = () => {
         <Link href="#projects">{experienceTitle}</Link>
       </section>
       <section className="flex gap-3 md:gap-6">
-        <Link href="https://github.com/iamcristian" target="_blank">
+        <Link
+          href="https://github.com/iamcristian"
+          target="_blank"
+          rel="noreferrer"
+        >
           <GrGithub size={"1.5rem"} />
         </Link>
-        <Link href="https://www.linkedin.com/in/cristianarando" target="_blank">
+        <Link
+          href="https://www.linkedin.com/in/cristianarando"
+          target="_blank"
+          rel="noreferrer"
+        >
           <GrLinkedin size={"1.5rem"} />
         </Link>
       </section>

@@ -13,27 +13,52 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Cristian Arando | Portfolio | Software Developer",
   description:
-    "Welcome to my portfolio! I showcase my projects and skills in web development.",
+    "Hello! I'm Cristian Arando, a passionate web developer. Explore my portfolio to discover the projects and skills I've developed in the field of web development.",
   keywords: [
+    "Cristian Arando",
+    "Cristian Arando Quecaña",
     "portfolio",
     "web development",
     "projects",
     "skills",
-    "Cristian Arando",
-    "cristian",
-    "arando",
-    "cristian arando",
     "web developer",
-    "developer",
     "software engineer",
+    "systems engineer",
   ],
-  authors: [{ name: "Cristian Arando", url: "https://cristianarando.dev" }],
+  authors: [{ name: "Cristian Arando", url: "https://cristianarando.tech" }],
   icons: [
     {
       rel: "icon",
       url: "public/icon.svg",
     },
   ],
+  openGraph: {
+    title: "Cristian Arando | Portfolio | Software Developer",
+    description:
+      "Welcome to my portfolio! I'm Cristian Arando, a systems engineer from Cochabamba, Bolivia, from Universidad Mayor de San Simón. I specialize in software development, and here you can discover my projects and skills in this field.",
+    images: [
+      {
+        url: "public/me.webp",
+        width: 400,
+        height: 400,
+        alt: "Cristian Arando | Portfolio | Software Developer",
+      },
+      {
+        url: "public/dark-portfolio.webp",
+        width: 1200,
+        height: 630,
+        alt: "Capture of Cristian Arando's portfolio in dark mode",
+      },
+      {
+        url: "public/white-portfolio.webp",
+        width: 1200,
+        height: 630,
+        alt: "Capture of Cristian Arando's portfolio in light mode",
+      },
+    ],
+    type: "website",
+    url: "https://cristianarando.tech",
+  },
 };
 
 export default function RootLayout({

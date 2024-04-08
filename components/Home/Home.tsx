@@ -57,6 +57,7 @@ export const Home = () => {
         <Link
           href="https://www.linkedin.com/in/cristianarando"
           target="_blank"
+          rel="noreferrer"
           className="flex items-center gap-2 text-xs rounded-lg border p-2 border-black dark:border-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-black dark:text-white transition-colors duration-700"
         >
           <GrLinkedin size={20} />
@@ -65,6 +66,7 @@ export const Home = () => {
         <Link
           href={language === "en" ? "/CV_EN.pdf" : "/CV_ES.pdf"}
           target="_blank"
+          rel="noreferrer"
           className="flex items-center gap-2 text-xs rounded-lg border p-2 bg-slate-900 hover:bg-slate-700 text-white dark:bg-sky-700 dark:hover:bg-sky-600 border-black dark:border-solid transition-colors duration-700"
         >
           <GrDownload size={20} />
