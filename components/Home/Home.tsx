@@ -24,23 +24,23 @@ export const Home = () => {
           className="rounded-xl shadow-lg size-16"
           src="/me.webp"
           alt="Cristian Arando"
-          width={50}
-          height={50}
+          width={60}
+          height={60}
         />
         <p className="text-sm lg:text-lg">{presentation}</p>
       </div>
-      <h1 className="text-2xl lg:text-3xl font-bold tracking-tight dark:text-white">
+      <h1 className="text-2xl lg:text-5xl font-bold tracking-tight dark:text-white">
         Cristian Arando
       </h1>
       <ReactTyped
-        className="text-base font-semibold"
+        className="text-xl font-semibold"
         strings={[job]}
         typeSpeed={100}
         backDelay={5000}
         loop
       />
-      <p className="font-light my-5 w-[60%]">
-        <strong className="text-sky-700 font-semibold dark:text-sky-500">
+      <p className="font-semibold text-md my-5 w-[60%]">
+        <strong className="text-sky-700 font-semibold dark:text-sky-400">
           {situation}
         </strong>{" "}
         {description}
@@ -67,7 +67,7 @@ export const Home = () => {
           href={language === "en" ? "/CV_EN.pdf" : "/CV_ES.pdf"}
           target="_blank"
           rel="noreferrer"
-          className="flex items-center gap-2 text-xs rounded-lg border p-2 bg-slate-900 hover:bg-slate-700 text-white dark:bg-sky-700 dark:hover:bg-sky-600 border-black dark:border-solid transition-colors duration-700"
+          className="flex items-center gap-2 text-xs rounded-lg border p-2 bg-slate-900 hover:bg-slate-700 text-white dark:bg-sky-800 dark:hover:bg-sky-600 border-black dark:border-solid transition-colors duration-700"
         >
           <GrDownload size={20} />
           {downloadCV}

@@ -12,6 +12,7 @@ import {
   SiJunit5,
   SiMongodb,
   SiMysql,
+  SiNestjs,
   SiNextdotjs,
   SiNodedotjs,
   SiPostgresql,
@@ -54,6 +55,7 @@ export const BackendSkills = () => {
   return (
     <div className="flex flex-wrap justify-center text-center gap-5 md:gap-2 lg:gap-4 xl:gap-5 2xl:gap-6">
       <IconSkill text="Node.js" icon={SiNodedotjs} />
+      <IconSkill text="NestJs" icon={SiNestjs} />
       <IconSkill text="Express" icon={SiExpress} />
       <IconSkill text="Django" icon={SiDjango} />
     </div>

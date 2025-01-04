@@ -56,6 +56,19 @@
     "title": "My Projects",
     "projectsList": [
       {
+        "title": "Onelink - Based on LinkTree",
+        "date": "December 2024",
+        "description": "Development in React, Express, MongoDB, NodeJs, Typescript",
+        "repository": "https://github.com/iamcristian/onelink",
+        "text": [
+          "Developed as a personal project a web application based on LinkTree to share social media links and websites",
+          "Implemented a backend in NodeJs with Express, Typescript, and MongoDB to store links and user settings",
+          "Developed a frontend in React with Typescript, Tailwind, Shadcn, Zod, React Hook Forms, and TanstackQuery for the user interface",
+          "Used JWT authentication and password encryption for application security",
+          "Implemented Docker and docker-compose for application deployment"
+        ]
+      },
+      {
         "title": "Black Jack 21",
         "date": "July 2023",
         "description": "Guided development with Fernando Herrera's Modern JavaScript Course",

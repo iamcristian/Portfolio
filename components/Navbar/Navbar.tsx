@@ -45,9 +45,9 @@ export const Navbar = () => {
         <Link className="md:hover:underline" href="#projects">
           {projects}
         </Link>
-        <Link className="md:hover:underline" href="#contact">
+        {/* <Link className="md:hover:underline" href="#contact">
           {contact}
-        </Link>
+        </Link> */}
       </nav>
 
       <div className="flex gap-3 w-1/2 md:w-1/4 justify-end items-center">

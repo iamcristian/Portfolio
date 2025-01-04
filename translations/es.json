@@ -56,6 +56,19 @@
     "title": "Mis Proyectos",
     "projectsList": [
       {
+        "title": "Onelink - Basado en LinkTree",
+        "date": "Diciembre 2024",
+        "description": "Desarrollo en React, Express, MongoDB, NodeJs, Typescript",
+        "repository": "https://github.com/iamcristian/onelink",
+        "text": [
+          "Desarrolle como proyecto personal una aplicación web basada en LinkTree para compartir enlaces de redes sociales y sitios web",
+          "Implementé un backend en NodeJs con Express, Typescript y MongoDB para almacenar enlaces y configuraciones de usuario",
+          "Desarrollé un frontend en React con Typescript, Tailwind, Shadcn, Zod, React Hook Forms y TanstackQuery para la interfaz de usuario",
+          "Utilicé autenticación JWT y encriptación de contraseñas para la seguridad de la aplicación",
+          "Implemente docker y docker-compose para el despliegue de la aplicación"
+        ]
+      },
+      {
         "title": "Black Jack 21",
         "date": "Julio 2023",
         "description": "Desarrollo guiado con el Curso de JavaScript Moderno de Fernando Herrera",
@@ -69,7 +82,7 @@
       {
         "title": "Sistema de Gestión de Torneos Deportivos",
         "date": "Septiembre - Diciembre 2022",
-        "description": "Desarrollador Full Stack para el Curso de Ingeniería de Software en la Universidad",
+        "description": "Desarrollo Full Stack para el Curso de Ingeniería de Software en la Universidad",
         "repository": "https://github.com/iamcristian/Torneo-Internacional-Maxi-Basquet",
         "text": [
           "Diseñé y desarrollé un sistema de gestión de torneos deportivos integral",
