@@ -1,0 +1,26 @@
+---
+interface Props {
+  id: string;
+  title: string;
+}
+const { id, title } = Astro.props as Props;
+const hasFooter = Boolean(Astro.slots.footer);
+---
+
+<section id={id} class="mx-auto py-16 px-4 md:px-8 lg:px-16">
+  <h2 class="text-2xl md:text-3xl font-bold text-center tracking-tight mb-6">
+    {title}
+  </h2>
+
+  <div class="space-y-16">
+    <slot />
+  </div>
+
+  {
+    hasFooter && (
+      <div class="mt-12">
+        <slot name="footer" />
+      </div>
+    )
+  }
+</section>
