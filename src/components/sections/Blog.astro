@@ -2,6 +2,7 @@
 import { getLangFromUrl } from "@/i18n/utils";
 import { Image } from "astro:assets";
 import { getCollection, getEntry } from "astro:content";
+import Section from "../ui/section.astro";
 
 const lang = getLangFromUrl(Astro.url);
 
@@ -14,9 +15,7 @@ const featuredEntry = await getEntry("blog", `${lang}/how-javascript`)!!;
 const featuredPost = featuredEntry.data;
 ---
 
-<section id="blog" class="mx-auto py-16">
-  <h2 class="text-2xl font-bold mb-16">Latest from Blog</h2>
-
+<Section id="blog" title="Blog">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
     <!-- Featured Post -->
     <article class="rounded-lg shadow-lg flex flex-col lg:flex-row">
@@ -115,4 +114,4 @@ const featuredPost = featuredEntry.data;
       </a>
     </div>
   </div>
-</section>
+</Section>

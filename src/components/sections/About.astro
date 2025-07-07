@@ -2,13 +2,14 @@
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import { Image } from "astro:assets";
 import meImage from "@/assets/me.webp";
+import Section from "../ui/Section.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const about = t("about");
 ---
 
-<section id="about" class="py-18 lg:py-32 px-6 lg:px-8">
+<Section id="about">
   <div class="max-w-6xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 items-center">
       <div class="space-y-6 col-span-2">
@@ -41,4 +42,4 @@ const about = t("about");
       </div>
     </div>
   </div>
-</section>
+</Section>

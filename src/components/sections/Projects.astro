@@ -1,17 +1,14 @@
 ---
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import { Image } from "astro:assets";
+import Section from "../ui/Section.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const { title, viewAll, viewProject, linkProject, items } = t("projects");
 ---
 
-<section id="projects" class="mx-auto py-16">
-  <h2 class="text-2xl md:text-3xl font-bold text-center tracking-tight mb-6">
-    {title}
-  </h2>
-
+<Section id="projects" title={title}>
   <div class="space-y-16 px-32">
     {
       items.map((project, index) => (
@@ -70,4 +67,4 @@ const { title, viewAll, viewProject, linkProject, items } = t("projects");
       >
     </a>
   </div>
-</section>
+</Section>
