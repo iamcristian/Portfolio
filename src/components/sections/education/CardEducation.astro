@@ -1,0 +1,42 @@
+---
+const { data } = Astro.props;
+const { title, university, date, location, description, src } = data;
+---
+
+<li class="flex items-center w-full lg:max-w-1/2 py-4">
+  <img
+    alt="Card logo"
+    class="size-12 aspect-square object-contain bg-base-100 rounded-box mr-4 flex-shrink-0"
+    width={30}
+    height={30}
+    src={src}
+    loading="lazy"
+  />
+  <div class="flex-1 min-w-0">
+    <p class="text-base font-bold">{title}</p>
+    {university && <p class="font-medium">{university}</p>}
+    <div class="flex items-center gap-2 mt-1 text-xs">
+      {
+        date && (
+          <>
+            <svg class="w-4 h-4">
+              <use href="#icon-calendar" />
+            </svg>
+            <span class="font-semibold opacity-60">{date}</span>
+          </>
+        )
+      }
+      {
+        location && (
+          <>
+            <svg class="w-4 h-4">
+              <use href="#icon-location" />
+            </svg>
+            <span class="font-semibold opacity-60">{location}</span>
+          </>
+        )
+      }
+    </div>
+    {description && <p class="text-xs mt-1">{description}</p>}
+  </div>
+</li>

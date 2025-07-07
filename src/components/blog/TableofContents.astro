@@ -1,0 +1,26 @@
+---
+export interface Heading {
+  slug: string;
+  text: string;
+  depth: number;
+}
+
+const headings = (Astro.props.headings ?? []) as Heading[];
+---
+
+{
+  headings.length > 0 && (
+    <nav class="p-6 rounded-xl shadow-sm border">
+      <h2 class="text-base font-medium mb-4">Table of Contents</h2>
+      <ul class="space-y-2 text-sm">
+        {headings.map((heading) => (
+          <li class={`ml-${(heading.depth - 2) * 4}`}>
+            <a href={`#${heading.slug}`} class="">
+              {heading.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )
+}

@@ -1,0 +1,64 @@
+---
+import { languages } from "@/i18n/ui";
+import { getLangFromUrl } from "@/i18n/utils";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+const lang = getLangFromUrl(Astro.url);
+
+function cleanPath(path: string) {
+  const segments = path.split("/");
+  if (segments[1] && Object.keys(languages).includes(segments[1])) {
+    return "/" + segments.slice(2).join("/");
+  }
+  return path;
+}
+---
+
+<div class="dropdown dropdown-end">
+  <div
+    tabindex="0"
+    role="button"
+    class="btn btn-sm btn-ghost"
+    aria-label="Language"
+    title="Change Language"
+  >
+    <svg class="w-4 h-4">
+      <use href="#icon-globe"></use>
+    </svg>
+    <svg class="w-4 h-4"><use href="#icon-chevron-down"></use></svg>
+  </div>
+  <div tabindex="0" class="dropdown-content bg-base-300 rounded-box w-32">
+    <ul class="menu menu-sm w-full">
+      {
+        Object.entries(languages).map(([locale, label]) => (
+          <li>
+            {locale === lang ? (
+              <button
+                class="menu-active w-full flex items-center gap-2"
+                disabled
+              >
+                <span class="font-mono text-[.5625rem] font-bold opacity-40 uppercase min-w-[2.5rem]">
+                  {locale}
+                </span>
+                <span class="font-[sans-serif]">{label}</span>
+              </button>
+            ) : (
+              <a
+                href={getRelativeLocaleUrl(
+                  locale,
+                  cleanPath(Astro.url.pathname)
+                )}
+                class="w-full flex items-center gap-2"
+              >
+                <span class="font-mono text-[.5625rem] font-bold opacity-40 uppercase min-w-[2.5rem]">
+                  {locale}
+                </span>
+                <span class="font-[sans-serif]">{label}</span>
+              </a>
+            )}
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>

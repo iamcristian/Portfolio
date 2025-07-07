@@ -1,0 +1,108 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { getCollection, render } from "astro:content";
+import Prose from "@/components/Prose.astro";
+import Head from "@/components/Head.astro";
+import RelatedPosts from "@/components/blog/RelatedPosts.astro";
+import TableofContents from "@/components/blog/TableofContents.astro";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("blog");
+
+  const paths = pages.map((page) => {
+    const [lang, ...slug] = page.id.split("/");
+    return { params: { lang, slug: slug.join("/") || undefined }, props: page };
+  });
+
+  return paths;
+}
+
+const { lang } = Astro.params;
+const page = Astro.props;
+const { Content, headings } = await render(page);
+const formattedDate = page.data.publishDate.toLocaleDateString(lang);
+
+// Get all posts to find related ones
+const allPosts = await getCollection("blog");
+
+// Get related posts by matching tags, exclude current slug
+const relatedPosts = allPosts
+  .filter((post) => post.id !== page.id)
+  .filter((post) =>
+    post.data.tags?.some((tag) => page.data.tags?.includes(tag))
+  )
+  .slice(0, 3); // Max 3
+
+const metaTags = {
+  title: page.data.title,
+  description: page.data.excerpt,
+  image: page.data.image.src,
+  imageAlt: page.data.image.alt,
+};
+---
+
+<Layout type="blogPost" blogPost={metaTags}>
+  <Head lang={lang} blogPost={page.data} />
+
+  <!-- Breadcrumbs -->
+  <nav class="text-sm mb-8">
+    <a href="/" class="">Home</a> /
+    <a href="/blog" class="">Blog</a> /
+    <span class="">{page.data.title}</span>
+  </nav>
+
+  <div class="container mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-16">
+      <!-- Main content -->
+      <div class="lg:col-span-3">
+        <!-- Header -->
+        <header class="mb-16">
+          <div class="flex flex-wrap gap-2 mb-8">
+            {
+              page.data.tags?.map((tag) => (
+                <span class="px-3 py-1 rounded-full text-sm">{tag}</span>
+              ))
+            }
+          </div>
+          <h1 class="text-4xl md:text-6xl font-light tracking-tight mb-6">
+            {page.data.title}
+          </h1>
+          <div class="flex items-center space-x-6 text-gray-500 mb-8">
+            <span>{page.data.author}</span>
+            <span>{formattedDate}</span>
+            <span>{page.data.readTime}</span>
+          </div>
+          {
+            page.data.image.src && (
+              <img
+                src={page.data.image.src}
+                alt={page.data.image.alt}
+                class="rounded-2xl aspect-video object-cover mb-12"
+              />
+            )
+          }
+        </header>
+
+        <!-- Content -->
+        <article class="">
+          <Prose>
+            <Content />
+          </Prose>
+        </article>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="lg:col-span-1">
+        <div class="sticky top-32 space-y-8">
+          <TableofContents headings={headings} />
+          <div class="rounded-2xl p-6 border">
+            <h3 class="font-medium mb-2">Author</h3>
+            <p class="text-sm">{page.data.author}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Related Posts -->
+  {relatedPosts.length > 0 && <RelatedPosts posts={relatedPosts} />}
+</Layout>

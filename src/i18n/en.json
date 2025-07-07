@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "home": {
+      "title": "Home - Full Stack Developer Portfolio",
+      "description": "Welcome to my portfolio! I am a Full Stack Software Developer with a passion for building web applications.",
+      "image": "/images/home-banner.jpg",
+      "imageAlt": "Portfolio banner"
+    },
+    "blog": {
+      "title": "Blog - Full Stack Developer Portfolio",
+      "description": "Read my latest blog posts on web development, programming, and technology.",
+      "image": "/images/blog-banner.jpg",
+      "imageAlt": "Blog banner"
+    },
+    "projects": {
+      "title": "Projects - Full Stack Developer Portfolio",
+      "description": "Explore my projects showcasing my skills in web development and software engineering.",
+      "image": "/images/projects-banner.jpg",
+      "imageAlt": "Projects banner"
+    }
+  },
+  "header": {
+    "home": {
+      "id": "home",
+      "label": "Home"
+    },
+    "about": {
+      "id": "about",
+      "label": "About me"
+    },
+    "education": {
+      "id": "education",
+      "label": "Education"
+    },
+    "experience": {
+      "id": "experience",
+      "label": "Experience"
+    },
+    "projects": {
+      "id": "projects",
+      "label": "Projects"
+    },
+    "skills": {
+      "id": "skills",
+      "label": "Skills"
+    },
+    "blog": {
+      "id": "blog",
+      "label": "Blog"
+    }
+  },
+  "footer": {
+    "thanks": "Thanks for visiting my portfolio!"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "jobTitle": "Full Stack Software Developer",
+    "description": "Passionate about building web applications with modern technologies.",
+    "contact": "Contact me",
+    "download": "Download my CV"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph1": "I'm a software engineer passionate about creating elegant solutions to complex problems. With expertise in modern web technologies, I focus on building scalable applications that deliver exceptional user experiences.",
+    "paragraph2": "My expertise spans from user research and interface design to modern development with Go, Angular, and cloud infrastructure. I'm passionate about anime, gaming, and bringing a kawaii aesthetic to professional work.",
+    "paragraph3": "Based in California, originally from Mexico, I bring a unique perspective to technology and design, always focusing on creating solutions that truly matter to users.",
+    "stats": [
+      {
+        "number": "1+",
+        "title": "Years of Experience"
+      },
+      {
+        "number": "100%",
+        "title": "Passion Driven"
+      },
+      {
+        "number": "S+",
+        "title": "Strategic Thinking"
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "academicFormation": "Academic Formation",
+    "certifications": "Certifications",
+    "languages": "Languages",
+    "tags": ["Frontend", "Backend", "DevOps", "Testing", "Languages"],
+    "itemsAcademic": [
+      {
+        "title": "Postgraduate Diploma in Security of Technologies and Information",
+        "university": "Escuela Universitaria de Posgrado UMSS",
+        "date": "February 2024 - December 2024",
+        "location": "Cochabamba, Bolivia",
+        "description": "Graduated with honors. Focused on software architecture, algorithms, and web development. Participated in multiple hackathons and coding competitions.",
+        "src": "/posgradoumss.png"
+      },
+      {
+        "title": "Bachelor of Science in Systems Engineering",
+        "university": "Universidad Mayor de San Simon",
+        "date": "February 2019 - December 2025",
+        "location": "Cochabamba, Bolivia",
+        "description": "Graduated with honors. Focused on software architecture, algorithms, and web development. Participated in multiple hackathons and coding competitions.",
+        "src": "/umss.png"
+      }
+    ],
+    "itemsCertifications": [
+      {
+        "title": "Full Stack Developer Bootcamp",
+        "tag": "Frontend",
+        "university": "Platzi",
+        "date": "January 2023 - June 2023",
+        "description": "Completed a comprehensive bootcamp covering front-end and back-end development, including React, Node.js, and databases.",
+        "src": "/me.webp"
+      },
+      {
+        "title": "JavaScript Algorithms and Data Structures",
+        "tag": "Backend",
+        "university": "freeCodeCamp",
+        "date": "July 2022 - December 2022",
+        "description": "Mastered JavaScript fundamentals, algorithms, and data structures through hands-on projects.",
+        "src": "/me.webp"
+      },
+      {
+        "title": "AWS Certified Solutions Architect",
+        "tag": "DevOps",
+        "university": "Amazon Web Services",
+        "date": "March 2023",
+        "description": "Achieved certification demonstrating expertise in designing and deploying scalable systems on AWS.",
+        "src": "/me.webp"
+      },
+      {
+        "title": "Docker Essentials",
+        "tag": "DevOps",
+        "university": "Docker",
+        "date": "August 2023",
+        "description": "Completed a course on Docker fundamentals, including containerization and orchestration.",
+        "src": "/me.webp"
+      }
+    ],
+    "itemsLanguages": [
+      {
+        "title": "Spanish",
+        "description": "Native speaker",
+        "src": "/languages/spanish.png"
+      },
+      {
+        "title": "English",
+        "description": "B2 - Upper Intermediate. Professional working proficiency",
+        "src": "/languages/english.png"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "keyResponsabilities": "Key Responsibilities",
+    "skills": "Skills",
+    "items": [
+      {
+        "title": "Full Stack Developer Intern",
+        "company": "Tech Solutions Ltd.",
+        "date": "January 2024 - Present",
+        "location": "Cochabamba, Bolivia",
+        "description": "Working on developing and maintaining web applications using React and Node.js. Collaborating with the team to implement new features and improve user experience.",
+        "responsabilities": [
+          "Developing web applications using React and Node.js",
+          "Collaborating with the design team to implement UI/UX improvements",
+          "Participating in code reviews and team meetings",
+          "Learning and applying best practices in software development"
+        ],
+        "skills": ["React", "Node.js", "JavaScript", "HTML/CSS", "Git"]
+      },
+      {
+        "title": "Software Development Intern",
+        "company": "Innovatech Solutions",
+        "date": "June 2023 - December 2023",
+        "location": "Cochabamba, Bolivia",
+        "description": "Assisted in the development of web applications and participated in team projects. Gained experience in Agile methodologies and version control systems.",
+        "responsabilities": [
+          "Assisting in the development of web applications",
+          "Participating in Agile ceremonies and team meetings",
+          "Learning version control with Git"
+        ],
+        "skills": ["JavaScript", "HTML/CSS", "Git", "Agile"]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "skillCategories": [
+      {
+        "title": "Programming Languages",
+        "skills": ["JavaScript", "TypeScript", "Python", "Java"]
+      },
+      {
+        "title": "Frontend",
+        "skills": [
+          "React",
+          "Next.js",
+          "Astro",
+          "Tailwind CSS",
+          "Bootstrap",
+          "HTML5",
+          "CSS3"
+        ]
+      },
+      {
+        "title": "Backend",
+        "skills": [
+          "Node.js",
+          "NestJS",
+          "Express",
+          "Django",
+          "API Restful",
+          "GraphQL",
+          "Microservices"
+        ]
+      },
+      {
+        "title": "Database",
+        "skills": ["PostgreSQL", "MySQL", "SQLServer", "MongoDB"]
+      },
+      {
+        "title": "DevOps",
+        "skills": ["Docker", "CI/CD"]
+      },
+      {
+        "title": "Testing",
+        "skills": ["Jest", "Unit Testing"]
+      },
+      {
+        "title": "Soft Skills",
+        "skills": [
+          "Leadership",
+          "Communication",
+          "Problem Solving",
+          "Team Collaboration"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "viewAll": "View All Projects",
+    "viewProject": "View Project",
+    "linkProject": "Link",
+    "items": [
+      {
+        "title": "Portfolio Website",
+        "description": "A personal portfolio website built with Astro and Tailwind CSS to showcase my skills and projects.",
+        "tech": ["Astro", "Tailwind CSS", "JavaScript"],
+        "image": "/webproject.png",
+        "linkView": "https://github/iamcrsitian/projects/portfolio-website",
+        "linkRepository": "https://github/iamcrsitian/projects/portfolio-website",
+        "year": 2024
+      },
+      {
+        "title": "E-commerce Platform",
+        "description": "An e-commerce platform built with React and Node.js, featuring product listings, shopping cart, and user authentication.",
+        "tech": ["React", "Node.js", "MongoDB"],
+        "image": "/webproject.png",
+        "linkView": "https://github/iamcrsitian/projects/e-commerce-platform",
+        "linkRepository": "https://github/iamcrsitian/projects/e-commerce-platform",
+        "year": 2023
+      }
+    ]
+  }
+}

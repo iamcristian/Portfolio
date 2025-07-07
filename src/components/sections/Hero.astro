@@ -1,0 +1,59 @@
+---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const hero = t("hero");
+---
+
+<section
+  id="home"
+  class="relative w-full h-screen flex items-center justify-start py-16"
+>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <div class="flex flex-col justify-center space-y-6">
+      <span class="text-sm font-medium">{hero.greeting}</span>
+      <h1 class="text-3xl md:text-6xl font-bold">Cristian Arando</h1>
+      <h2 class="text-xl md:text-3xl font-semibold">
+        {hero.jobTitle}
+      </h2>
+      <p class="max-w-lg font-medium">{hero.description}</p>
+      <div class="flex flex-wrap gap-4">
+        <a href={`cv_${lang}.pdf`} class="btn btn-outline" download>
+          <svg class="w-6 mr-1"><use href="#icon-download"></use></svg>
+          {hero.download}
+        </a>
+        <a href="mailto:crisarandosyse@gmail.com" class="btn btn-outline">
+          <svg class="w-6 mr-1"><use href="#icon-mail"></use></svg>
+          {hero.contact}
+        </a>
+        <a
+          href="https://github.com/iamcristian"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-outline"
+        >
+          <svg class="w-6 mr-1"><use href="#icon-github"></use></svg>
+          GitHub
+        </a>
+        <a
+          href="https://linkedin.com/in/cristianarando"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-outline"
+        >
+          <svg class="w-6 mr-1"><use href="#icon-linkedin"></use></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce"
+  >
+    <a href="#about" aria-label="Scroll down">
+      <svg class="h-8 w-8"><use href="#icon-chevron-down"></use></svg>
+    </a>
+  </div>
+</section>

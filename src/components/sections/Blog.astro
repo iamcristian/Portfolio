@@ -1,0 +1,118 @@
+---
+import { getLangFromUrl } from "@/i18n/utils";
+import { Image } from "astro:assets";
+import { getCollection, getEntry } from "astro:content";
+
+const lang = getLangFromUrl(Astro.url);
+
+const recentPosts = (await getCollection("blog"))
+  .filter((post) => post.data.language === lang)
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+  .slice(0, 3);
+
+const featuredEntry = await getEntry("blog", `${lang}/how-javascript`)!!;
+const featuredPost = featuredEntry.data;
+---
+
+<section id="blog" class="mx-auto py-16">
+  <h2 class="text-2xl font-bold mb-16">Latest from Blog</h2>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    <!-- Featured Post -->
+    <article class="rounded-lg shadow-lg flex flex-col lg:flex-row">
+      <figure class="h-64 w-full lg:w-1/2">
+        <Image
+          src={featuredPost.image.src}
+          alt={featuredPost.image.alt}
+          class="object-cover w-full h-full"
+          loading="lazy"
+          width={600}
+          height={400}
+        />
+      </figure>
+      <div class="px-8 flex flex-col justify-center w-full lg:w-1/2">
+        <div class="flex items-center text-sm mb-4">
+          <svg class="h-4 w-4 mr-2"><use href="#icon-calendar"></use></svg>
+          {
+            featuredPost.publishDate.toLocaleDateString(lang, {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })
+          }
+          <svg class="h-4 w-4 ml-4 mr-2"><use href="#icon-clock"></use></svg>
+          {featuredPost.readTime}
+        </div>
+        <div class="text-lg font-bold mb-3">{featuredPost.title}</div>
+        <p class="mb-3 text-base">{featuredPost.excerpt}</p>
+        <div class="flex flex-wrap gap-2 mb-3">
+          {
+            featuredPost.tags.map((tag: string) => (
+              <span class="text-xs px-2 py-1 rounded">{tag}</span>
+            ))
+          }
+        </div>
+        <a
+          href={`/${lang}/blog/${featuredPost.slug.split("/").pop()}`}
+          class="inline-flex items-center font-medium"
+        >
+          Read more
+          <svg class="h-4 w-4 ml-2"><use href="#icon-arrow-right"></use></svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Recent Posts -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {
+        recentPosts.map((post) => (
+          <article class="rounded-lg overflow-hidden shadow-md flex flex-col">
+            <figure class="h-48 w-full">
+              <Image
+                src={post.data.image.src}
+                alt={post.data.image.alt}
+                class="object-cover w-full h-full"
+                loading="lazy"
+                width={600}
+                height={400}
+              />
+            </figure>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex items-center text-sm mb-3">
+                <svg class="h-4 w-4 mr-2">
+                  <use href="#icon-calendar" />
+                </svg>
+                {post.data.publishDate.toLocaleDateString(lang, {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </div>
+              <div class="text-base font-bold mb-2">{post.data.title}</div>
+              <p class="text-sm mb-4 flex-1">{post.data.excerpt}</p>
+              <a
+                href={`/${lang}/blog/${post.data.slug.split("/").pop()}`}
+                class="inline-flex items-center text-sm font-medium"
+              >
+                Read more
+                <svg class="h-4 w-4 ml-1">
+                  <use href="#icon-arrow-right" />
+                </svg>
+              </a>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+
+    <div class="text-center">
+      <a
+        href={`/${lang}/blog`}
+        class="inline-flex items-center px-6 pb-3 font-semibold rounded-lg"
+      >
+        View All Posts
+        <svg class="h-5 w-5 ml-2"><use href="#icon-arrow-right"></use></svg>
+      </a>
+    </div>
+  </div>
+</section>

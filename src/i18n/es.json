@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "home": {
+      "title": "Inicio - Portafolio de Desarrollador Full Stack",
+      "description": "¡Bienvenido a mi portafolio! Soy un Desarrollador de Software Full Stack con pasión por construir aplicaciones web.",
+      "image": "/images/home-banner.jpg",
+      "imageAlt": "Banner del portafolio"
+    },
+    "blog": {
+      "title": "Blog - Portafolio de Desarrollador Full Stack",
+      "description": "Lee mis últimas publicaciones en el blog sobre desarrollo web, programación y tecnología.",
+      "image": "/images/blog-banner.jpg",
+      "imageAlt": "Banner del blog"
+    },
+    "projects": {
+      "title": "Proyectos - Portafolio de Desarrollador Full Stack",
+      "description": "Explora mis proyectos que muestran mis habilidades en desarrollo web e ingeniería de software.",
+      "image": "/images/projects-banner.jpg",
+      "imageAlt": "Banner de proyectos"
+    }
+  },
+  "header": {
+    "home": {
+      "id": "home",
+      "label": "Inicio"
+    },
+    "about": {
+      "id": "about",
+      "label": "Sobre mí"
+    },
+    "education": {
+      "id": "education",
+      "label": "Educación"
+    },
+    "experience": {
+      "id": "experience",
+      "label": "Experiencia"
+    },
+    "projects": {
+      "id": "projects",
+      "label": "Proyectos"
+    },
+    "skills": {
+      "id": "skills",
+      "label": "Habilidades"
+    },
+    "blog": {
+      "id": "blog",
+      "label": "Blog"
+    }
+  },
+  "footer": {
+    "thanks": "¡Gracias por visitar mi portafolio!"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "jobTitle": "Desarrollador de Software Full Stack",
+    "description": "Apasionado por construir aplicaciones web con tecnologías modernas.",
+    "contact": "Contáctame",
+    "download": "Descargar mi CV"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "paragraph1": "Soy un ingeniero de software apasionado por crear soluciones elegantes a problemas complejos. Con experiencia en tecnologías web modernas, me enfoco en construir aplicaciones escalables que ofrecen experiencias excepcionales a los usuarios.",
+    "paragraph2": "Mi experiencia abarca desde la investigación de usuarios y el diseño de interfaces hasta el desarrollo moderno con Go, Angular e infraestructura en la nube. Me apasiona el anime, los videojuegos y aportar una estética kawaii al trabajo profesional.",
+    "paragraph3": "Resido en California, originalmente de México, y aporto una perspectiva única a la tecnología y el diseño, siempre enfocado en crear soluciones que realmente importan a los usuarios.",
+    "stats": [
+      {
+        "number": "1",
+        "title": "Años de experiencia"
+      },
+      {
+        "number": "100%",
+        "title": "Impulsado por la pasión"
+      },
+      {
+        "number": "S+",
+        "title": "Pensamiento estratégico"
+      }
+    ]
+  },
+  "education": {
+    "title": "Educación",
+    "academicFormation": "Formación Académica",
+    "certifications": "Certificaciones",
+    "languages": "Idiomas",
+    "tags": ["Frontend", "Backend", "DevOps", "Pruebas", "Idiomas"],
+    "itemsAcademic": [
+      {
+        "title": "Diplomado en Seguridad de Tecnologías e Información",
+        "place": "Universidad Mayor de San Simón",
+        "date": "Febrero 2024 - Diciembre 2024",
+        "location": "Cochabamba, Bolivia",
+        "description": "Graduado con honores. Enfoque en arquitectura de software, algoritmos y desarrollo web. Participación en múltiples hackatones y competencias de programación.",
+        "src": "/me.webp"
+      },
+      {
+        "title": "Licenciatura en Ingeniería de Sistemas",
+        "university": "Universidad Mayor de San Simón",
+        "date": "Febrero 2019 - Diciembre 2025",
+        "location": "Cochabamba, Bolivia",
+        "description": "Graduado con honores. Enfoque en arquitectura de software, algoritmos y desarrollo web. Participación en múltiples hackatones y competencias de programación.",
+        "src": "/me.webp"
+      }
+    ],
+    "itemsCertifications": [
+      {
+        "title": "Bootcamp Desarrollador Full Stack",
+        "tag": "Frontend",
+        "university": "Platzi",
+        "date": "Enero 2023 - Junio 2023",
+        "description": "Bootcamp integral sobre desarrollo front-end y back-end, incluyendo React, Node.js y bases de datos.",
+        "src": "/me.webp"
+      },
+      {
+        "title": "Algoritmos y Estructuras de Datos en JavaScript",
+        "tag": "Backend",
+        "university": "freeCodeCamp",
+        "date": "Julio 2022 - Diciembre 2022",
+        "description": "Dominio de fundamentos de JavaScript, algoritmos y estructuras de datos mediante proyectos prácticos.",
+        "src": "/me.webp"
+      },
+      {
+        "title": "AWS Certified Solutions Architect",
+        "tag": "DevOps",
+        "university": "Amazon Web Services",
+        "date": "Marzo 2023",
+        "description": "Certificación que demuestra experiencia en diseño y despliegue de sistemas escalables en AWS.",
+        "src": "/me.webp"
+      },
+      {
+        "title": "Docker Essentials",
+        "tag": "DevOps",
+        "university": "Docker",
+        "date": "Agosto 2023",
+        "description": "Curso sobre fundamentos de Docker, incluyendo contenerización y orquestación.",
+        "src": "/me.webp"
+      }
+    ],
+    "itemsLanguages": [
+      {
+        "title": "Español",
+        "description": "Hablante nativo",
+        "src": "/languages/spanish.png"
+      },
+      {
+        "title": "Inglés",
+        "description": "B2 - Intermedio alto. Competencia profesional",
+        "src": "/languages/english.png"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experiencia",
+    "keyResponsabilities": "Responsabilidades Clave",
+    "skills": "Habilidades",
+    "items": [
+      {
+        "title": "Practicante de Desarrollador Full Stack",
+        "company": "Tech Solutions Ltd.",
+        "date": "Enero 2024 - Presente",
+        "location": "Cochabamba, Bolivia",
+        "description": "Desarrollo y mantenimiento de aplicaciones web utilizando React y Node.js. Colaboración con el equipo para implementar nuevas funcionalidades y mejorar la experiencia del usuario.",
+        "responsabilities": [
+          "Desarrollar aplicaciones web usando React y Node.js",
+          "Colaborar con el equipo de diseño para implementar mejoras en UI/UX",
+          "Participar en revisiones de código y reuniones de equipo",
+          "Aprender y aplicar buenas prácticas en desarrollo de software"
+        ],
+        "skills": ["React", "Node.js", "JavaScript", "HTML/CSS", "Git"]
+      },
+      {
+        "title": "Practicante de Desarrollo de Software",
+        "company": "Innovatech Solutions",
+        "date": "Junio 2023 - Diciembre 2023",
+        "location": "Cochabamba, Bolivia",
+        "description": "Asistencia en el desarrollo de aplicaciones web y participación en proyectos de equipo. Experiencia adquirida en metodologías Ágiles y sistemas de control de versiones.",
+        "responsabilities": [
+          "Asistir en el desarrollo de aplicaciones web",
+          "Participar en ceremonias Ágiles y reuniones de equipo",
+          "Aprender control de versiones con Git"
+        ],
+        "skills": ["JavaScript", "HTML/CSS", "Git", "Ágil"]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Habilidades",
+    "skillCategories": [
+      {
+        "title": "Lenguajes de Programación",
+        "skills": ["JavaScript", "TypeScript", "Python", "Java"]
+      },
+      {
+        "title": "Frontend",
+        "skills": [
+          "React",
+          "Next.js",
+          "Astro",
+          "Tailwind CSS",
+          "Bootstrap",
+          "HTML5",
+          "CSS3"
+        ]
+      },
+      {
+        "title": "Backend",
+        "skills": [
+          "Node.js",
+          "NestJS",
+          "Express",
+          "Django",
+          "API Restful",
+          "GraphQL",
+          "Microservicios"
+        ]
+      },
+      {
+        "title": "Bases de Datos",
+        "skills": ["PostgreSQL", "MySQL", "SQLServer", "MongoDB"]
+      },
+      {
+        "title": "DevOps",
+        "skills": ["Docker", "CI/CD"]
+      },
+      {
+        "title": "Pruebas",
+        "skills": ["Jest", "Pruebas Unitarias"]
+      },
+      {
+        "title": "Habilidades Blandas",
+        "skills": [
+          "Liderazgo",
+          "Comunicación",
+          "Resolución de Problemas",
+          "Colaboración en Equipo"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "viewAll": "Ver todos los proyectos",
+    "viewProject": "Ver proyecto",
+    "linkProject": "Enlace",
+    "items": [
+      {
+        "title": "Sitio Web de Portafolio",
+        "description": "Un sitio web de portafolio personal construido con Astro y Tailwind CSS para mostrar mis habilidades y proyectos.",
+        "tech": ["Astro", "Tailwind CSS", "JavaScript"],
+        "image": "/webproject.png",
+        "linkView": "https://github/iamcrsitian/projects/portfolio-website",
+        "linkRepository": "https://github.com/iamcristian/projects/portfolio-website",
+        "year": 2024
+      },
+      {
+        "title": "Plataforma de Comercio Electrónico",
+        "description": "Una plataforma de comercio electrónico construida con React y Node.js, con listados de productos, carrito de compras y autenticación de usuarios.",
+        "tech": ["React", "Node.js", "MongoDB"],
+        "image": "/webproject.png",
+        "linkView": "https://github/iamcrsitian/projects/e-commerce-platform",
+        "linkRepository": "https://github.com/iamcristian/projects/portfolio-website",
+        "year": 2023
+      }
+    ]
+  }
+}

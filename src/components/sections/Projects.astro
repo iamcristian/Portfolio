@@ -1,0 +1,73 @@
+---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { Image } from "astro:assets";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const { title, viewAll, viewProject, linkProject, items } = t("projects");
+---
+
+<section id="projects" class="mx-auto py-16">
+  <h2 class="text-2xl md:text-3xl font-bold text-center tracking-tight mb-6">
+    {title}
+  </h2>
+
+  <div class="space-y-16 px-32">
+    {
+      items.map((project, index) => (
+        <div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class={index % 2 === 1 ? "lg:order-2" : ""}>
+              <Image
+                src={project.image}
+                alt={project.title}
+                width={800}
+                height={450}
+                class="w-full h-72 rounded-2xl"
+              />
+            </div>
+            <div class={index % 2 === 1 ? "lg:order-1" : ""}>
+              <h3 class="text-xl mb-4">{project.title}</h3>
+              <p class="mb-6">{project.description}</p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                {project.tech.map((tech) => (
+                  <span class="px-3 py-1">{tech}</span>
+                ))}
+              </div>
+              <div class="flex items-center space-x-6">
+                <a class="flex items-center space-x-2" href={project.linkView}>
+                  <span>{viewProject}</span>
+                  <svg class="w-4 h-4">
+                    <use href="#icon-external-link" />
+                  </svg>
+                </a>
+                <a
+                  class="flex items-center space-x-2"
+                  href={project.linkRepository}
+                >
+                  <span>{linkProject}</span>
+                  <svg class="w-4 h-4">
+                    <use href="#icon-repository" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+
+  <div class="text-center mt-12">
+    <a
+      href={`/${lang}/projects`}
+      class="group inline-flex items-center px-6 pb-3 font-semibold"
+    >
+      {viewAll}
+      <svg
+        class="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+        ><use href="#icon-arrow-right"></use></svg
+      >
+    </a>
+  </div>
+</section>

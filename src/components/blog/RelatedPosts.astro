@@ -1,0 +1,37 @@
+---
+interface Post {
+  slug: string;
+  data: {
+    title: string;
+    publishDate: Date;
+    excerpt?: string;
+  };
+}
+
+const { posts = [] }: { posts: Post[] } = Astro.props;
+---
+
+<div class="container mx-auto">
+  <section class="mt-24 border-t pt-12 ">
+    <h2 class="text-2xl font-light mb-8">Related Posts</h2>
+    <ul class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {
+        posts.map((post) => (
+          <li class="border rounded-xl p-6 hover:shadow transition">
+            <a href={`/blog/${post.slug}`} class="block">
+              <h3 class="text-lg font-medium mb-2">
+                {post.data.title}
+              </h3>
+              {post.data.excerpt && (
+                <p class="text-sm">{post.data.excerpt}</p>
+              )}
+              <p class="mt-4 text-xs">
+                {new Date(post.data.publishDate).toLocaleDateString()}
+              </p>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</div>

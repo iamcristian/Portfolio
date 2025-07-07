@@ -1,0 +1,17 @@
+---
+const { lang, title, description, image, imageAlt } = Astro.props;
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="canonical" href={Astro.url.href} />
+<meta http-equiv="Content-Language" content={lang} />
+
+<!-- Open Graph -->
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.your-domain.com/" />
+<meta property="og:image" content={image} />
+<meta property="og:image:alt" content={imageAlt} />

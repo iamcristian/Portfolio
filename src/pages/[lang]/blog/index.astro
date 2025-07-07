@@ -1,0 +1,47 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { getCollection } from "astro:content";
+import FilterAndPostGrid from "@/components/blog/FilterAndPostGrid";
+
+export function getStaticPaths() {
+  return [{ params: { lang: "en" } }, { params: { lang: "es" } }];
+}
+
+const { lang } = Astro.params;
+
+const allPosts = (await getCollection("blog"))
+  .filter((post) => post.data.language === lang)
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+  .map((post) => ({
+    ...post.data,
+    date: post.data.publishDate.toISOString(),
+  }));
+---
+
+<Layout type="blog">
+  <main class="container pt-24 mx-auto">
+    <!-- BREADCRUMBS -->
+    <div class="mx-auto">
+      <nav class="flex items-center space-x-2 text-sm">
+        <a href="/">Home</a>
+        <svg class="w-4 h-4"><use href="#icon-chevron-right"></use></svg>
+        <span>Blog</span>
+      </nav>
+    </div>
+
+    <!-- HEADER -->
+    <section class="py-20 px-6 lg:px-8">
+      <div class="mx-auto text-center">
+        <h1 class="text-5xl md:text-7xl font-light mb-8">
+          Writing &<br /><span class="font-medium">Insights</span>
+        </h1>
+        <p class="text-xl max-w-2xl mx-auto">
+          Thoughts on technology, software engineering, and the future of
+          digital experiences
+        </p>
+      </div>
+    </section>
+
+    <FilterAndPostGrid client:load posts={allPosts} lang={lang} />
+  </main>
+</Layout>
