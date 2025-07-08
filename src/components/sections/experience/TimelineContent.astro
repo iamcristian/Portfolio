@@ -1,0 +1,52 @@
+---
+const { item, index, keyResponsabilities, skills, lengthItems } = Astro.props;
+---
+
+<li>
+  {index !== 0 && <hr class="bg-base-content" />}
+
+  {/* Timeline icon */}
+  <div class="timeline-middle">
+    <svg class="h-5 w-5">
+      <use href="#icon-check-one"></use>
+    </svg>
+  </div>
+
+  {/* Timeline content */}
+  <div
+    class={`${
+      index % 2 === 0 ? "timeline-start md:text-end" : "timeline-end"
+    } mb-2`}
+  >
+    <time class="font-mono italic">{item.date}</time>
+    <div class="text-lg font-bold">{item.title}</div>
+    <div class="font-semibold text-base-content/70">{item.company}</div>
+    <p class="mt-2 text-sm">{item.description}</p>
+    <div class="mt-4">
+      <h4 class="font-semibold">{keyResponsabilities}</h4>
+      <ul class="text-xs list-disc list-inside">
+        {
+          item.responsabilities.map((responsibility: string) => (
+            <li>{responsibility}</li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="mt-4">
+      <h4 class="font-semibold">{skills}</h4>
+      <div
+        class={`flex flex-wrap gap-2 ${
+          index % 2 === 0 ? "justify-end" : "justify-start"
+        }`}
+      >
+        {
+          item.skills.map((skill: string) => (
+            <kbd class="kbd kbd-sm">{skill}</kbd>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+
+  {index !== lengthItems - 1 && <hr class="bg-base-content" />}
+</li>

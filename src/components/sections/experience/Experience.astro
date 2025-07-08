@@ -1,0 +1,27 @@
+---
+import Section from "@/components/ui/Section.astro";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import TimelineContent from "./TimelineContent.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const { title, items, keyResponsabilities, skills } = t("experience");
+---
+
+<Section id="experience" title={title}>
+  <ul
+    class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
+  >
+    {
+      items.map((item, index) => (
+        <TimelineContent
+          item={item}
+          index={index}
+          keyResponsabilities={keyResponsabilities}
+          skills={skills}
+          lengthItems={items.length}
+        />
+      ))
+    }
+  </ul>
+</Section>
