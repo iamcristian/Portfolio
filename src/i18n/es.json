@@ -263,5 +263,10 @@
         "year": 2023
       }
     ]
+  },
+  "blog": {
+    "title": "Blog",
+    "viewAll": "Ver todas las publicaciones",
+    "viewPost": "Leer publicación"
   }
 }

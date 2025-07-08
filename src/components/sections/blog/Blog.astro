@@ -1,11 +1,13 @@
 ---
 import Button from "@/components/ui/Button.astro";
 import Section from "@/components/ui/Section.astro";
-import { getLangFromUrl } from "@/i18n/utils";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import { getCollection, getEntry } from "astro:content";
 import PostCard from "@/components/sections/blog/PostCard.astro";
 
 const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const blog = t("blog");
 
 const recentPosts = (await getCollection("blog"))
   .filter((post) => post.data.language === lang)
@@ -16,20 +18,29 @@ const featuredEntry = await getEntry("blog", `${lang}/how-javascript`)!!;
 const featuredPost = featuredEntry.data;
 ---
 
-<Section id="blog" title="Blog">
+<Section id="blog" title={blog.title}>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
     <!-- Featured Post -->
-    <PostCard post={featuredPost} lang={lang} featured={true} readMoreText="View Post" />
+    <PostCard
+      post={featuredPost}
+      lang={lang}
+      featured={true}
+      readMoreText={blog.viewPost}
+    />
 
     <!-- Recent Posts -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      {recentPosts.map((post) => <PostCard post={post.data} lang={lang} readMoreText="View Post" />)}
+      {
+        recentPosts.map((post) => (
+          <PostCard post={post.data} lang={lang} readMoreText={blog.viewPost} />
+        ))
+      }
     </div>
 
     <div class="text-center mt-12">
       <Button
         href={`/${lang}/blog`}
-        text="View all posts"
+        text={blog.viewAll}
         icon="icon-arrow-right"
         class="group inline-flex items-center px-6 pb-3 font-semibold"
         iconClass="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
