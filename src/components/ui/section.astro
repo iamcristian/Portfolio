@@ -2,11 +2,17 @@
 interface Props {
   id: string;
   title?: string;
+  height?: "screen";
 }
-const { id, title } = Astro.props as Props;
+const { id, title, height } = Astro.props;
+const sectionHeight =
+  height === "screen" ? "h-screen flex items-center justify-start" : "mx-auto";
 ---
 
-<section id={id} class="mx-auto py-18 px-4 md:px-8 lg:px-16">
+<section
+  id={id}
+  class=`${sectionHeight} pt-18 py-0 lg:py-18 px-4 md:px-8 lg:px-16`
+>
   {
     title && (
       <h2 class="text-2xl md:text-3xl font-bold text-center tracking-tight mb-6">

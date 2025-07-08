@@ -9,12 +9,7 @@ const themes = [
 ---
 
 <div title="Change Theme" class="dropdown dropdown-end">
-  <div
-    tabindex="0"
-    role="button"
-    class="btn btn-sm gap-1.5 px-1.5 btn-ghost"
-    aria-label="Change Theme"
-  >
+  <button tabindex="0" class="btn btn-sm btn-ghost">
     <!-- Logo -->
     <div
       class="border-base-content/10 grid shrink-0 grid-cols-2 gap-0.5 rounded-md border p-1"
@@ -25,7 +20,7 @@ const themes = [
       <div class="bg-accent size-1 rounded-full"></div>
     </div>
     <svg class="w-4 h-4"><use href="#icon-chevron-down"></use></svg>
-  </div>
+  </button>
   <div tabindex="0" class="dropdown-content bg-base-300 rounded-box w-32">
     <ul class="menu menu-sm w-full">
       {

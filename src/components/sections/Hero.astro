@@ -1,15 +1,13 @@
 ---
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import Section from "../ui/Section.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const hero = t("hero");
 ---
 
-<section
-  id="home"
-  class="relative w-full h-screen flex items-center justify-start py-16"
->
+<Section id="home" height="screen">
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
     <div class="flex flex-col justify-center space-y-6">
       <span class="text-sm font-medium">{hero.greeting}</span>
@@ -56,4 +54,4 @@ const hero = t("hero");
       <svg class="h-8 w-8"><use href="#icon-chevron-down"></use></svg>
     </a>
   </div>
-</section>
+</Section>

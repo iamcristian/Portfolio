@@ -28,7 +28,7 @@ const { title, viewAll, viewProject, linkProject, items } = t("projects");
               <p class="mb-6">{project.description}</p>
               <div class="flex flex-wrap gap-2 mb-6">
                 {project.tech.map((tech) => (
-                  <span class="px-3 py-1">{tech}</span>
+                  <kbd class="kbd kbd-sm">{tech}</kbd>
                 ))}
               </div>
               <div class="flex items-center space-x-6">

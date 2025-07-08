@@ -2,7 +2,7 @@
 import { getLangFromUrl } from "@/i18n/utils";
 import { Image } from "astro:assets";
 import { getCollection, getEntry } from "astro:content";
-import Section from "../ui/section.astro";
+import Section from "../ui/Section.astro";
 
 const lang = getLangFromUrl(Astro.url);
 
@@ -47,7 +47,7 @@ const featuredPost = featuredEntry.data;
         <div class="flex flex-wrap gap-2 mb-3">
           {
             featuredPost.tags.map((tag: string) => (
-              <span class="text-xs px-2 py-1 rounded">{tag}</span>
+              <kbd class="kbd kbd-sm">{tag}</kbd>
             ))
           }
         </div>

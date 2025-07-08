@@ -6,51 +6,49 @@ const t = useTranslations(lang);
 const footer = t("footer");
 ---
 
-<div class="w-full">
-  <footer class="footer py-4 container mx-auto">
-    <aside class="grid-flow-col items-center">
-      <svg class="w-8 h-8">
-        <use href="#icon-dev"></use>
-      </svg>
-      <p>
-        Cristian Arando
-        <br />
-        {footer["thanks"]}
-      </p>
-    </aside>
-    <nav class="md:place-self-center md:justify-self-end">
-      <div class="grid grid-flow-col gap-4">
-        <a
-          aria-label="linkedin link"
-          href="https://linkedin.com/in/cristianarando"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg class="w-8 h-8">
-            <use href="#icon-linkedin"></use>
-          </svg>
-        </a>
-        <a
-          aria-label="github link"
-          href="https://github.com/iamcristian"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg class="w-8 h-8">
-            <use href="#icon-github"></use>
-          </svg>
-        </a>
-        <a
-          aria-label="mail link"
-          href="mailto:crisarandosyse@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg class="w-8 h-8">
-            <use href="#icon-mail"></use>
-          </svg>
-        </a>
-      </div>
-    </nav>
-  </footer>
-</div>
+<footer class="footer py-4 container mx-auto px-4 md:px-8 lg:px-16">
+  <aside class="grid-flow-col items-center">
+    <svg class="w-8 h-8">
+      <use href="#icon-dev"></use>
+    </svg>
+    <p>
+      Cristian Arando
+      <br />
+      {footer["thanks"]}
+    </p>
+  </aside>
+  <nav class="justify-self-end">
+    <div class="grid grid-flow-col gap-4">
+      <a
+        aria-label="linkedin link"
+        href="https://linkedin.com/in/cristianarando"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg class="w-8 h-8">
+          <use href="#icon-linkedin"></use>
+        </svg>
+      </a>
+      <a
+        aria-label="github link"
+        href="https://github.com/iamcristian"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg class="w-8 h-8">
+          <use href="#icon-github"></use>
+        </svg>
+      </a>
+      <a
+        aria-label="mail link"
+        href="mailto:crisarandosyse@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg class="w-8 h-8">
+          <use href="#icon-mail"></use>
+        </svg>
+      </a>
+    </div>
+  </nav>
+</footer>
