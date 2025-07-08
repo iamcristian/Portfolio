@@ -1,43 +1,21 @@
 ---
-interface Props {
-  href?: string;
-  variant?: "solid" | "outline" | "ghost";
-  size?: "sm" | "md" | "lg";
-  type?: "submit" | "button";
-  children: any;
-}
-
 const {
   href,
-  variant = "outline",
-  size = "md",
-  type = "button",
-  children,
+  text,
+  icon,
+  class: className = "",
+  iconClass = "w-4 h-4",
+  ...props
 } = Astro.props;
-
-const base = "inline-flex items-center font-semibold rounded-md transition";
-const sizes = {
-  sm: "text-sm px-3 py-1",
-  md: "text-base px-4 py-2",
-  lg: "text-lg px-6 py-3",
-};
-const variants = {
-  solid: "bg-blue-600 text-white hover:bg-blue-700",
-  outline: "border border-blue-600 text-blue-600 hover:bg-blue-100",
-  ghost: "text-blue-600 hover:underline",
-};
-
-const classes = `${base} ${sizes[size]} ${variants[variant]}`;
 ---
 
-{
-  href ? (
-    <a href={href} class={classes}>
-      {children}
-    </a>
-  ) : (
-    <button type={type} class={classes}>
-      {children}
-    </button>
-  )
-}
+<a href={href} class={`flex items-center space-x-2 ${className}`} {...props}>
+  <span>{text}</span>
+  {
+    icon && (
+      <svg class={iconClass}>
+        <use href={`#${icon}`} />
+      </svg>
+    )
+  }
+</a>

@@ -15,7 +15,7 @@ const blog = defineCollection({
       alt: z.string(),
     }),
     author: z.string().default("Anonymous"),
-    language: z.enum(["en", "es", "ru", "ge"]),
+    language: z.enum(["en", "es"]),
     tags: z.array(z.string()),
     publishDate: z.string().transform((str) => new Date(str)),
     authorContact: z.string().email(),

@@ -19,8 +19,8 @@ const { item, index, keyResponsabilities, skills, lengthItems } = Astro.props;
     } mb-2`}
   >
     <time class="font-mono italic">{item.date}</time>
-    <div class="text-lg font-bold">{item.title}</div>
-    <div class="font-semibold text-base-content/70">{item.company}</div>
+    <h3 class="text-lg font-bold">{item.title}</h3>
+    <p class="font-semibold text-base-content/70">{item.company}</p>
     <p class="mt-2 text-sm">{item.description}</p>
     <div class="mt-4">
       <h4 class="font-semibold">{keyResponsabilities}</h4>

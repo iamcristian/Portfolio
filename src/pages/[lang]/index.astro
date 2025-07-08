@@ -3,10 +3,10 @@ import Layout from "@/layouts/Layout.astro";
 import Hero from "@/components/sections/Hero.astro";
 import About from "@/components/sections/About.astro";
 import Education from "@/components/sections/education/Education.astro";
-import Blog from "@/components/sections/Blog.astro";
 import Skills from "@/components/sections/Skills.astro";
-import Projects from "@/components/sections/Projects.astro";
+import Projects from "@/components/sections/projects/Projects.astro";
 import Experience from "@/components/sections/Experience/Experience.astro";
+import Blog from "@/components/sections/blog/Blog.astro";
 
 export function getStaticPaths() {
   return [{ params: { lang: "en" } }, { params: { lang: "es" } }];

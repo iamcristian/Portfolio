@@ -1,0 +1,35 @@
+---
+import Section from "@/components/ui/Section.astro";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import CardProject from "./CardProject.astro";
+import Button from "@/components/ui/Button.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const { title, viewAll, viewProject, linkProject, items } = t("projects");
+---
+
+<Section id="projects" title={title}>
+  <div class="space-y-16 md:px-32">
+    {
+      items.map((project, index) => (
+        <CardProject
+          project={project}
+          index={index}
+          viewProject={viewProject}
+          linkProject={linkProject}
+        />
+      ))
+    }
+  </div>
+
+  <div class="text-center mt-12">
+    <Button
+      href={`/${lang}/projects`}
+      text={viewAll}
+      icon="icon-arrow-right"
+      class="group inline-flex items-center px-6 pb-3 font-semibold"
+      iconClass="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+    />
+  </div>
+</Section>

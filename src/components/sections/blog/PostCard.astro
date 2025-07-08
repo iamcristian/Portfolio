@@ -1,0 +1,54 @@
+---
+const { post, lang, featured = false, readMoreText } = Astro.props;
+import Button from "@/components/ui/Button.astro";
+import { Image } from "astro:assets";
+---
+
+<article class={`rounded-lg flex flex-col ${featured ? "lg:flex-row" : ""}`}>
+  <figure class={`${featured ? "h-64 w-full lg:w-1/2" : "h-48 w-full"}`}>
+    <Image
+      src={post.image.src}
+      alt={post.image.alt}
+      class="object-cover w-full h-full"
+      loading="lazy"
+      width={600}
+      height={400}
+    />
+  </figure>
+  <div
+    class={`${featured ? "p-6 flex flex-col justify-center w-full lg:w-1/2" : "p-6 flex flex-col flex-1"}`}
+  >
+    <div class="flex items-center text-sm mb-4">
+      <svg class="h-4 w-4 mr-2"><use href="#icon-calendar"></use></svg>
+      {
+        post.publishDate.toLocaleDateString(lang, {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })
+      }
+
+      <svg class="h-4 w-4 ml-4 mr-2">
+        <use href="#icon-clock"></use>
+      </svg>
+      {post.readTime}
+    </div>
+    <h3 class="font-bold mb-2">
+      {post.title}
+    </h3>
+    <p class="text-sm mb-4 flex-1">
+      {post.excerpt}
+    </p>
+
+    <div class="flex flex-wrap gap-2 mb-3">
+      {post.tags.map((tag: string) => <kbd class="kbd kbd-sm">{tag}</kbd>)}
+    </div>
+    <Button
+      href={`/${lang}/blog/${post.slug.split("/").pop()}`}
+      text={readMoreText}
+      icon="icon-arrow-right"
+      class="group inline-flex items-center pb-3 font-semibold"
+      iconClass="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+    />
+  </div>
+</article>

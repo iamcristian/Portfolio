@@ -1,0 +1,37 @@
+---
+import Button from "@/components/ui/Button.astro";
+import { Image } from "astro:assets";
+
+const { project, index, viewProject, linkProject } = Astro.props;
+---
+
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+  <div class={index % 2 === 1 ? "lg:order-2" : ""}>
+    <Image
+      src={project.image}
+      alt={project.title}
+      width={800}
+      height={450}
+      class="w-full h-72 rounded-2xl"
+    />
+  </div>
+  <div class={index % 2 === 1 ? "lg:order-1" : ""}>
+    <h3 class="text-lg mb-4 font-bold">{project.title}</h3>
+    <p class="mb-6">{project.description}</p>
+    <div class="flex flex-wrap gap-2 mb-6">
+      {project.tech.map((tech: string) => <kbd class="kbd kbd-sm">{tech}</kbd>)}
+    </div>
+    <div class="flex items-center space-x-6">
+      <Button
+        href={project.linkView}
+        text={viewProject}
+        icon="icon-external-link"
+      />
+      <Button
+        href={project.linkRepository}
+        text={linkProject}
+        icon="icon-repository"
+      />
+    </div>
+  </div>
+</div>
