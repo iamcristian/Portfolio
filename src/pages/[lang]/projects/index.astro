@@ -1,138 +1,38 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import ProjectsIsland from "@/components/projects/ProjectsIsland.tsx";
+import ProjectsView from "@/components/projects/ProjectsView";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 export function getStaticPaths() {
   return [{ params: { lang: "en" } }, { params: { lang: "es" } }];
 }
 
-const { lang } = Astro.params;
-// Aquí copia tu array completo de proyectos:
-import type { Project } from "@/components/projects/ProjectsIsland";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const contentProjects = t("projects");
 
-const projects: Project[] = [
-  {
-    id: 1,
-    title: "E-Commerce Platform",
-    description:
-      "A full-stack solution with real-time inventory management and seamless payment processing",
-    longDescription:
-      "Built a comprehensive e-commerce platform from the ground up, featuring real-time inventory tracking, secure payment processing with Stripe, and an intuitive admin dashboard. The platform handles thousands of transactions daily and includes advanced features like abandoned cart recovery and personalized product recommendations.",
-    technologies: ["Next.js", "Node.js", "PostgreSQL", "Stripe", "Redis"],
-    category: "Full Stack",
-    year: "2024",
-    status: "Live",
-    github: "#",
-    demo: "#",
-    featured: true,
-    metrics: {
-      users: "10K+",
-      performance: "98%",
-      uptime: "99.9%",
-    },
-  },
-  {
-    id: 2,
-    title: "AI Analytics Dashboard",
-    description:
-      "Machine learning powered business intelligence platform with predictive analytics",
-    longDescription:
-      "Developed an AI-powered analytics dashboard that processes large datasets to provide actionable business insights. Features include predictive modeling, real-time data visualization, and automated report generation. The system uses machine learning algorithms to identify trends and anomalies in business data.",
-    technologies: ["React", "Python", "TensorFlow", "D3.js", "FastAPI"],
-    category: "AI/ML",
-    year: "2024",
-    status: "Live",
-    github: "#",
-    demo: "#",
-    featured: true,
-    metrics: {
-      accuracy: "94%",
-      dataPoints: "1M+",
-      insights: "500+",
-    },
-  },
-  {
-    id: 3,
-    title: "Real-time Chat System",
-    description:
-      "Scalable messaging platform with end-to-end encryption and WebSocket support",
-    longDescription:
-      "Created a high-performance real-time chat application supporting thousands of concurrent users. Implemented end-to-end encryption, file sharing, group chats, and message history. The system uses WebSocket connections for instant messaging and includes features like typing indicators and read receipts.",
-    technologies: ["Vue.js", "Socket.io", "Redis", "MongoDB", "Docker"],
-    category: "Real-time",
-    year: "2023",
-    status: "Live",
-    github: "#",
-    demo: "#",
-    featured: false,
-    metrics: {
-      messages: "1M+",
-      users: "5K+",
-      latency: "<50ms",
-    },
-  },
-  {
-    id: 4,
-    title: "Blockchain Voting System",
-    description:
-      "Decentralized voting platform ensuring transparency and security",
-    longDescription:
-      "Built a secure blockchain-based voting system that ensures transparency and prevents fraud. The platform uses smart contracts to manage voting processes and stores votes on a distributed ledger. Features include voter authentication, real-time results, and audit trails.",
-    technologies: ["Solidity", "Web3.js", "React", "IPFS", "Ethereum"],
-    category: "Blockchain",
-    year: "2023",
-    status: "Beta",
-    github: "#",
-    demo: "#",
-    featured: false,
-    metrics: {
-      votes: "50K+",
-      security: "100%",
-      transparency: "Full",
-    },
-  },
-  {
-    id: 5,
-    title: "IoT Monitoring System",
-    description:
-      "Real-time monitoring system for IoT devices with data visualization",
-    longDescription:
-      "Developed a comprehensive IoT monitoring solution that tracks and analyzes data from hundreds of connected devices. The system provides real-time alerts, historical data analysis, and predictive maintenance recommendations. Features include custom dashboards and automated reporting.",
-    technologies: ["React", "Node.js", "InfluxDB", "Grafana", "MQTT"],
-    category: "IoT",
-    year: "2023",
-    status: "Live",
-    github: "#",
-    demo: "#",
-    featured: false,
-    metrics: {
-      devices: "500+",
-      uptime: "99.8%",
-      alerts: "1K+",
-    },
-  },
-  {
-    id: 6,
-    title: "Mobile Fitness App",
-    description: "Cross-platform fitness tracking app with social features",
-    longDescription:
-      "Created a comprehensive fitness tracking application with social networking features. Users can track workouts, set goals, share achievements, and compete with friends. The app includes workout plans, nutrition tracking, and integration with wearable devices.",
-    technologies: ["React Native", "Firebase", "Redux", "Expo", "Stripe"],
-    category: "Mobile",
-    year: "2022",
-    status: "Live",
-    github: "#",
-    demo: "#",
-    featured: false,
-    metrics: {
-      downloads: "25K+",
-      rating: "4.8/5",
-      retention: "75%",
-    },
-  },
+const categories = [
+  "All",
+  ...new Set(t("projects").items.map((p) => p.category)),
 ];
 ---
 
 <Layout type="projects">
-  <ProjectsIsland client:visible projects={projects} lang={lang} />
+  <div class="container pt-24 mx-auto">
+    <!-- Breadcrumbs -->
+    <div class="mx-auto">
+      <nav class="flex items-center space-x-2 text-sm">
+        <a href="/">Home</a>
+        <svg class="w-4 h-4"><use href="#icon-chevron-right"></use></svg>
+        <span>Projects</span>
+      </nav>
+    </div>
+
+    <ProjectsView
+      client:visible
+      projects={contentProjects.items}
+      categories={categories}
+      t={contentProjects}
+    />
+  </div>
 </Layout>

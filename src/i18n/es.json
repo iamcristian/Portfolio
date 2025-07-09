@@ -241,32 +241,67 @@
   "projects": {
     "title": "Proyectos",
     "viewAll": "Ver todos los proyectos",
-    "viewProject": "Ver proyecto",
-    "linkProject": "Enlace",
+    "sourceCode": "Código fuente",
+    "liveDemo": "Demo",
+    "featured": "Destacado",
+    "searchPlaceholder": "Buscar proyectos, tecnologías...",
+    "noProjectsMatch": "No se encontraron proyectos que coincidan con tus criterios.",
+    "clearFilters": "Limpiar todos los filtros",
     "items": [
       {
         "title": "Sitio Web de Portafolio",
         "description": "Un sitio web de portafolio personal construido con Astro y Tailwind CSS para mostrar mis habilidades y proyectos.",
         "tech": ["Astro", "Tailwind CSS", "JavaScript"],
+        "category": "Full Stack",
+        "featured": true,
+        "year": 2024,
         "image": "/webproject.png",
-        "linkView": "https://github/iamcrsitian/projects/portfolio-website",
-        "linkRepository": "https://github.com/iamcristian/projects/portfolio-website",
-        "year": 2024
+        "linkRepository": "https://github/iamcrsitian/projects/portfolio-website",
+        "linkDemo": "https://github/iamcrsitian/projects/portfolio-website"
       },
       {
-        "title": "Plataforma de Comercio Electrónico",
-        "description": "Una plataforma de comercio electrónico construida con React y Node.js, con listados de productos, carrito de compras y autenticación de usuarios.",
+        "title": "Plataforma de E-commerce",
+        "description": "Una plataforma de comercio electrónico desarrollada con React y Node.js, con listado de productos, carrito de compras y autenticación de usuarios.",
         "tech": ["React", "Node.js", "MongoDB"],
+        "category": "IoT",
+        "featured": true,
+        "year": 2023,
         "image": "/webproject.png",
-        "linkView": "https://github/iamcrsitian/projects/e-commerce-platform",
-        "linkRepository": "https://github.com/iamcristian/projects/portfolio-website",
-        "year": 2023
+        "linkRepository": "https://github/iamcrsitian/projects/e-commerce-platform",
+        "linkDemo": "https://github/iamcrsitian/projects/e-commerce-platform"
+      },
+      {
+        "title": "Plataforma de Blog",
+        "description": "Una plataforma de blogs construida con Next.js y MongoDB, que permite a los usuarios crear, leer y comentar publicaciones.",
+        "tech": ["Next.js", "MongoDB", "Tailwind CSS"],
+        "category": "Full Stack",
+        "featured": false,
+        "year": 2023,
+        "image": "/webproject.png",
+        "linkRepository": "https://github/iamcrsitian/projects/blog-platform",
+        "linkDemo": "https://github/iamcrsitian/projects/blog-platform"
+      },
+      {
+        "title": "App de Gestión de Tareas",
+        "description": "Una aplicación de gestión de tareas desarrollada con Angular y Firebase, que permite a los usuarios crear, actualizar y eliminar tareas.",
+        "tech": ["Angular", "Firebase", "TypeScript"],
+        "category": "Mobile",
+        "featured": false,
+        "year": 2023,
+        "image": "/webproject.png",
+        "linkRepository": "https://github/iamcrsitian/projects/task-management-app",
+        "linkDemo": "https://github/iamcrsitian/projects/task-management-app"
       }
     ]
   },
   "blog": {
     "title": "Blog",
     "viewAll": "Ver todas las publicaciones",
-    "viewPost": "Leer publicación"
+    "viewPost": "Leer publicación",
+    "sourceCode": "Código fuente",
+    "liveDemo": "Demo en vivo",
+    "searchPlaceholder": "Buscar proyectos, tecnologías...",
+    "noPostsMatch": "No se encontraron proyectos que coincidan con tus criterios.",
+    "clearFilters": "Limpiar todos los filtros"
   }
 }

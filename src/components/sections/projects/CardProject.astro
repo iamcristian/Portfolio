@@ -2,7 +2,7 @@
 import Button from "@/components/ui/Button.astro";
 import { Image } from "astro:assets";
 
-const { project, index, viewProject, linkProject } = Astro.props;
+const { project, index, sourceCode, liveDemo } = Astro.props;
 ---
 
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
@@ -23,15 +23,21 @@ const { project, index, viewProject, linkProject } = Astro.props;
     </div>
     <div class="flex items-center space-x-6">
       <Button
-        href={project.linkView}
-        text={viewProject}
-        icon="icon-external-link"
-      />
-      <Button
         href={project.linkRepository}
-        text={linkProject}
-        icon="icon-repository"
+        text={sourceCode}
+        icon="icon-github"
+        class="btn bg-base-content text-base-100"
       />
+      {
+        project.linkDemo && (
+          <Button
+            href={project.linkDemo}
+            text={liveDemo}
+            icon="icon-external-link"
+            class="btn btn-outline"
+          />
+        )
+      }
     </div>
   </div>
 </div>

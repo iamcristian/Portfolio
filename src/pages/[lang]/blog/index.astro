@@ -1,26 +1,30 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { getCollection } from "astro:content";
-import FilterAndPostGrid from "@/components/blog/FilterAndPostGrid";
+import BlogView from "@/components/blog/BlogView";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 export function getStaticPaths() {
   return [{ params: { lang: "en" } }, { params: { lang: "es" } }];
 }
 
-const { lang } = Astro.params;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const contentBlog = t("blog");
 
 const allPosts = (await getCollection("blog"))
   .filter((post) => post.data.language === lang)
-  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
   .map((post) => ({
     ...post.data,
     date: post.data.publishDate.toISOString(),
   }));
+
+const tags = [...new Set(allPosts.flatMap((p) => p.tags))];
 ---
 
 <Layout type="blog">
   <main class="container pt-24 mx-auto">
-    <!-- BREADCRUMBS -->
+    <!-- Breadcrumbs -->
     <div class="mx-auto">
       <nav class="flex items-center space-x-2 text-sm">
         <a href="/">Home</a>
@@ -29,19 +33,12 @@ const allPosts = (await getCollection("blog"))
       </nav>
     </div>
 
-    <!-- HEADER -->
-    <section class="py-20 px-6 lg:px-8">
-      <div class="mx-auto text-center">
-        <h1 class="text-5xl md:text-7xl font-light mb-8">
-          Writing &<br /><span class="font-medium">Insights</span>
-        </h1>
-        <p class="text-xl max-w-2xl mx-auto">
-          Thoughts on technology, software engineering, and the future of
-          digital experiences
-        </p>
-      </div>
-    </section>
-
-    <FilterAndPostGrid client:load posts={allPosts} lang={lang} />
+    <BlogView
+      client:visible
+      posts={allPosts}
+      lang={lang}
+      tags={tags}
+      t={contentBlog}
+    />
   </main>
 </Layout>

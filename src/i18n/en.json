@@ -110,7 +110,7 @@
         "university": "Platzi",
         "date": "January 2023 - June 2023",
         "description": "Completed a comprehensive bootcamp covering front-end and back-end development, including React, Node.js, and databases.",
-        "src": "/me.webp"
+        "src": "/devtalles.jpeg"
       },
       {
         "title": "JavaScript Algorithms and Data Structures",
@@ -118,7 +118,7 @@
         "university": "freeCodeCamp",
         "date": "July 2022 - December 2022",
         "description": "Mastered JavaScript fundamentals, algorithms, and data structures through hands-on projects.",
-        "src": "/me.webp"
+        "src": "/devtalles.jpeg"
       },
       {
         "title": "AWS Certified Solutions Architect",
@@ -126,7 +126,7 @@
         "university": "Amazon Web Services",
         "date": "March 2023",
         "description": "Achieved certification demonstrating expertise in designing and deploying scalable systems on AWS.",
-        "src": "/me.webp"
+        "src": "/devtalles.jpeg"
       },
       {
         "title": "Docker Essentials",
@@ -134,7 +134,7 @@
         "university": "Docker",
         "date": "August 2023",
         "description": "Completed a course on Docker fundamentals, including containerization and orchestration.",
-        "src": "/me.webp"
+        "src": "/devtalles.jpeg"
       }
     ],
     "itemsLanguages": [
@@ -241,32 +241,65 @@
   "projects": {
     "title": "Projects",
     "viewAll": "View All Projects",
-    "viewProject": "View Project",
-    "linkProject": "Link",
+    "sourceCode": "Source Code",
+    "liveDemo": "Live Demo",
+    "featured": "Featured",
+    "searchPlaceholder": "Search projects, technologies...",
+    "noProjectsMatch": "No projects found matching your criteria.",
+    "clearFilters": "Clear All Filters",
     "items": [
       {
         "title": "Portfolio Website",
         "description": "A personal portfolio website built with Astro and Tailwind CSS to showcase my skills and projects.",
         "tech": ["Astro", "Tailwind CSS", "JavaScript"],
+        "category": "Full Stack",
+        "featured": true,
+        "year": 2024,
         "image": "/webproject.png",
-        "linkView": "https://github/iamcrsitian/projects/portfolio-website",
         "linkRepository": "https://github/iamcrsitian/projects/portfolio-website",
-        "year": 2024
+        "linkDemo": "https://github/iamcrsitian/projects/portfolio-website"
       },
       {
         "title": "E-commerce Platform",
         "description": "An e-commerce platform built with React and Node.js, featuring product listings, shopping cart, and user authentication.",
         "tech": ["React", "Node.js", "MongoDB"],
+        "category": "IoT",
+        "featured": true,
+        "year": 2023,
         "image": "/webproject.png",
-        "linkView": "https://github/iamcrsitian/projects/e-commerce-platform",
         "linkRepository": "https://github/iamcrsitian/projects/e-commerce-platform",
-        "year": 2023
+        "linkDemo": "https://github/iamcrsitian/projects/e-commerce-platform"
+      },
+      {
+        "title": "Blog Platform",
+        "description": "A blogging platform built with Next.js and MongoDB, allowing users to create, read, and comment on posts.",
+        "tech": ["Next.js", "MongoDB", "Tailwind CSS"],
+        "category": "Full Stack",
+        "featured": false,
+        "year": 2023,
+        "image": "/webproject.png",
+        "linkRepository": "https://github/iamcrsitian/projects/blog-platform",
+        "linkDemo": "https://github/iamcrsitian/projects/blog-platform"
+      },
+      {
+        "title": "Task Management App",
+        "description": "A task management application built with Angular and Firebase, allowing users to create, update, and delete tasks.",
+        "tech": ["Angular", "Firebase", "TypeScript"],
+        "category": "Mobile",
+        "featured": false,
+        "year": 2023,
+        "image": "/webproject.png",
+        "linkRepository": "https://github/iamcrsitian/projects/task-management-app",
+        "linkDemo": "https://github/iamcrsitian/projects/task-management-app"
       }
     ]
   },
   "blog": {
     "title": "Blog",
     "viewAll": "View All Posts",
-    "viewPost": "Read Post"
+    "viewPost": "Read Post",
+    "searchPlaceholder": "Search projects, technologies...",
+    "noPostsMatch": "No projects found matching your criteria.",
+    "clearFilters": "Clear All Filters"
   }
 }
