@@ -1,20 +1,20 @@
 {
   "meta": {
     "home": {
-      "title": "Inicio - Portafolio de Desarrollador Full Stack",
-      "description": "¡Bienvenido a mi portafolio! Soy un Desarrollador de Software Full Stack con pasión por construir aplicaciones web.",
+      "title": "Inicio - Portafolio Desarrollador Full Stack",
+      "description": "¡Bienvenido a mi portafolio! Soy un Desarrollador de Software Full Stack apasionado por crear aplicaciones web.",
       "image": "/images/home-banner.jpg",
       "imageAlt": "Banner del portafolio"
     },
     "blog": {
-      "title": "Blog - Portafolio de Desarrollador Full Stack",
-      "description": "Lee mis últimas publicaciones en el blog sobre desarrollo web, programación y tecnología.",
+      "title": "Blog - Portafolio Desarrollador Full Stack",
+      "description": "Lee mis últimas publicaciones sobre desarrollo web, programación y tecnología.",
       "image": "/images/blog-banner.jpg",
       "imageAlt": "Banner del blog"
     },
     "projects": {
-      "title": "Proyectos - Portafolio de Desarrollador Full Stack",
-      "description": "Explora mis proyectos que muestran mis habilidades en desarrollo web e ingeniería de software.",
+      "title": "Proyectos - Portafolio Desarrollador Full Stack",
+      "description": "Explora mis proyectos que demuestran mis habilidades en desarrollo web e ingeniería de software.",
       "image": "/images/projects-banner.jpg",
       "imageAlt": "Banner de proyectos"
     }
@@ -55,18 +55,18 @@
   "hero": {
     "greeting": "Hola, soy",
     "jobTitle": "Desarrollador de Software Full Stack",
-    "description": "Apasionado por construir aplicaciones web con tecnologías modernas.",
+    "description": "Apasionado por crear aplicaciones web con tecnologías modernas.",
     "contact": "Contáctame",
     "download": "Descargar mi CV"
   },
   "about": {
     "title": "Sobre mí",
-    "paragraph1": "Soy un ingeniero de software apasionado por crear soluciones elegantes a problemas complejos. Con experiencia en tecnologías web modernas, me enfoco en construir aplicaciones escalables que ofrecen experiencias excepcionales a los usuarios.",
-    "paragraph2": "Mi experiencia abarca desde la investigación de usuarios y el diseño de interfaces hasta el desarrollo moderno con Go, Angular e infraestructura en la nube. Me apasiona el anime, los videojuegos y aportar una estética kawaii al trabajo profesional.",
-    "paragraph3": "Resido en California, originalmente de México, y aporto una perspectiva única a la tecnología y el diseño, siempre enfocado en crear soluciones que realmente importan a los usuarios.",
+    "paragraph1": "Soy un ingeniero de software apasionado por crear soluciones elegantes a problemas complejos. Con experiencia en tecnologías web modernas, me enfoco en construir aplicaciones escalables que ofrecen experiencias excepcionales al usuario.",
+    "paragraph2": "Mi experiencia abarca desde investigación de usuarios y diseño de interfaces hasta desarrollo moderno con Go, Angular e infraestructura en la nube. Me apasiona el anime, los videojuegos y aportar una estética kawaii al trabajo profesional.",
+    "paragraph3": "Resido en California, originario de México, aporto una perspectiva única a la tecnología y el diseño, siempre enfocado en crear soluciones que realmente importan a los usuarios.",
     "stats": [
       {
-        "number": "1",
+        "number": "1+",
         "title": "Años de experiencia"
       },
       {
@@ -84,15 +84,15 @@
     "academicFormation": "Formación Académica",
     "certifications": "Certificaciones",
     "languages": "Idiomas",
-    "tags": ["Frontend", "Backend", "DevOps", "Pruebas", "Idiomas"],
+    "tags": ["Frontend", "Backend", "DevOps", "Testing", "Idiomas"],
     "itemsAcademic": [
       {
         "title": "Diplomado en Seguridad de Tecnologías e Información",
-        "place": "Universidad Mayor de San Simón",
+        "university": "Escuela Universitaria de Posgrado UMSS",
         "date": "Febrero 2024 - Diciembre 2024",
         "location": "Cochabamba, Bolivia",
         "description": "Graduado con honores. Enfoque en arquitectura de software, algoritmos y desarrollo web. Participación en múltiples hackatones y competencias de programación.",
-        "src": "/me.webp"
+        "src": "/posgradoumss.png"
       },
       {
         "title": "Licenciatura en Ingeniería de Sistemas",
@@ -100,7 +100,7 @@
         "date": "Febrero 2019 - Diciembre 2025",
         "location": "Cochabamba, Bolivia",
         "description": "Graduado con honores. Enfoque en arquitectura de software, algoritmos y desarrollo web. Participación en múltiples hackatones y competencias de programación.",
-        "src": "/me.webp"
+        "src": "/umss.png"
       }
     ],
     "itemsCertifications": [
@@ -109,8 +109,8 @@
         "tag": "Frontend",
         "university": "Platzi",
         "date": "Enero 2023 - Junio 2023",
-        "description": "Bootcamp integral sobre desarrollo front-end y back-end, incluyendo React, Node.js y bases de datos.",
-        "src": "/me.webp"
+        "description": "Bootcamp integral cubriendo desarrollo frontend y backend, incluyendo React, Node.js y bases de datos.",
+        "src": "/devtalles.jpeg"
       },
       {
         "title": "Algoritmos y Estructuras de Datos en JavaScript",
@@ -118,7 +118,7 @@
         "university": "freeCodeCamp",
         "date": "Julio 2022 - Diciembre 2022",
         "description": "Dominio de fundamentos de JavaScript, algoritmos y estructuras de datos mediante proyectos prácticos.",
-        "src": "/me.webp"
+        "src": "/devtalles.jpeg"
       },
       {
         "title": "AWS Certified Solutions Architect",
@@ -126,7 +126,7 @@
         "university": "Amazon Web Services",
         "date": "Marzo 2023",
         "description": "Certificación que demuestra experiencia en diseño y despliegue de sistemas escalables en AWS.",
-        "src": "/me.webp"
+        "src": "/devtalles.jpeg"
       },
       {
         "title": "Docker Essentials",
@@ -134,7 +134,7 @@
         "university": "Docker",
         "date": "Agosto 2023",
         "description": "Curso sobre fundamentos de Docker, incluyendo contenerización y orquestación.",
-        "src": "/me.webp"
+        "src": "/devtalles.jpeg"
       }
     ],
     "itemsLanguages": [
@@ -152,20 +152,20 @@
   },
   "experience": {
     "title": "Experiencia",
-    "keyResponsabilities": "Responsabilidades Clave",
+    "keyResponsabilities": "Responsabilidades clave",
     "skills": "Habilidades",
     "items": [
       {
-        "title": "Practicante de Desarrollador Full Stack",
+        "title": "Practicante Desarrollador Full Stack",
         "company": "Tech Solutions Ltd.",
         "date": "Enero 2024 - Presente",
         "location": "Cochabamba, Bolivia",
-        "description": "Desarrollo y mantenimiento de aplicaciones web utilizando React y Node.js. Colaboración con el equipo para implementar nuevas funcionalidades y mejorar la experiencia del usuario.",
+        "description": "Desarrollo y mantenimiento de aplicaciones web usando React y Node.js. Colaboración con el equipo para implementar nuevas funcionalidades y mejorar la experiencia de usuario.",
         "responsabilities": [
           "Desarrollar aplicaciones web usando React y Node.js",
-          "Colaborar con el equipo de diseño para implementar mejoras en UI/UX",
+          "Colaborar con el equipo de diseño para implementar mejoras de UI/UX",
           "Participar en revisiones de código y reuniones de equipo",
-          "Aprender y aplicar buenas prácticas en desarrollo de software"
+          "Aprender y aplicar mejores prácticas de desarrollo de software"
         ],
         "skills": ["React", "Node.js", "JavaScript", "HTML/CSS", "Git"]
       },
@@ -174,10 +174,10 @@
         "company": "Innovatech Solutions",
         "date": "Junio 2023 - Diciembre 2023",
         "location": "Cochabamba, Bolivia",
-        "description": "Asistencia en el desarrollo de aplicaciones web y participación en proyectos de equipo. Experiencia adquirida en metodologías Ágiles y sistemas de control de versiones.",
+        "description": "Asistencia en el desarrollo de aplicaciones web y participación en proyectos de equipo. Experiencia en metodologías ágiles y sistemas de control de versiones.",
         "responsabilities": [
           "Asistir en el desarrollo de aplicaciones web",
-          "Participar en ceremonias Ágiles y reuniones de equipo",
+          "Participar en ceremonias ágiles y reuniones de equipo",
           "Aprender control de versiones con Git"
         ],
         "skills": ["JavaScript", "HTML/CSS", "Git", "Ágil"]
@@ -216,7 +216,7 @@
         ]
       },
       {
-        "title": "Bases de Datos",
+        "title": "Base de Datos",
         "skills": ["PostgreSQL", "MySQL", "SQLServer", "MongoDB"]
       },
       {
@@ -224,7 +224,7 @@
         "skills": ["Docker", "CI/CD"]
       },
       {
-        "title": "Pruebas",
+        "title": "Testing",
         "skills": ["Jest", "Pruebas Unitarias"]
       },
       {
@@ -232,8 +232,8 @@
         "skills": [
           "Liderazgo",
           "Comunicación",
-          "Resolución de Problemas",
-          "Colaboración en Equipo"
+          "Resolución de problemas",
+          "Colaboración en equipo"
         ]
       }
     ]
@@ -250,7 +250,7 @@
     "items": [
       {
         "title": "Sitio Web de Portafolio",
-        "description": "Un sitio web de portafolio personal construido con Astro y Tailwind CSS para mostrar mis habilidades y proyectos.",
+        "description": "Un sitio web personal de portafolio construido con Astro y Tailwind CSS para mostrar mis habilidades y proyectos.",
         "tech": ["Astro", "Tailwind CSS", "JavaScript"],
         "category": "Full Stack",
         "featured": true,
@@ -261,7 +261,7 @@
       },
       {
         "title": "Plataforma de E-commerce",
-        "description": "Una plataforma de comercio electrónico desarrollada con React y Node.js, con listado de productos, carrito de compras y autenticación de usuarios.",
+        "description": "Una plataforma de comercio electrónico construida con React y Node.js, con listado de productos, carrito de compras y autenticación de usuarios.",
         "tech": ["React", "Node.js", "MongoDB"],
         "category": "IoT",
         "featured": true,
@@ -283,9 +283,9 @@
       },
       {
         "title": "App de Gestión de Tareas",
-        "description": "Una aplicación de gestión de tareas desarrollada con Angular y Firebase, que permite a los usuarios crear, actualizar y eliminar tareas.",
+        "description": "Aplicación de gestión de tareas construida con Angular y Firebase, permitiendo a los usuarios crear, actualizar y eliminar tareas.",
         "tech": ["Angular", "Firebase", "TypeScript"],
-        "category": "Mobile",
+        "category": "Móvil",
         "featured": false,
         "year": 2023,
         "image": "/webproject.png",
@@ -300,10 +300,11 @@
     "viewPost": "Leer publicación",
     "featured": "Destacado",
     "searchPlaceholder": "Buscar proyectos, tecnologías...",
-    "noPostsMatch": "No se encontraron proyectos que coincidan con tus criterios.",
+    "noPostsMatch": "No se encontraron publicaciones que coincidan con tus criterios.",
     "clearFilters": "Limpiar todos los filtros",
-    "tableOfContents": "Tabla de Contenidos",
-    "author": "Autor"
+    "tableOfContents": "Tabla de contenidos",
+    "author": "Autor",
+    "relatedPosts": "Publicaciones relacionadas"
   },
   "breadcrumbs": {
     "home": "Inicio",

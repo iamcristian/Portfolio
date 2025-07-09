@@ -18,7 +18,7 @@ const { item, index, keyResponsabilities, skills, lengthItems } = Astro.props;
       index % 2 === 0 ? "timeline-start md:text-end" : "timeline-end"
     } mb-2`}
   >
-    <time class="font-mono italic">{item.date}</time>
+    <time class="font-mono italic text-sm md:text-md">{item.date}</time>
     <h3 class="text-lg font-bold">{item.title}</h3>
     <p class="font-semibold text-base-content/70">{item.company}</p>
     <p class="mt-2 text-sm">{item.description}</p>
@@ -35,7 +35,7 @@ const { item, index, keyResponsabilities, skills, lengthItems } = Astro.props;
     <div class="mt-4">
       <div
         class={`flex flex-wrap gap-2 ${
-          index % 2 === 0 ? "justify-end" : "justify-start"
+          index % 2 === 0 ? "md:justify-end" : "md:justify-start"
         }`}
       >
         {

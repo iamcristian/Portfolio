@@ -24,10 +24,10 @@ const tags = [...new Set(allPosts.flatMap((p) => p.tags))];
 ---
 
 <Layout type="blog">
-  <div class="container pt-24 mx-auto">
+  <div class="container pt-24 px-4 md:px-8 lg:px-16 mx-auto">
     <!-- Breadcrumbs -->
     <nav class="flex items-center space-x-2 text-sm">
-      <a href="/">{contentBreadcrumbs.home}</a>
+      <a href=`/${lang}`>{contentBreadcrumbs.home}</a>
       <svg class="w-4 h-4"><use href="#icon-chevron-right"></use></svg>
       <span>{contentBreadcrumbs.blog}</span>
     </nav>

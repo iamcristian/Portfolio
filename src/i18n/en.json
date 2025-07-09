@@ -242,7 +242,7 @@
     "title": "Projects",
     "viewAll": "View All Projects",
     "sourceCode": "Source Code",
-    "liveDemo": "Live Demo",
+    "liveDemo": "Demo",
     "featured": "Featured",
     "searchPlaceholder": "Search projects, technologies...",
     "noProjectsMatch": "No projects found matching your criteria.",
@@ -303,7 +303,8 @@
     "noPostsMatch": "No projects found matching your criteria.",
     "clearFilters": "Clear All Filters",
     "tableOfContents": "Table of Contents",
-    "author": "Author"
+    "author": "Author",
+    "relatedPosts": "Related Posts"
   },
   "breadcrumbs": {
     "home": "Home",

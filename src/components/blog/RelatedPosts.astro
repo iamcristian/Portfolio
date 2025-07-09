@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl } from "@/i18n/utils";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 interface Post {
   id: string;
@@ -12,13 +12,15 @@ interface Post {
 }
 
 const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const { relatedPosts } = t("blog");
 
 const { posts = [] }: { posts?: Post[] } = Astro.props;
 ---
 
-<div class="container mx-auto">
+<div class="container px-4 md:px-8 lg:px-16 mx-auto">
   <section class="mt-24 border-t pt-12">
-    <h2 class="text-2xl mb-8">Related Posts</h2>
+    <h2 class="text-2xl mb-8">{relatedPosts}</h2>
     <ul class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       {
         posts.map((post) => (
@@ -30,7 +32,11 @@ const { posts = [] }: { posts?: Post[] } = Astro.props;
               <h3 class="text-lg font-medium mb-2">{post.data.title}</h3>
               {post.data.excerpt && <p class="text-sm">{post.data.excerpt}</p>}
               <p class="mt-4 text-xs">
-                {new Date(post.data.publishDate).toLocaleDateString()}
+                {new Date(post.data.publishDate).toLocaleDateString(lang, {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
               </p>
             </a>
           </li>
