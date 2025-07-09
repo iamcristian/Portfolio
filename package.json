@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev --host",
+    "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
@@ -15,6 +15,7 @@
     "@types/react-dom": "^19.1.6",
     "astro": "^5.9.4",
     "daisyui": "^5.0.43",
+    "gsap": "^3.13.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "tailwindcss": "^4.1.10",

@@ -5,6 +5,7 @@ import Sprite from "@/assets/icons.svg?raw";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import Footer from "@/components/footer/Footer.astro";
 import Head from "@/components/Head.astro";
+import PageTransition from "@/components/ui/PageTransition.astro";
 
 interface Props {
   type: "home" | "blog" | "projects" | "blogPost";
@@ -55,10 +56,11 @@ const meta = type === "blogPost" ? blogPost : t("meta")[type];
 
     <!-- Main Layout -->
     <Header isHome={type === "home"} />
-    <div class="container mx-auto">
+    <div class="container mx-auto relative">
       <slot />
     </div>
     <Footer />
+    <PageTransition />
   </body>
 </html>
 
