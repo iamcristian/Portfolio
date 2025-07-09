@@ -5,6 +5,7 @@ import Prose from "@/components/Prose.astro";
 import Head from "@/components/Head.astro";
 import RelatedPosts from "@/components/blog/RelatedPosts.astro";
 import TableofContents from "@/components/blog/TableofContents.astro";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 export async function getStaticPaths() {
   const pages = await getCollection("blog");
@@ -17,7 +18,10 @@ export async function getStaticPaths() {
   return paths;
 }
 
-const { lang } = Astro.params;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const contentBreadcrumbs = t("breadcrumbs");
+
 const page = Astro.props;
 const { Content, headings } = await render(page);
 const formattedDate = page.data.publishDate.toLocaleDateString(lang);
@@ -27,11 +31,12 @@ const allPosts = await getCollection("blog");
 
 // Get related posts by matching tags, exclude current slug
 const relatedPosts = allPosts
+  .filter((post) => post.data.language === lang)
   .filter((post) => post.id !== page.id)
   .filter((post) =>
     post.data.tags?.some((tag) => page.data.tags?.includes(tag))
   )
-  .slice(0, 3); // Max 3
+  .slice(0, 3);
 
 const metaTags = {
   title: page.data.title,
@@ -44,47 +49,59 @@ const metaTags = {
 <Layout type="blogPost" blogPost={metaTags}>
   <Head lang={lang} blogPost={page.data} />
 
-  <!-- Breadcrumbs -->
-  <nav class="text-sm mb-8">
-    <a href="/" class="">Home</a> /
-    <a href="/blog" class="">Blog</a> /
-    <span class="">{page.data.title}</span>
-  </nav>
+  <div class="container pt-24 mx-auto">
+    <!-- Breadcrumbs -->
+    <nav class="flex items-center space-x-2 text-sm">
+      <a href="/" class="">{contentBreadcrumbs.home}</a>
+      <svg class="w-4 h-4"><use href="#icon-chevron-right"></use></svg>
+      <a href={`/${lang}/blog`} class="">{contentBreadcrumbs.blog}</a>
+      <svg class="w-4 h-4"><use href="#icon-chevron-right"></use></svg>
+      <span class="">{page.data.title}</span>
+    </nav>
 
-  <div class="container mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-16">
       <!-- Main content -->
-      <div class="lg:col-span-3">
-        <!-- Header -->
-        <header class="mb-16">
-          <div class="flex flex-wrap gap-2 mb-8">
-            {
-              page.data.tags?.map((tag) => (
-                <span class="px-3 py-1 rounded-full text-sm">{tag}</span>
-              ))
-            }
+      <div class="lg:col-span-3 space-y-8">
+        <h1 class="text-2xl md:text-6xl font-bold tracking-tighter">
+          {page.data.title}
+        </h1>
+        <div class="flex flex-wrap gap-2">
+          {page.data.tags?.map((tag) => <kbd class="kbd">{tag}</kbd>)}
+        </div>
+        <div class="flex items-center space-x-6">
+          <div class="flex items-center space-x-2 text-sm">
+            <svg class="w-4 h-4 inline-block">
+              <use href="#icon-calendar"></use>
+            </svg>
+            <span>
+              {
+                new Date(formattedDate).toLocaleDateString(lang, {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })
+              }
+            </span>
           </div>
-          <h1 class="text-4xl md:text-6xl font-light tracking-tight mb-6">
-            {page.data.title}
-          </h1>
-          <div class="flex items-center space-x-6 text-gray-500 mb-8">
-            <span>{page.data.author}</span>
-            <span>{formattedDate}</span>
+          <div class="flex items-center space-x-2 text-sm">
+            <svg class="w-4 h-4 inline-block">
+              <use href="#icon-clock"></use>
+            </svg>
             <span>{page.data.readTime}</span>
           </div>
-          {
-            page.data.image.src && (
-              <img
-                src={page.data.image.src}
-                alt={page.data.image.alt}
-                class="rounded-2xl aspect-video object-cover mb-12"
-              />
-            )
-          }
-        </header>
+        </div>
+        {
+          page.data.image.src && (
+            <img
+              src={page.data.image.src}
+              alt={page.data.image.alt}
+              class="rounded-2xl aspect-video object-cover mb-12"
+            />
+          )
+        }
 
         <!-- Content -->
-        <article class="">
+        <article>
           <Prose>
             <Content />
           </Prose>

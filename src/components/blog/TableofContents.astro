@@ -15,9 +15,7 @@ const headings = (Astro.props.headings ?? []) as Heading[];
       <ul class="space-y-2 text-sm">
         {headings.map((heading) => (
           <li class={`ml-${(heading.depth - 2) * 4}`}>
-            <a href={`#${heading.slug}`} class="">
-              {heading.text}
-            </a>
+            <a href={`#${heading.slug}`}>{heading.text}</a>
           </li>
         ))}
       </ul>
