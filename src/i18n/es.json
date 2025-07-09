@@ -301,7 +301,9 @@
     "featured": "Destacado",
     "searchPlaceholder": "Buscar proyectos, tecnologías...",
     "noPostsMatch": "No se encontraron proyectos que coincidan con tus criterios.",
-    "clearFilters": "Limpiar todos los filtros"
+    "clearFilters": "Limpiar todos los filtros",
+    "tableOfContents": "Tabla de Contenidos",
+    "author": "Autor"
   },
   "breadcrumbs": {
     "home": "Inicio",

@@ -5,13 +5,20 @@ export interface Heading {
   depth: number;
 }
 
+const { tableOfContentText } = Astro.props;
+
 const headings = (Astro.props.headings ?? []) as Heading[];
 ---
 
 {
   headings.length > 0 && (
-    <nav class="p-6 rounded-xl shadow-sm border">
-      <h2 class="text-base font-medium mb-4">Table of Contents</h2>
+    <nav class="p-6 rounded-xl border">
+      <div class="flex items-center space-x-2 mb-4">
+        <svg class="w-5 h-5">
+          <use href="#icon-table-of-contents" />
+        </svg>
+        <h2 class="font-bold">{tableOfContentText}</h2>
+      </div>
       <ul class="space-y-2 text-sm">
         {headings.map((heading) => (
           <li class={`ml-${(heading.depth - 2) * 4}`}>
