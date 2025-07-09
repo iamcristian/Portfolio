@@ -122,6 +122,7 @@ const BlogView = ({ posts, tags, t, lang }: Props) => {
                 post={post}
                 viewMode={state.viewMode}
                 lang={lang}
+                featuredText={t.featured}
               />
             ))}
           </div>

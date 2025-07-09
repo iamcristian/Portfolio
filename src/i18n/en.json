@@ -298,8 +298,14 @@
     "title": "Blog",
     "viewAll": "View All Posts",
     "viewPost": "Read Post",
+    "featured": "Featured",
     "searchPlaceholder": "Search projects, technologies...",
     "noPostsMatch": "No projects found matching your criteria.",
     "clearFilters": "Clear All Filters"
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "projects": "Projects",
+    "blog": "Blog"
   }
 }

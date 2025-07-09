@@ -11,6 +11,7 @@ export function getStaticPaths() {
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const contentBlog = t("blog");
+const contentBreadcrumbs = t("breadcrumbs");
 
 const allPosts = (await getCollection("blog"))
   .filter((post) => post.data.language === lang)
@@ -27,9 +28,9 @@ const tags = [...new Set(allPosts.flatMap((p) => p.tags))];
     <!-- Breadcrumbs -->
     <div class="mx-auto">
       <nav class="flex items-center space-x-2 text-sm">
-        <a href="/">Home</a>
+        <a href="/">{contentBreadcrumbs.home}</a>
         <svg class="w-4 h-4"><use href="#icon-chevron-right"></use></svg>
-        <span>Blog</span>
+        <span>{contentBreadcrumbs.blog}</span>
       </nav>
     </div>
 

@@ -10,6 +10,7 @@ export function getStaticPaths() {
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const contentProjects = t("projects");
+const contentBreadcrumbs = t("breadcrumbs");
 
 const categories = [
   "All",
@@ -22,9 +23,9 @@ const categories = [
     <!-- Breadcrumbs -->
     <div class="mx-auto">
       <nav class="flex items-center space-x-2 text-sm">
-        <a href="/">Home</a>
+        <a href="/">{contentBreadcrumbs.home}</a>
         <svg class="w-4 h-4"><use href="#icon-chevron-right"></use></svg>
-        <span>Projects</span>
+        <span>{contentBreadcrumbs.projects}</span>
       </nav>
     </div>
 

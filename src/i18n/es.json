@@ -298,10 +298,14 @@
     "title": "Blog",
     "viewAll": "Ver todas las publicaciones",
     "viewPost": "Leer publicación",
-    "sourceCode": "Código fuente",
-    "liveDemo": "Demo en vivo",
+    "featured": "Destacado",
     "searchPlaceholder": "Buscar proyectos, tecnologías...",
     "noPostsMatch": "No se encontraron proyectos que coincidan con tus criterios.",
     "clearFilters": "Limpiar todos los filtros"
+  },
+  "breadcrumbs": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "blog": "Blog"
   }
 }

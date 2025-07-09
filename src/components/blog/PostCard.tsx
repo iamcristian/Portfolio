@@ -13,9 +13,15 @@ interface PostCardProps {
   post: Post;
   viewMode: "grid" | "list";
   lang: string;
+  featuredText: string;
 }
 
-export const PostCard = ({ post, viewMode, lang }: PostCardProps) => {
+export const PostCard = ({
+  post,
+  viewMode,
+  lang,
+  featuredText,
+}: PostCardProps) => {
   return (
     <a
       href={`/${lang}/blog/${post.slug.split("/").pop()}`}
@@ -36,7 +42,7 @@ export const PostCard = ({ post, viewMode, lang }: PostCardProps) => {
         />
         {post.featured && (
           <div className="badge badge-ghost absolute top-4 left-4 z-10">
-            {"Featured"}
+            {featuredText}
           </div>
         )}
       </div>
