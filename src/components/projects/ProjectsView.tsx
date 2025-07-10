@@ -10,7 +10,7 @@ interface Props {
     year: number;
     image: string;
     linkRepository: string;
-    linkDemo: string;
+    linkDemo?: string;
     featured: boolean;
   }[];
   categories: string[];

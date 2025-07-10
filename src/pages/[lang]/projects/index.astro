@@ -12,9 +12,16 @@ const t = useTranslations(lang);
 const contentProjects = t("projects");
 const contentBreadcrumbs = t("breadcrumbs");
 
+const sortedProjects = [...contentProjects.items].sort((a, b) => {
+  if (a.featured && !b.featured) return -1;
+  if (!a.featured && b.featured) return 1;
+
+  return b.year - a.year;
+});
+
 const categories = [
   "All",
-  ...new Set(t("projects").items.map((p) => p.category)),
+  ...new Set(contentProjects.items.map((p) => p.category)),
 ];
 ---
 
@@ -29,7 +36,7 @@ const categories = [
 
     <ProjectsView
       client:visible
-      projects={contentProjects.items}
+      projects={sortedProjects}
       categories={categories}
       t={contentProjects}
     />

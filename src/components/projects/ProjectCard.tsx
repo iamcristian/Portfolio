@@ -6,7 +6,7 @@ interface Project {
   year: number;
   image: string;
   linkRepository: string;
-  linkDemo: string;
+  linkDemo?: string;
   featured: boolean;
 }
 
@@ -33,7 +33,9 @@ export const ProjectCard = ({
     >
       {/* Image */}
       <div
-        className={`relative ${viewMode === "list" ? "w-1/3 md:w-1/5" : "aspect-video"}`}
+        className={`relative ${
+          viewMode === "list" ? "w-1/3 md:w-1/5" : "aspect-video"
+        }`}
       >
         <img
           src={project.image}
@@ -69,7 +71,9 @@ export const ProjectCard = ({
         </p>
         <div className="flex flex-wrap gap-1">
           {project.tech.map((tech: string) => (
-            <kbd key={tech} className="kbd">{tech}</kbd>
+            <kbd key={tech} className="kbd">
+              {tech}
+            </kbd>
           ))}
         </div>
         <div className="space-x-2">
@@ -82,15 +86,17 @@ export const ProjectCard = ({
             </svg>
             <span>{sourceCodeText}</span>
           </a>
-          <a
-            href={project.linkDemo}
-            className="btn bg-white text-base-100 space-x-2"
-          >
-            <span>{liveDemoText}</span>
-            <svg className="w-4 h-4">
-              <use href="#icon-external-link" />
-            </svg>
-          </a>
+          {project.linkDemo && (
+            <a
+              href={project.linkDemo}
+              className="btn bg-white text-base-100 space-x-2"
+            >
+              <span>{liveDemoText}</span>
+              <svg className="w-4 h-4">
+                <use href="#icon-external-link" />
+              </svg>
+            </a>
+          )}
         </div>
       </div>
     </div>

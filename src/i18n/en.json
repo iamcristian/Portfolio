@@ -329,22 +329,11 @@
       },
       {
         "title": "Frontend",
-        "skills": [
-          "React",
-          "Next.js",
-          "Astro",
-          "Tailwind CSS",
-          "Bootstrap"
-        ]
+        "skills": ["React", "Next.js", "Astro", "Tailwind CSS", "Bootstrap"]
       },
       {
         "title": "Backend",
-        "skills": [
-          "Node.js",
-          "NestJS",
-          "Express",
-          "Django"
-        ]
+        "skills": ["Node.js", "NestJS", "Express", "Django"]
       },
       {
         "title": "Database",
@@ -380,48 +369,71 @@
     "clearFilters": "Clear All Filters",
     "items": [
       {
-        "title": "Portfolio Website",
-        "description": "A personal portfolio website built with Astro and Tailwind CSS to showcase my skills and projects.",
-        "tech": ["Astro", "Tailwind CSS", "JavaScript"],
+        "title": "OneLink - Personal Link-sharing Platform",
+        "description": "A fullstack application for creating and sharing personal link pages, built with React, Tailwind, Express, and MongoDB.",
+        "tech": [
+          "TypeScript",
+          "React",
+          "Shadcn",
+          "React Query",
+          "Express",
+          "MongoDB",
+          "JWT"
+        ],
         "category": "Full Stack",
         "featured": true,
-        "year": 2024,
-        "image": "/webproject.png",
+        "year": 2025,
+        "image": "/projects/onelink.webp",
+        "linkRepository": "https://github.com/iamcristian/onelink-frontend"
+      },
+      {
+        "title": "Explora Bolivia - Travel Guide App",
+        "description": "A travel guide web application for Bolivia, built with Nextjs and Nestjs, providing information on tourist attractions, accommodations, and local culture.",
+        "tech": [
+          "Next.js",
+          "Shadcn",
+          "NestJS",
+          "TypeORM",
+          "PostgreSQL",
+          "Docker",
+          "Gitlab"
+        ],
+        "category": "Full Stack",
+        "featured": true,
+        "year": 2025,
+        "image": "/projects/explorabolivia.webp",
+        "linkRepository": "https://gitlab.com/iamcristian/explora-bolivia-frontend"
+      },
+      {
+        "title": "Portfolio Website",
+        "description": "A personal portfolio website built with Astro and Tailwind CSS to showcase my projects, experience, posts, and skills.",
+        "tech": ["Astro", "Tailwind CSS", "TypeScript", "React", "GSAP", "DaisyUI", "i18n"],
+        "category": "Frontend",
+        "featured": false,
+        "year": 2025,
+        "image": "/projects/portfolio.webp",
         "linkRepository": "https://github/iamcrsitian/projects/portfolio-website",
         "linkDemo": "https://github/iamcrsitian/projects/portfolio-website"
       },
       {
-        "title": "E-commerce Platform",
-        "description": "An e-commerce platform built with React and Node.js, featuring product listings, shopping cart, and user authentication.",
-        "tech": ["React", "Node.js", "MongoDB"],
-        "category": "IoT",
-        "featured": true,
-        "year": 2023,
-        "image": "/webproject.png",
-        "linkRepository": "https://github/iamcrsitian/projects/e-commerce-platform",
-        "linkDemo": "https://github/iamcrsitian/projects/e-commerce-platform"
-      },
-      {
-        "title": "Blog Platform",
-        "description": "A blogging platform built with Next.js and MongoDB, allowing users to create, read, and comment on posts.",
-        "tech": ["Next.js", "MongoDB", "Tailwind CSS"],
+        "title": "Maxi Basquet - Basketball Team Management",
+        "description": "A web application for managing basketball teams, including player statistics, match schedules, and team rankings, built with Django and Bootstrap.",
+        "tech": ["Django", "Python", "PostgreSQL", "Bootstrap"],
         "category": "Full Stack",
         "featured": false,
         "year": 2023,
-        "image": "/webproject.png",
-        "linkRepository": "https://github/iamcrsitian/projects/blog-platform",
-        "linkDemo": "https://github/iamcrsitian/projects/blog-platform"
+        "image": "/projects/maxibasquet.webp",
+        "linkRepository": "https://github.com/iamcristian/Torneo-Internacional-Maxi-Basquet"
       },
       {
-        "title": "Task Management App",
-        "description": "A task management application built with Angular and Firebase, allowing users to create, update, and delete tasks.",
-        "tech": ["Angular", "Firebase", "TypeScript"],
-        "category": "Mobile",
+        "title": "Long Old Live+",
+        "description": "A website dedicated to the well-being of older adults, providing useful muscle exercises and mental activities to strengthen the mind. Developed with JavaScript, HTML, and CSS.",
+        "tech": ["JavaScript Vanilla", "HTML", "CSS", "Bootstrap", "Firebase"],
+        "category": "Frontend",
         "featured": false,
-        "year": 2023,
-        "image": "/webproject.png",
-        "linkRepository": "https://github/iamcrsitian/projects/task-management-app",
-        "linkDemo": "https://github/iamcrsitian/projects/task-management-app"
+        "year": 2022,
+        "image": "/projects/longoldlive.webp",
+        "linkRepository": "https://github.com/borisumss/LongOldLivePlus"
       }
     ]
   },
