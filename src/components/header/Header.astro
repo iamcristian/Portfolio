@@ -53,7 +53,10 @@ const header = t("header");
           {
             Object.values(header).map((section) => (
               <li>
-                <a class="link link-hover" href={`#${section.id}`}>
+                <a
+                  class="link link-hover"
+                  href={isHome ? `#${section.id}` : `/${lang}#${section.id}`}
+                >
                   {section.label}
                 </a>
               </li>

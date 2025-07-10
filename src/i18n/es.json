@@ -1,21 +1,21 @@
 {
   "meta": {
     "home": {
-      "title": "Inicio - Portafolio Desarrollador Full Stack",
-      "description": "¡Bienvenido a mi portafolio! Soy un Desarrollador de Software Full Stack apasionado por crear aplicaciones web.",
-      "image": "/images/home-banner.jpg",
+      "title": "Inicio - Cristian Arando | Portafolio de Desarrollador de Software",
+      "description": "¡Bienvenido! Soy Cristian Arando, Ingeniero de Sistemas con diplomado en Seguridad de la Información para entornos físicos y virtuales. Explora mi portafolio enfocado en ciberseguridad y desarrollo de software.",
+      "image": "/website-screenshot.webp",
       "imageAlt": "Banner del portafolio"
     },
     "blog": {
-      "title": "Blog - Portafolio Desarrollador Full Stack",
+      "title": "Blog - Cristian Arando | Portafolio de Desarrollador de Software",
       "description": "Lee mis últimas publicaciones sobre desarrollo web, programación y tecnología.",
-      "image": "/images/blog-banner.jpg",
+      "image": "/website-blog-screenshot.webp",
       "imageAlt": "Banner del blog"
     },
     "projects": {
-      "title": "Proyectos - Portafolio Desarrollador Full Stack",
-      "description": "Explora mis proyectos que demuestran mis habilidades en desarrollo web e ingeniería de software.",
-      "image": "/images/projects-banner.jpg",
+      "title": "Proyectos - Cristian Arando | Portafolio de Desarrollador de Software",
+      "description": "Explora mis proyectos que muestran mis habilidades en desarrollo web e ingeniería de software.",
+      "image": "/website-projects-screenshot.webp",
       "imageAlt": "Banner de proyectos"
     }
   },
@@ -54,28 +54,28 @@
   },
   "hero": {
     "greeting": "Hola, soy",
-    "jobTitle": "Desarrollador de Software Full Stack",
-    "description": "Apasionado por crear aplicaciones web con tecnologías modernas.",
+    "jobTitle": "Desarrollador Full Stack",
+    "description": "Estratega apasionado por resolver problemas complejos con tecnología",
     "contact": "Contáctame",
     "download": "Descargar mi CV"
   },
   "about": {
-    "title": "Sobre mí",
-    "paragraph1": "Soy un ingeniero de software apasionado por crear soluciones elegantes a problemas complejos. Con experiencia en tecnologías web modernas, me enfoco en construir aplicaciones escalables que ofrecen experiencias excepcionales al usuario.",
-    "paragraph2": "Mi experiencia abarca desde investigación de usuarios y diseño de interfaces hasta desarrollo moderno con Go, Angular e infraestructura en la nube. Me apasiona el anime, los videojuegos y aportar una estética kawaii al trabajo profesional.",
-    "paragraph3": "Resido en California, originario de México, aporto una perspectiva única a la tecnología y el diseño, siempre enfocado en crear soluciones que realmente importan a los usuarios.",
+    "title": "Sobre Mí",
+    "paragraph1": "Estratega dedicado a convertir ideas ambiciosas en realidad a través de la tecnología. Mi enfoque combina pensamiento analítico e innovación para resolver problemas complejos y entregar soluciones que destacan.",
+    "paragraph2": "Mi experiencia se centra en el desarrollo web moderno con Next.js, React, NestJS, Express y TypeScript. Disfruto explorando donde la tecnología se encuentra con la realidad, y soy apasionado de los videojuegos y libros de filosofía, siempre buscando nuevas formas de expandir mi perspectiva y habilidades.",
+    "paragraph3": "Establecido en Cochabamba, Bolivia, aporto una perspectiva única a cada proyecto, siempre esforzándome por crear soluciones que sean significativas e impactantes. Creo en el aprendizaje continuo y en extraer inspiración de diversos intereses para alimentar mi trabajo.",
     "stats": [
       {
         "number": "1+",
-        "title": "Años de experiencia"
+        "title": "Años de Experiencia"
       },
       {
         "number": "100%",
-        "title": "Impulsado por la pasión"
+        "title": "Pasión por lo que Hago"
       },
       {
         "number": "S+",
-        "title": "Pensamiento estratégico"
+        "title": "Pensamiento Estratégico"
       }
     ]
   },
@@ -84,57 +84,185 @@
     "academicFormation": "Formación Académica",
     "certifications": "Certificaciones",
     "languages": "Idiomas",
-    "tags": ["Frontend", "Backend", "DevOps", "Testing", "Idiomas"],
+    "tags": [
+      "FullStack",
+      "Fundamentos de Software",
+      "Lingüística",
+      "Metodologías",
+      "Seguridad Web",
+      "Redes",
+      "Distinciones Académicas"
+    ],
     "itemsAcademic": [
+      {
+        "title": "Estudiante en Cambridge English Centre",
+        "university": "Cambridge English Centre",
+        "date": "Marzo 2025 - Actual",
+        "location": "Remoto",
+        "description": "Actualmente inscrito en un programa de inglés para mejorar mis habilidades de comunicación profesional y obtener una certificación Cambridge English B2 FCE.",
+        "src": "/academies/cec.webp"
+      },
       {
         "title": "Diplomado en Seguridad de Tecnologías e Información",
         "university": "Escuela Universitaria de Posgrado UMSS",
         "date": "Febrero 2024 - Diciembre 2024",
         "location": "Cochabamba, Bolivia",
-        "description": "Graduado con honores. Enfoque en arquitectura de software, algoritmos y desarrollo web. Participación en múltiples hackatones y competencias de programación.",
-        "src": "/posgradoumss.png"
+        "description": "Graduado con honores. Enfocado en arquitectura de software, algoritmos y desarrollo web. Participé en múltiples hackathons y competencias de programación.",
+        "src": "/academies/posgradoumss.png"
       },
       {
         "title": "Licenciatura en Ingeniería de Sistemas",
         "university": "Universidad Mayor de San Simón",
-        "date": "Febrero 2019 - Diciembre 2025",
+        "date": "Febrero 2019 - Diciembre 2023",
         "location": "Cochabamba, Bolivia",
-        "description": "Graduado con honores. Enfoque en arquitectura de software, algoritmos y desarrollo web. Participación en múltiples hackatones y competencias de programación.",
-        "src": "/umss.png"
+        "description": "Graduado con honores. Enfocado en arquitectura de software, algoritmos y desarrollo web. Participé en múltiples hackathons y competencias de programación.",
+        "src": "/academies/umss.png"
       }
     ],
     "itemsCertifications": [
       {
-        "title": "Bootcamp Desarrollador Full Stack",
-        "tag": "Frontend",
-        "university": "Platzi",
-        "date": "Enero 2023 - Junio 2023",
-        "description": "Bootcamp integral cubriendo desarrollo frontend y backend, incluyendo React, Node.js y bases de datos.",
-        "src": "/devtalles.jpeg"
+        "title": "Next.js: El Framework de React para Producción",
+        "tag": "FullStack",
+        "university": "Devtalles",
+        "date": "Junio 2024",
+        "description": "Completé un curso integral sobre Next.js, abarcando SSR, SSG, hooks, mejores prácticas y despliegue.",
+        "src": "/academies/devtalles.webp",
+        "link": "https://cursos.devtalles.com/certificates/ot6ijhzpfs"
       },
       {
-        "title": "Algoritmos y Estructuras de Datos en JavaScript",
-        "tag": "Backend",
-        "university": "freeCodeCamp",
-        "date": "Julio 2022 - Diciembre 2022",
-        "description": "Dominio de fundamentos de JavaScript, algoritmos y estructuras de datos mediante proyectos prácticos.",
-        "src": "/devtalles.jpeg"
+        "title": "NestJS + Microservicios: Aplicaciones Escalables y Modulares",
+        "tag": "FullStack",
+        "university": "Devtalles",
+        "date": "Mayo 2024",
+        "description": "Completé un curso sobre NestJS y microservicios, enfocado en la construcción de aplicaciones escalables y modulares.",
+        "src": "/academies/devtalles.webp",
+        "link": "https://cursos.devtalles.com/certificates/q52zqaoqna"
       },
       {
-        "title": "AWS Certified Solutions Architect",
-        "tag": "DevOps",
-        "university": "Amazon Web Services",
-        "date": "Marzo 2023",
-        "description": "Certificación que demuestra experiencia en diseño y despliegue de sistemas escalables en AWS.",
-        "src": "/devtalles.jpeg"
+        "title": "Node - Autenticación REST con Clean Architecture",
+        "tag": "FullStack",
+        "university": "Devtalles",
+        "date": "Abril 2024",
+        "description": "Completé un curso sobre autenticación en Node.js utilizando principios de Clean Architecture, mejorando la seguridad y mantenibilidad.",
+        "src": "/academies/devtalles.webp",
+        "link": "https://cursos.devtalles.com/certificates/icacthbzrc"
       },
       {
-        "title": "Docker Essentials",
-        "tag": "DevOps",
-        "university": "Docker",
+        "title": "JavaScript Moderno: Guía para Dominar el Lenguaje",
+        "tag": "FullStack",
+        "university": "Devtalles",
         "date": "Agosto 2023",
-        "description": "Curso sobre fundamentos de Docker, incluyendo contenerización y orquestación.",
-        "src": "/devtalles.jpeg"
+        "description": "Completé un curso sobre JavaScript moderno, abarcando características ES6+, programación asíncrona y mejores prácticas.",
+        "src": "/academies/devtalles.webp",
+        "link": "https://cursos.devtalles.com/certificates/jyflbutxb0"
+      },
+      {
+        "title": "Agile con Atlassian Jira",
+        "tag": "Metodologías",
+        "university": "Coursera - Atlassian",
+        "date": "Julio 2023",
+        "description": "Completé un curso sobre metodologías Agile utilizando Atlassian Jira, enfocado en gestión de proyectos y colaboración en equipo.",
+        "src": "/academies/coursera.webp",
+        "link": "https://coursera.org/share/b97617897c0dc270bad0c9d1fcb34c37"
+      },
+      {
+        "title": "Principios SOLID y Clean Code",
+        "tag": "Fundamentos de Software",
+        "university": "Devtalles",
+        "date": "Abril 2024",
+        "description": "Completé un curso sobre principios SOLID y prácticas de Clean Code, mejorando el diseño de software y la mantenibilidad.",
+        "src": "/academies/devtalles.webp",
+        "link": "https://cursos.devtalles.com/certificates/fbyc1og4td"
+      },
+      {
+        "title": "Fundamentos de Software",
+        "tag": "Fundamentos de Software",
+        "university": "EscuelaIT",
+        "date": "Agosto 2023",
+        "description": "Completé un curso sobre fundamentos de software, abarcando conceptos clave en desarrollo de software, incluyendo patrones de diseño, arquitectura y mejores prácticas.",
+        "src": "/academies/escuelait.webp",
+        "link": "https://escuelait/certificado/CERT-6bUoExVq"
+      },
+      {
+        "title": "Programación con Java",
+        "tag": "Fundamentos de Software",
+        "university": "EscuelaIT",
+        "date": "Julio 2023",
+        "description": "Completé un curso sobre programación en Java, enfocado en principios de programación orientada a objetos, estructuras de datos y algoritmos.",
+        "src": "/academies/escuelait.webp",
+        "link": "https://escuelait/certificado/CERT-neGp23aM"
+      },
+      {
+        "title": "Control de Versiones con Git",
+        "tag": "Fundamentos de Software",
+        "university": "Coursera - Atlassian",
+        "date": "Enero 2023",
+        "description": "Completé un curso sobre control de versiones usando Git, abarcando ramificación, fusión y flujos de trabajo de colaboración.",
+        "src": "/academies/coursera.webp",
+        "link": "https://coursera.org/share/b90c858376ed4333bb46c751295dcd67"
+      },
+      {
+        "title": "Ecuaciones Diferenciales para Ingenieros",
+        "tag": "Fundamentos de Software",
+        "university": "Coursera - The Hong Kong University",
+        "date": "Diciembre 2022",
+        "description": "Completé un curso sobre ecuaciones diferenciales, enfocado en aplicaciones en ingeniería y tecnología.",
+        "src": "/academies/coursera.webp",
+        "link": "https://coursera.org/share/b2dd83ae991c55dc66cf59fee04730a4"
+      },
+      {
+        "title": "CCNA: Redes Empresariales, Seguridad y Automatización",
+        "tag": "Redes",
+        "university": "Cisco",
+        "date": "Enero 2024",
+        "description": "Completé el curso CCNA de Redes Empresariales, Seguridad y Automatización, abarcando conceptos avanzados de redes y prácticas de seguridad.",
+        "src": "/academies/cisco.webp",
+        "link": "https://www.credly.com/badges/5850eb71-fb55-4692-b3d1-4402a12887d5/public_url"
+      },
+      {
+        "title": "CCNA: Conmutación, Enrutamiento y Fundamentos Inalámbricos",
+        "tag": "Redes",
+        "university": "Cisco",
+        "date": "Julio 2023",
+        "description": "Completé el curso CCNA de Conmutación, Enrutamiento y Fundamentos Inalámbricos, enfocado en diseño de redes, configuración y resolución de problemas.",
+        "src": "/academies/cisco.webp",
+        "link": "https://www.credly.com/badges/30da6658-bb81-470e-ba01-fe922d220168/public_url"
+      },
+      {
+        "title": "CCNA: Introducción a Redes",
+        "tag": "Redes",
+        "university": "Cisco",
+        "date": "Enero 2023",
+        "description": "Completé el curso CCNA de Introducción a Redes, abarcando fundamentos de redes, direccionamiento IP y seguridad básica de redes.",
+        "src": "/academies/cisco.webp",
+        "link": "https://www.credly.com/badges/7828169a-a251-4156-9cc4-6badc6c3799b/public_url"
+      },
+      {
+        "title": "Pruebas de Penetración de API",
+        "tag": "Seguridad Web",
+        "university": "APISEC",
+        "date": "Mayo 2024",
+        "description": "Completé un curso sobre pruebas de penetración de API, enfocado en identificar y explotar vulnerabilidades en APIs web utilizando el OWASP API Security Top 10 2023.",
+        "src": "/academies/apisec.webp",
+        "link": "https://www.credly.com/badges/b845b494-cb64-4434-8cec-9e24e696c310/public_url"
+      },
+      {
+        "title": "Certificado de Inglés EFSET B2 Intermedio Alto",
+        "tag": "Lingüística",
+        "university": "EF Standard English Test",
+        "date": "Noviembre 2023",
+        "description": "Logré un nivel B2 Intermedio Alto en competencia de inglés, demostrando la capacidad de comunicarme efectivamente en entornos profesionales.",
+        "src": "/academies/efset.webp",
+        "link": "https://www.efset.org/cert/eHmQk3"
+      },
+      {
+        "title": "Reconocimiento de Estudiante Excelente",
+        "tag": "Distinciones Académicas",
+        "university": "Último Año de Bachillerato",
+        "date": "Diciembre 2023",
+        "description": "Reconocido como estudiante excelente por destacado rendimiento académico durante mi último año de bachillerato.",
+        "src": "/academies/award.webp",
+        "link": "https://drive.google.com/file/d/1ijJqIJjJ7dsUUxPuLJD1nCyyYeaErVRa/view"
       }
     ],
     "itemsLanguages": [
@@ -145,42 +273,50 @@
       },
       {
         "title": "Inglés",
-        "description": "B2 - Intermedio alto. Competencia profesional",
+        "description": "B2 - Intermedio Alto. Competencia profesional",
         "src": "/languages/english.png"
       }
     ]
   },
   "experience": {
     "title": "Experiencia",
-    "keyResponsabilities": "Responsabilidades clave",
+    "keyResponsabilities": "Responsabilidades Clave",
     "skills": "Habilidades",
     "items": [
       {
-        "title": "Practicante Desarrollador Full Stack",
-        "company": "Tech Solutions Ltd.",
-        "date": "Enero 2024 - Presente",
-        "location": "Cochabamba, Bolivia",
-        "description": "Desarrollo y mantenimiento de aplicaciones web usando React y Node.js. Colaboración con el equipo para implementar nuevas funcionalidades y mejorar la experiencia de usuario.",
+        "title": "Desarrollador Web Freelance",
+        "company": "Freelance",
+        "date": "Febrero 2025 - Presente",
+        "location": "Global",
+        "description": "Trabajo de forma independiente en proyectos de desarrollo web, construyendo aplicaciones con Next.js, React y NestJS.",
         "responsabilities": [
-          "Desarrollar aplicaciones web usando React y Node.js",
-          "Colaborar con el equipo de diseño para implementar mejoras de UI/UX",
-          "Participar en revisiones de código y reuniones de equipo",
-          "Aprender y aplicar mejores prácticas de desarrollo de software"
+          "Desarrollo y mantenimiento de aplicaciones web",
+          "Solución de problemas y resolución de incidencias técnicas",
+          "Aprendizaje continuo de nuevas tecnologías y frameworks"
         ],
-        "skills": ["React", "Node.js", "JavaScript", "HTML/CSS", "Git"]
+        "skills": [
+          "Nextjs",
+          "React",
+          "NestJS",
+          "TypeScript",
+          "HTML/CSS",
+          "GitHub"
+        ]
       },
       {
-        "title": "Practicante de Desarrollo de Software",
-        "company": "Innovatech Solutions",
-        "date": "Junio 2023 - Diciembre 2023",
+        "title": "Practicante de Desarrollo Full Stack",
+        "company": "DTIC - Departamento de Tecnologías de Información y Comunicación",
+        "date": "Agosto 2024 - Diciembre 2024",
         "location": "Cochabamba, Bolivia",
-        "description": "Asistencia en el desarrollo de aplicaciones web y participación en proyectos de equipo. Experiencia en metodologías ágiles y sistemas de control de versiones.",
+        "description": "Contribuí al desarrollo y mantenimiento de aplicaciones web utilizando React, Yii2 y PostgreSQL. Trabajé estrechamente con el equipo para implementar nuevas funcionalidades y mejorar la experiencia de usuario en sistemas académicos.",
         "responsabilities": [
-          "Asistir en el desarrollo de aplicaciones web",
-          "Participar en ceremonias ágiles y reuniones de equipo",
-          "Aprender control de versiones con Git"
+          "Desarrollé aplicaciones web utilizando React y Yii2",
+          "Colaboré con el equipo de diseño para implementar mejoras de UI/UX",
+          "Participé en revisiones de código y reuniones de equipo",
+          "Analicé requisitos y propuse soluciones técnicas",
+          "Utilicé UML para diseño de sistemas y documentación"
         ],
-        "skills": ["JavaScript", "HTML/CSS", "Git", "Ágil"]
+        "skills": ["React", "Yii2", "PostgreSQL", "HTML/CSS", "GitLab", "UML"]
       }
     ]
   },
@@ -193,27 +329,11 @@
       },
       {
         "title": "Frontend",
-        "skills": [
-          "React",
-          "Next.js",
-          "Astro",
-          "Tailwind CSS",
-          "Bootstrap",
-          "HTML5",
-          "CSS3"
-        ]
+        "skills": ["React", "Next.js", "Astro", "Tailwind CSS", "Bootstrap"]
       },
       {
         "title": "Backend",
-        "skills": [
-          "Node.js",
-          "NestJS",
-          "Express",
-          "Django",
-          "API Restful",
-          "GraphQL",
-          "Microservicios"
-        ]
+        "skills": ["Node.js", "NestJS", "Express", "Django"]
       },
       {
         "title": "Base de Datos",
@@ -232,79 +352,110 @@
         "skills": [
           "Liderazgo",
           "Comunicación",
-          "Resolución de problemas",
-          "Colaboración en equipo"
+          "Resolución de Problemas",
+          "Colaboración en Equipo"
         ]
       }
     ]
   },
   "projects": {
     "title": "Proyectos",
-    "viewAll": "Ver todos los proyectos",
-    "sourceCode": "Código fuente",
+    "viewAll": "Ver Todos los Proyectos",
+    "sourceCode": "Código Fuente",
     "liveDemo": "Demo",
     "featured": "Destacado",
     "searchPlaceholder": "Buscar proyectos, tecnologías...",
     "noProjectsMatch": "No se encontraron proyectos que coincidan con tus criterios.",
-    "clearFilters": "Limpiar todos los filtros",
+    "clearFilters": "Limpiar Todos los Filtros",
     "items": [
       {
-        "title": "Sitio Web de Portafolio",
-        "description": "Un sitio web personal de portafolio construido con Astro y Tailwind CSS para mostrar mis habilidades y proyectos.",
-        "tech": ["Astro", "Tailwind CSS", "JavaScript"],
+        "title": "OneLink - Plataforma Personal para Compartir Enlaces",
+        "description": "Una aplicación fullstack para crear y compartir páginas personales de enlaces, construida con React, Tailwind, Express y MongoDB.",
+        "tech": [
+          "TypeScript",
+          "React",
+          "Shadcn",
+          "React Query",
+          "Express",
+          "MongoDB",
+          "JWT"
+        ],
         "category": "Full Stack",
         "featured": true,
-        "year": 2024,
-        "image": "/webproject.png",
+        "year": 2025,
+        "image": "/projects/onelink.webp",
+        "linkRepository": "https://github.com/iamcristian/onelink-frontend"
+      },
+      {
+        "title": "Explora Bolivia - Aplicación de Guía Turística",
+        "description": "Una aplicación web de guía turística para Bolivia, construida con Nextjs y Nestjs, que proporciona información sobre atracciones turísticas, alojamientos y cultura local.",
+        "tech": [
+          "Next.js",
+          "Shadcn",
+          "NestJS",
+          "TypeORM",
+          "PostgreSQL",
+          "Docker",
+          "Gitlab"
+        ],
+        "category": "Full Stack",
+        "featured": true,
+        "year": 2025,
+        "image": "/projects/explorabolivia.webp",
+        "linkRepository": "https://gitlab.com/iamcristian/explora-bolivia-frontend"
+      },
+      {
+        "title": "Página Web de Portafolio",
+        "description": "Un sitio web de portafolio personal construido con Astro y Tailwind CSS para mostrar mis proyectos, experiencia, publicaciones y habilidades.",
+        "tech": [
+          "Astro",
+          "Tailwind CSS",
+          "TypeScript",
+          "React",
+          "GSAP",
+          "DaisyUI",
+          "i18n"
+        ],
+        "category": "Frontend",
+        "featured": false,
+        "year": 2025,
+        "image": "/projects/portfolio.webp",
         "linkRepository": "https://github/iamcrsitian/projects/portfolio-website",
         "linkDemo": "https://github/iamcrsitian/projects/portfolio-website"
       },
       {
-        "title": "Plataforma de E-commerce",
-        "description": "Una plataforma de comercio electrónico construida con React y Node.js, con listado de productos, carrito de compras y autenticación de usuarios.",
-        "tech": ["React", "Node.js", "MongoDB"],
-        "category": "IoT",
-        "featured": true,
-        "year": 2023,
-        "image": "/webproject.png",
-        "linkRepository": "https://github/iamcrsitian/projects/e-commerce-platform",
-        "linkDemo": "https://github/iamcrsitian/projects/e-commerce-platform"
-      },
-      {
-        "title": "Plataforma de Blog",
-        "description": "Una plataforma de blogs construida con Next.js y MongoDB, que permite a los usuarios crear, leer y comentar publicaciones.",
-        "tech": ["Next.js", "MongoDB", "Tailwind CSS"],
+        "title": "Maxi Básquet - Gestión de Equipos de Baloncesto",
+        "description": "Una aplicación web para la gestión de equipos de baloncesto, incluyendo estadísticas de jugadores, calendarios de partidos y clasificaciones de equipos, construida con Django y Bootstrap.",
+        "tech": ["Django", "Python", "PostgreSQL", "Bootstrap"],
         "category": "Full Stack",
         "featured": false,
         "year": 2023,
-        "image": "/webproject.png",
-        "linkRepository": "https://github/iamcrsitian/projects/blog-platform",
-        "linkDemo": "https://github/iamcrsitian/projects/blog-platform"
+        "image": "/projects/maxibasquet.webp",
+        "linkRepository": "https://github.com/iamcristian/Torneo-Internacional-Maxi-Basquet"
       },
       {
-        "title": "App de Gestión de Tareas",
-        "description": "Aplicación de gestión de tareas construida con Angular y Firebase, permitiendo a los usuarios crear, actualizar y eliminar tareas.",
-        "tech": ["Angular", "Firebase", "TypeScript"],
-        "category": "Móvil",
+        "title": "Long Old Live+",
+        "description": "Un sitio web dedicado al bienestar de los adultos mayores, proporcionando ejercicios musculares útiles y actividades mentales para fortalecer la mente. Desarrollado con JavaScript, HTML y CSS.",
+        "tech": ["JavaScript Vanilla", "HTML", "CSS", "Bootstrap", "Firebase"],
+        "category": "Frontend",
         "featured": false,
-        "year": 2023,
-        "image": "/webproject.png",
-        "linkRepository": "https://github/iamcrsitian/projects/task-management-app",
-        "linkDemo": "https://github/iamcrsitian/projects/task-management-app"
+        "year": 2022,
+        "image": "/projects/longoldlive.webp",
+        "linkRepository": "https://github.com/borisumss/LongOldLivePlus"
       }
     ]
   },
   "blog": {
     "title": "Blog",
-    "viewAll": "Ver todas las publicaciones",
-    "viewPost": "Leer publicación",
+    "viewAll": "Ver Todas las Publicaciones",
+    "viewPost": "Leer Publicación",
     "featured": "Destacado",
     "searchPlaceholder": "Buscar proyectos, tecnologías...",
-    "noPostsMatch": "No se encontraron publicaciones que coincidan con tus criterios.",
-    "clearFilters": "Limpiar todos los filtros",
-    "tableOfContents": "Tabla de contenidos",
+    "noPostsMatch": "No se encontraron proyectos que coincidan con tus criterios.",
+    "clearFilters": "Limpiar Todos los Filtros",
+    "tableOfContents": "Tabla de Contenidos",
     "author": "Autor",
-    "relatedPosts": "Publicaciones relacionadas"
+    "relatedPosts": "Publicaciones Relacionadas"
   },
   "breadcrumbs": {
     "home": "Inicio",

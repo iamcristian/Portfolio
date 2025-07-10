@@ -64,7 +64,7 @@ const BlogView = ({ posts, tags, t, lang }: Props) => {
                 className={`btn ${
                   state.selectedTags.includes(tag)
                     ? "btn-outline"
-                    : "bg-white text-base-100"
+                    : ""
                 }`}
               >
                 {tag}
