@@ -1,21 +1,21 @@
 {
   "meta": {
     "home": {
-      "title": "Home - Full Stack Developer Portfolio",
-      "description": "Welcome to my portfolio! I am a Full Stack Software Developer with a passion for building web applications.",
-      "image": "/images/home-banner.jpg",
+      "title": "Home - Cristian Arando | Software Developer Portfolio",
+      "description": "Welcome! I am Cristian Arando, Systems Engineer with a postgraduate diploma in Information Security for physical and virtual environments. Explore my portfolio focused on cybersecurity and software development.",
+      "image": "/website-screenshot.webp",
       "imageAlt": "Portfolio banner"
     },
     "blog": {
-      "title": "Blog - Full Stack Developer Portfolio",
+      "title": "Blog - Cristian Arando | Software Developer Portfolio",
       "description": "Read my latest blog posts on web development, programming, and technology.",
-      "image": "/images/blog-banner.jpg",
+      "image": "/website-blog-screenshot.webp",
       "imageAlt": "Blog banner"
     },
     "projects": {
-      "title": "Projects - Full Stack Developer Portfolio",
+      "title": "Projects - Cristian Arando | Software Developer Portfolio",
       "description": "Explore my projects showcasing my skills in web development and software engineering.",
-      "image": "/images/projects-banner.jpg",
+      "image": "/website-projects-screenshot.webp",
       "imageAlt": "Projects banner"
     }
   },
@@ -55,15 +55,15 @@
   "hero": {
     "greeting": "Hello, I'm",
     "jobTitle": "Full Stack Software Developer",
-    "description": "Passionate about building web applications with modern technologies.",
+    "description": "Strategist passionate about solving complex problems with technology",
     "contact": "Contact me",
     "download": "Download my CV"
   },
   "about": {
     "title": "About Me",
-    "paragraph1": "I'm a software engineer passionate about creating elegant solutions to complex problems. With expertise in modern web technologies, I focus on building scalable applications that deliver exceptional user experiences.",
-    "paragraph2": "My expertise spans from user research and interface design to modern development with Go, Angular, and cloud infrastructure. I'm passionate about anime, gaming, and bringing a kawaii aesthetic to professional work.",
-    "paragraph3": "Based in California, originally from Mexico, I bring a unique perspective to technology and design, always focusing on creating solutions that truly matter to users.",
+    "paragraph1": "Strategist dedicated to turning ambitious ideas into reality through technology. My approach blends analytical thinking and innovation to solve complex problems and deliver solutions that stand out.",
+    "paragraph2": "My expertise centers on modern web development with Next.js, React, NestJS, Express, and TypeScript. I enjoy exploring where technology meets reality, and I'm passionate about gaming and philosophical books, always seeking new ways to expand my perspective and skills.",
+    "paragraph3": "Based in Cochabamba, Bolivia, I bring a unique perspective to every project, always striving to create solutions that are both meaningful and impactful. I believe in continuous learning and drawing inspiration from diverse interests to fuel my work.",
     "stats": [
       {
         "number": "1+",
@@ -84,8 +84,24 @@
     "academicFormation": "Academic Formation",
     "certifications": "Certifications",
     "languages": "Languages",
-    "tags": ["Frontend", "Backend", "DevOps", "Testing", "Languages"],
+    "tags": [
+      "FullStack",
+      "Software Foundations",
+      "Linguistics",
+      "Methodologies",
+      "Web Security",
+      "Networks",
+      "Academic Distinctions"
+    ],
     "itemsAcademic": [
+      {
+        "title": "Student in Cambridge English Centre",
+        "university": "Cambridge English Centre",
+        "date": "March 2025 - Actual",
+        "location": "Remote",
+        "description": "Currently enrolled in an English language program to improve my professional communication skills and obtain a Cambridge English certification B2 FCE.",
+        "src": "/academies/cec.webp"
+      },
       {
         "title": "Postgraduate Diploma in Security of Technologies and Information",
         "university": "Escuela Universitaria de Posgrado UMSS",
@@ -97,7 +113,7 @@
       {
         "title": "Bachelor of Science in Systems Engineering",
         "university": "Universidad Mayor de San Simon",
-        "date": "February 2019 - December 2025",
+        "date": "February 2019 - December 2023",
         "location": "Cochabamba, Bolivia",
         "description": "Graduated with honors. Focused on software architecture, algorithms, and web development. Participated in multiple hackathons and coding competitions.",
         "src": "/academies/umss.png"
@@ -105,36 +121,148 @@
     ],
     "itemsCertifications": [
       {
-        "title": "Full Stack Developer Bootcamp",
-        "tag": "Frontend",
-        "university": "Platzi",
-        "date": "January 2023 - June 2023",
-        "description": "Completed a comprehensive bootcamp covering front-end and back-end development, including React, Node.js, and databases.",
-        "src": "/academies/devtalles.jpeg"
+        "title": "Next.js: The React Framework for Production",
+        "tag": "FullStack",
+        "university": "Devtalles",
+        "date": "June 2024",
+        "description": "Completed a comprehensive course on Next.js, covering SSR, SSG, hooks, best practices, and deployment.",
+        "src": "/academies/devtalles.webp",
+        "link": "https://cursos.devtalles.com/certificates/ot6ijhzpfs"
       },
       {
-        "title": "JavaScript Algorithms and Data Structures",
-        "tag": "Backend",
-        "university": "freeCodeCamp",
-        "date": "July 2022 - December 2022",
-        "description": "Mastered JavaScript fundamentals, algorithms, and data structures through hands-on projects.",
-        "src": "/academies/devtalles.jpeg"
+        "title": "NestJS + Microservices: Scalable and Modular Applications",
+        "tag": "FullStack",
+        "university": "Devtalles",
+        "date": "May 2024",
+        "description": "Completed a course on NestJS and microservices, focusing on building scalable and modular applications.",
+        "src": "/academies/devtalles.webp",
+        "link": "https://cursos.devtalles.com/certificates/q52zqaoqna"
       },
       {
-        "title": "AWS Certified Solutions Architect",
-        "tag": "DevOps",
-        "university": "Amazon Web Services",
-        "date": "March 2023",
-        "description": "Achieved certification demonstrating expertise in designing and deploying scalable systems on AWS.",
-        "src": "/academies/devtalles.jpeg"
+        "title": "Node - REST Authentication with Clean Architecture",
+        "tag": "FullStack",
+        "university": "Devtalles",
+        "date": "April 2024",
+        "description": "Completed a course on Node.js authentication using Clean Architecture principles, enhancing security and maintainability.",
+        "src": "/academies/devtalles.webp",
+        "link": "https://cursos.devtalles.com/certificates/icacthbzrc"
       },
       {
-        "title": "Docker Essentials",
-        "tag": "DevOps",
-        "university": "Docker",
+        "title": "Modern JavaScript: Guide to Mastering the Language",
+        "tag": "FullStack",
+        "university": "Devtalles",
         "date": "August 2023",
-        "description": "Completed a course on Docker fundamentals, including containerization and orchestration.",
-        "src": "/academies/devtalles.jpeg"
+        "description": "Completed a course on modern JavaScript, covering ES6+ features, asynchronous programming, and best practices.",
+        "src": "/academies/devtalles.webp",
+        "link": "https://cursos.devtalles.com/certificates/jyflbutxb0"
+      },
+      {
+        "title": "Agile with Atlassian Jira",
+        "tag": "Methodologies",
+        "university": "Coursera - Atlassian",
+        "date": "July 2023",
+        "description": "Completed a course on Agile methodologies using Atlassian Jira, focusing on project management and team collaboration.",
+        "src": "/academies/coursera.webp",
+        "link": "https://coursera.org/share/b97617897c0dc270bad0c9d1fcb34c37"
+      },
+      {
+        "title": "SOLID Principles and Clean Code",
+        "tag": "Software Foundations",
+        "university": "Devtalles",
+        "date": "April 2024",
+        "description": "Completed a course on SOLID principles and Clean Code practices, enhancing software design and maintainability.",
+        "src": "/academies/devtalles.webp",
+        "link": "https://cursos.devtalles.com/certificates/fbyc1og4td"
+      },
+      {
+        "title": "Software Foundations",
+        "tag": "Software Foundations",
+        "university": "EscuelaIT",
+        "date": "August 2023",
+        "description": "Completed a course on software foundations, covering key concepts in software development, including design patterns, architecture, and best practices.",
+        "src": "/academies/escuelait.webp",
+        "link": "https://escuelait/certificado/CERT-6bUoExVq"
+      },
+      {
+        "title": "Programming with Java",
+        "tag": "Software Foundations",
+        "university": "EscuelaIT",
+        "date": "July 2023",
+        "description": "Completed a course on Java programming, focusing on object-oriented programming principles, data structures, and algorithms.",
+        "src": "/academies/escuelait.webp",
+        "link": "https://escuelait/certificado/CERT-neGp23aM"
+      },
+      {
+        "title": "Version Control with Git",
+        "tag": "Software Foundations",
+        "university": "Coursera - Atlassian",
+        "date": "January 2023",
+        "description": "Completed a course on version control using Git, covering branching, merging, and collaboration workflows.",
+        "src": "/academies/coursera.webp",
+        "link": "https://coursera.org/share/b90c858376ed4333bb46c751295dcd67"
+      },
+      {
+        "title": "Differential Equations for Engineers",
+        "tag": "Software Foundations",
+        "university": "Coursera - The Hong Kong University",
+        "date": "December 2022",
+        "description": "Completed a course on differential equations, focusing on applications in engineering and technology.",
+        "src": "/academies/coursera.webp",
+        "link": "https://coursera.org/share/b2dd83ae991c55dc66cf59fee04730a4"
+      },
+      {
+        "title": "CCNA: Enterprise Networking, Security, and Automation",
+        "tag": "Networks",
+        "university": "Cisco",
+        "date": "January 2024",
+        "description": "Completed the CCNA Enterprise Networking, Security, and Automation course, covering advanced networking concepts and security practices.",
+        "src": "/academies/cisco.webp",
+        "link": "https://www.credly.com/badges/5850eb71-fb55-4692-b3d1-4402a12887d5/public_url"
+      },
+      {
+        "title": "CCNA: Switching, Routing, and Wireless Essentials",
+        "tag": "Networks",
+        "university": "Cisco",
+        "date": "July 2023",
+        "description": "Completed the CCNA Switching, Routing, and Wireless Essentials course, focusing on network design, configuration, and troubleshooting.",
+        "src": "/academies/cisco.webp",
+        "link": "https://www.credly.com/badges/30da6658-bb81-470e-ba01-fe922d220168/public_url"
+      },
+      {
+        "title": "CCNA: Introduction to Networks",
+        "tag": "Networks",
+        "university": "Cisco",
+        "date": "January 2023",
+        "description": "Completed the CCNA Introduction to Networks course, covering networking fundamentals, IP addressing, and basic network security.",
+        "src": "/academies/cisco.webp",
+        "link": "https://www.credly.com/badges/7828169a-a251-4156-9cc4-6badc6c3799b/public_url"
+      },
+      {
+        "title": "API Penetration Testing",
+        "tag": "Web Security",
+        "university": "APISEC",
+        "date": "May 2024",
+        "description": "Completed a course on API penetration testing, focusing on identifying and exploiting vulnerabilities in web APIs using the OWASP API Security Top 10 2023.",
+        "src": "/academies/apisec.webp",
+        "link": "https://www.credly.com/badges/b845b494-cb64-4434-8cec-9e24e696c310/public_url"
+      },
+      {
+        "title": "EFSET English Certificate B2 Upper Intermediate",
+        "tag": "Linguistics",
+        "university": "EF Standard English Test",
+        "date": "November 2023",
+        "description": "Achieved a B2 Upper Intermediate level in English proficiency, demonstrating the ability to communicate effectively in professional settings.",
+        "src": "/academies/efset.webp",
+        "link": "https://www.efset.org/cert/eHmQk3"
+      },
+      {
+        "title": "Excellent Student Recognition",
+        "tag": "Academic Distinctions",
+        "university": "High School Senior Year",
+        "date": "December 2023",
+        "description": "Recognized as an excellent student for outstanding academic performance during my final year of high school.",
+        "src": "/academies/award.webp",
+        "link": "https://drive.google.com/file/d/1ijJqIJjJ7dsUUxPuLJD1nCyyYeaErVRa/view"
       }
     ],
     "itemsLanguages": [
@@ -156,31 +284,39 @@
     "skills": "Skills",
     "items": [
       {
-        "title": "Full Stack Developer Intern",
-        "company": "Tech Solutions Ltd.",
-        "date": "January 2024 - Present",
-        "location": "Cochabamba, Bolivia",
-        "description": "Working on developing and maintaining web applications using React and Node.js. Collaborating with the team to implement new features and improve user experience.",
+        "title": "Freelance Web Developer",
+        "company": "Freelance",
+        "date": "February 2025 - Present",
+        "location": "Global",
+        "description": "Working independently on web development projects, building applications using Next.js, React, and NestJS.",
         "responsabilities": [
-          "Developing web applications using React and Node.js",
-          "Collaborating with the design team to implement UI/UX improvements",
-          "Participating in code reviews and team meetings",
-          "Learning and applying best practices in software development"
+          "Developing and maintaining web applications",
+          "Troubleshooting and resolving technical issues",
+          "Continuously learning new technologies and frameworks"
         ],
-        "skills": ["React", "Node.js", "JavaScript", "HTML/CSS", "Git"]
+        "skills": [
+          "Nextjs",
+          "React",
+          "NestJS",
+          "TypeScript",
+          "HTML/CSS",
+          "GitHub"
+        ]
       },
       {
-        "title": "Software Development Intern",
-        "company": "Innovatech Solutions",
-        "date": "June 2023 - December 2023",
+        "title": "Full Stack Developer Intern",
+        "company": "DTIC - Department of Information Technology and Communications",
+        "date": "August 2024 - December 2024",
         "location": "Cochabamba, Bolivia",
-        "description": "Assisted in the development of web applications and participated in team projects. Gained experience in Agile methodologies and version control systems.",
+        "description": "Contributed to the development and maintenance of web applications using React, Yii2, and PostgreSQL. Worked closely with the team to implement new features and enhance user experience in academic systems.",
         "responsabilities": [
-          "Assisting in the development of web applications",
-          "Participating in Agile ceremonies and team meetings",
-          "Learning version control with Git"
+          "Developed web applications using React and Yii2",
+          "Collaborated with the design team to implement UI/UX improvements",
+          "Participated in code reviews and team meetings",
+          "Analyzed requirements and proposed technical solutions",
+          "Used UML for system design and documentation"
         ],
-        "skills": ["JavaScript", "HTML/CSS", "Git", "Agile"]
+        "skills": ["React", "Yii2", "PostgreSQL", "HTML/CSS", "GitLab", "UML"]
       }
     ]
   },
@@ -198,9 +334,7 @@
           "Next.js",
           "Astro",
           "Tailwind CSS",
-          "Bootstrap",
-          "HTML5",
-          "CSS3"
+          "Bootstrap"
         ]
       },
       {
@@ -209,10 +343,7 @@
           "Node.js",
           "NestJS",
           "Express",
-          "Django",
-          "API Restful",
-          "GraphQL",
-          "Microservices"
+          "Django"
         ]
       },
       {

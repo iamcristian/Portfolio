@@ -1,6 +1,6 @@
 ---
 const { data } = Astro.props;
-const { title, university, date, location, description, src } = data;
+const { title, university, date, location, description, src, link } = data;
 ---
 
 <li class="flex items-center w-full lg:max-w-1/2 py-4">
@@ -14,7 +14,18 @@ const { title, university, date, location, description, src } = data;
   />
   <div class="flex-1 min-w-0">
     <p class="text-base font-bold">{title}</p>
-    {university && <p class="font-medium">{university}</p>}
+    <div class="flex items-center gap-2">
+      {university && <p class="font-medium">{university}</p>}
+      {
+        link && (
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <svg class="w-4 h-4">
+              <use href="#icon-external-link" />
+            </svg>
+          </a>
+        )
+      }
+    </div>
     <div class="flex items-center gap-2 mt-1 text-xs">
       {
         date && (

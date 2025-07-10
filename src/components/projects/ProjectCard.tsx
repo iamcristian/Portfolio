@@ -33,7 +33,7 @@ export const ProjectCard = ({
     >
       {/* Image */}
       <div
-        className={`relative ${viewMode === "list" ? "w-1/5" : "aspect-video"}`}
+        className={`relative ${viewMode === "list" ? "w-1/3 md:w-1/5" : "aspect-video"}`}
       >
         <img
           src={project.image}
