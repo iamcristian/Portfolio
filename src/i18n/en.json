@@ -92,7 +92,7 @@
         "date": "February 2024 - December 2024",
         "location": "Cochabamba, Bolivia",
         "description": "Graduated with honors. Focused on software architecture, algorithms, and web development. Participated in multiple hackathons and coding competitions.",
-        "src": "/posgradoumss.png"
+        "src": "/academies/posgradoumss.png"
       },
       {
         "title": "Bachelor of Science in Systems Engineering",
@@ -100,7 +100,7 @@
         "date": "February 2019 - December 2025",
         "location": "Cochabamba, Bolivia",
         "description": "Graduated with honors. Focused on software architecture, algorithms, and web development. Participated in multiple hackathons and coding competitions.",
-        "src": "/umss.png"
+        "src": "/academies/umss.png"
       }
     ],
     "itemsCertifications": [
@@ -110,7 +110,7 @@
         "university": "Platzi",
         "date": "January 2023 - June 2023",
         "description": "Completed a comprehensive bootcamp covering front-end and back-end development, including React, Node.js, and databases.",
-        "src": "/devtalles.jpeg"
+        "src": "/academies/devtalles.jpeg"
       },
       {
         "title": "JavaScript Algorithms and Data Structures",
@@ -118,7 +118,7 @@
         "university": "freeCodeCamp",
         "date": "July 2022 - December 2022",
         "description": "Mastered JavaScript fundamentals, algorithms, and data structures through hands-on projects.",
-        "src": "/devtalles.jpeg"
+        "src": "/academies/devtalles.jpeg"
       },
       {
         "title": "AWS Certified Solutions Architect",
@@ -126,7 +126,7 @@
         "university": "Amazon Web Services",
         "date": "March 2023",
         "description": "Achieved certification demonstrating expertise in designing and deploying scalable systems on AWS.",
-        "src": "/devtalles.jpeg"
+        "src": "/academies/devtalles.jpeg"
       },
       {
         "title": "Docker Essentials",
@@ -134,7 +134,7 @@
         "university": "Docker",
         "date": "August 2023",
         "description": "Completed a course on Docker fundamentals, including containerization and orchestration.",
-        "src": "/devtalles.jpeg"
+        "src": "/academies/devtalles.jpeg"
       }
     ],
     "itemsLanguages": [
