@@ -10,7 +10,7 @@
     yPercent: -100,
     delay: 0.1,
     ease: "ease_1",
-    duration: 1,
+    duration: 0.5,
   });
 
   function ready(fn: () => void) {
@@ -39,7 +39,7 @@
           gsap.to(".page-transition", {
             yPercent: 0,
             ease: "ease_1",
-            duration: 1,
+            duration: 0.5,
             onComplete: () => {
               window.location.assign(destination);
             },
