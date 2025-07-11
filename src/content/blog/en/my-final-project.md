@@ -11,10 +11,7 @@ language: "en"
 tags:
   [
     "cybersecurity",
-    "penetration testing",
-    "OWASP",
-    "API security",
-    "vulnerability analysis",
+    "penetration testing"
   ]
 publishDate: "2024-09-20"
 authorContact: "crisarandosyse@gmail.com"

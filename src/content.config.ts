@@ -20,7 +20,7 @@ const blog = defineCollection({
     publishDate: z.string().transform((str) => new Date(str)),
     authorContact: z.string().email(),
     readTime: z.string().default("5 min"),
-    excerpt: z.string().max(200),
+    excerpt: z.string().max(300),
     featured: z.boolean().default(false),
   }),
 });

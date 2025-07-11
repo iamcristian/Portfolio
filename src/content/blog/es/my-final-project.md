@@ -11,10 +11,7 @@ language: "es"
 tags:
   [
     "ciberseguridad",
-    "pruebas de penetración",
-    "OWASP",
-    "seguridad en API",
-    "análisis de vulnerabilidades",
+    "pruebas de penetración"
   ]
 publishDate: "2024-09-20"
 authorContact: "crisarandosyse@gmail.com"
