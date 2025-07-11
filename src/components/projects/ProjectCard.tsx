@@ -40,6 +40,9 @@ export const ProjectCard = ({
         <img
           src={project.image}
           alt={project.title}
+          loading="lazy"
+          width={400}
+          height={300}
           className={`w-full h-full object-cover ${
             viewMode === "list" ? "rounded-l-2xl" : "rounded-t-2xl"
           }`}
