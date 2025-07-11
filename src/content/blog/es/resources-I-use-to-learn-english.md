@@ -1,6 +1,6 @@
 ---
 title: Recursos que Uso para Aprender Inglés
-slug: es/resources-i-use-to-learn-english
+slug: es/resources-I-use-to-learn-english
 image:
   src: /covers/learning-english.webp
   alt: Persona estudiando inglés con diversos recursos
@@ -12,62 +12,100 @@ authorContact: crisarandosyse@gmail.com
 readTime: 4 min
 excerpt: Descubre los recursos más efectivos que me han ayudado a mejorar mi dominio del inglés, desde aplicaciones y sitios web hasta técnicas de inmersión y métodos de práctica.
 ---
+## 🚀 Por Qué el Inglés Es Importante Para Mí
 
-## Mi Viaje de Aprendizaje de Inglés
-
-Aprender inglés ha sido uno de los desafíos más gratificantes en mi desarrollo profesional. Como desarrollador de software trabajando en una industria cada vez más global, dominar el inglés no era opcional—era esencial. A lo largo de los años, he descubierto muchos recursos que aceleraron significativamente mi proceso de aprendizaje.
-
----
-
-## Aplicaciones y Plataformas Digitales
-
-La revolución digital ha transformado el aprendizaje de idiomas. Estas son las aplicaciones y plataformas que encontré más efectivas:
-
-1. **Duolingo**: Perfecto para principiantes, su enfoque gamificado me mantuvo motivado durante las primeras etapas.
-2. **Anki**: Este software de repetición espaciada revolucionó mi adquisición de vocabulario.
-3. **Grammarly**: Esencial para detectar errores gramaticales sutiles en mi escritura.
-4. **Tandem**: Conectarme con hablantes nativos para practicar conversación fue invaluable.
-5. **YouTube**: Canales como "English with Lucy" y "engVid" ofrecen lecciones gratuitas de alta calidad.
+Como desarrollador de software, aprender inglés no fue opcional: fue una necesidad profesional. Desde leer documentación hasta comunicarme con equipos internacionales, el inglés me ha abierto muchas puertas. Aquí te comparto cómo lo estoy aprendiendo paso a paso, con las herramientas que más impacto han tenido en mi rutina.
 
 ---
 
-## Técnicas de Inmersión
+## 📘 Gramática y Vocabulario (Base Fundamental)
 
-La verdadera fluidez viene de la inmersión. Así es como incorporé el inglés en mi vida diaria:
+Estos recursos me ayudaron a construir una base sólida:
 
-- **Cambiar los idiomas de los dispositivos**: Configurar mi teléfono, computadora y otros dispositivos en inglés
-- **Entretenimiento en inglés**: Ver programas de TV y películas con subtítulos en inglés
-- **Lectura**: Comenzar con artículos simples y avanzar gradualmente a textos más complejos
-- **Podcasts**: Escuchar durante los desplazamientos para mejorar la comprensión
-- **Escribir entradas de diario**: Practicar la expresión en un entorno de baja presión
+- **📙 *English Grammar in Use*** – Raymond Murphy  
+  Estudio un tema cada pocos días y repaso temas anteriores regularmente. Las explicaciones claras y los ejercicios me ayudan a reforzar los conceptos más difíciles.
 
----
+- **📘 *English Vocabulary in Use (Upper-Intermediate to Advanced)***  
+  Me enfoco en uno o dos temas por semana. Extraigo palabras clave y frases, y las agrego a Anki.
 
-## Recursos Profesionales
+- **📕 *Business Vocabulary in Use***  
+  Ideal para mejorar la comunicación técnica y profesional en correos y reuniones.
 
-Para inglés técnico y profesional, me apoyé en:
-
-- **Cursos de Cambridge English**: Aprendizaje estructurado con rutas de progresión claras
-- **LinkedIn Learning**: Cursos de inglés de negocios adaptados a contextos profesionales
-- **Stack Overflow**: Las discusiones técnicas me ayudaron a aprender terminología específica de la industria
-- **Documentación de GitHub**: Leer y contribuir a la documentación mejoró mi escritura técnica
+- **🗂️ Anki (App de repetición espaciada)**  
+  Uso barajas personalizadas con vocabulario y frases tomadas de libros y videos de YouTube. Reviso las tarjetas diariamente (~10–15 minutos al día).
 
 ---
 
-## Estrategias de Aprendizaje que Funcionaron
+## 🎧 Práctica de Escucha (Input)
 
-Más allá de recursos específicos, estas estrategias mejoraron significativamente mis resultados:
+Para mejorar la comprensión y el lenguaje natural:
 
-- **Práctica diaria consistente**: Incluso solo 20 minutos al día
-- **Hablar en voz alta**: Incluso cuando estoy solo, para mejorar la pronunciación
-- **Grabarme**: Para identificar problemas de pronunciación
-- **Enseñar conceptos**: Explicar lo que aprendí a otros
-- **Establecer metas específicas**: En lugar de objetivos vagos de "mejora"
+- **🎥 Canales de YouTube**  
+  - *English with Lucy*: Excelente para pronunciación, gramática e inglés británico.  
+  - *engVid*: Muy útil para estudiantes intermedios y avanzados. Lecciones claras y por temas.
+
+- **🎙️ Podcasts**  
+  - *The English We Speak* – De BBC Learning English, centrado en expresiones y modismos.  
+  - *Luke’s English Podcast* – Muy natural y útil para conversaciones reales.
+
+- **📺 Series y Películas**  
+  Siempre uso subtítulos en inglés (nunca en español). Algunas de mis favoritas:  
+  - *Black Mirror* (desafiante pero útil)  
+  - *Better Call Saul* (ideal para vocabulario legal)  
+  - *Breaking Bad* (excelente para lenguaje cotidiano)  
+  - *The Walking Dead* (bueno para conversaciones informales)
 
 ---
 
-## Conclusión
+## 🗣️ Habla y Pronunciación
 
-El viaje hacia el dominio del inglés es continuo, pero estos recursos han sido instrumentales en mi progreso. La clave no es encontrar un único recurso perfecto, sino crear una combinación personalizada que aborde las habilidades de lectura, escritura, escucha y habla mientras mantiene tu motivación.
+Aunque no tenga hablantes nativos cerca, practico así:
 
-¿Qué recursos has encontrado útiles en tu viaje de aprendizaje de idiomas?
+- **Hablar en voz alta todos los días**:  
+  Leo textos cortos o explico temas en voz alta, imitando el ritmo de un nativo.
+
+- **Técnica de shadowing**:  
+  Pauso un video o audio y repito lo que dicen con la misma entonación y pronunciación.
+
+- **Grabarme hablando**:  
+  Un hábito semanal para evaluar mi pronunciación y corregirme.
+
+- **Conversaciones en línea (próximamente)**:  
+  Planeo usar plataformas como iTalki o ConversationExchange para practicar con personas reales.
+
+---
+
+## 📝 Escritura y Pensamiento en Inglés
+
+Estas estrategias me ayudaron a pasar de solo entender a realmente **pensar en inglés**:
+
+- **Escribir diario (journaling)**:  
+  Escribo entradas breves (3–5 frases) sobre lo que aprendí o hice en el día.
+
+- **Explicar conceptos**:  
+  Me explico reglas gramaticales en voz alta o por escrito. Esto revela vacíos y refuerza lo aprendido.
+
+- **Practicar correos electrónicos**:  
+  Escribo correos técnicos o mensajes en inglés, incluso si no los envío. Me enfoco en situaciones laborales.
+
+---
+
+## 🔄 Mi Rutina Diaria (Ejemplo)
+
+Así organizo mi práctica actual:
+
+| Hora | Actividad |
+|------|-----------|
+| ⏰ Mañana | Revisar 20–30 tarjetas de Anki (vocabulario y gramática) |
+| 🧠 Mediodía | Leer una unidad de *English Grammar in Use* o *Vocabulary in Use* |
+| 🎧 Tarde | Ver un video de YouTube (10–15 min) o escuchar un podcast |
+| 📖 Noche | Leer un artículo o capítulo de libro (en inglés) |
+| 🗣️ Semanal | Grabarme hablando o explicando un tema |
+
+---
+
+## ✅ Reflexión Final
+
+No necesitas 20 recursos. Solo necesitas un sistema pequeño y **constante** que trabaje las 4 habilidades: escuchar, hablar, leer y escribir. Estas son las herramientas que yo uso, y funcionan bien juntas. Todavía estoy en el camino, pero cada día me siento más cómodo y confiado.
+
+> ¿Tú también estás aprendiendo inglés? Me encantaría saber: ¿qué recursos o técnicas te han funcionado mejor?

@@ -1,5 +1,5 @@
 ---
-title: Books I Want to Read This Year
+title: Books I Want to Read in my lifetime
 slug: en/books-i-want-to-read
 image:
   src: /covers/reading-list.webp
@@ -10,89 +10,88 @@ tags: [books, reading]
 publishDate: "2024-06-20"
 authorContact: crisarandosyse@gmail.com
 readTime: 3 min
-excerpt: Explore my curated reading list for the year, featuring books across technical subjects, fiction, personal development, and big ideas that I'm excited to discover.
+excerpt: Explore my curated reading list, featuring books across technical subjects, fiction, personal development, and big ideas that I'm excited to discover.
 ---
 
-## My Reading Goals for 2024
+## 📚 My Reading Goals
 
-Reading has always been central to my personal and professional growth. This year, I've set an ambitious goal to read 25 books across diverse categories. This list represents my current priorities and interests, though I always leave room for spontaneous discoveries!
-
----
-
-## Technical and Professional Development
-
-As a software developer, staying current with technical knowledge is essential:
-
-1. **"Clean Architecture" by Robert C. Martin**  
-   Building on "Clean Code," this book promises to deepen my understanding of software design principles.
-
-2. **"Designing Data-Intensive Applications" by Martin Kleppmann**  
-   With data becoming increasingly central to modern applications, this book will strengthen my backend expertise.
-
-3. **"The Pragmatic Programmer: 20th Anniversary Edition" by Dave Thomas and Andy Hunt**  
-   This updated classic contains timeless wisdom for writing better code and enjoying the craft more.
-
-4. **"The Phoenix Project" by Gene Kim, Kevin Behr, and George Spafford**  
-   This novel about DevOps principles will help me understand organizational IT challenges.
+Reading is a lifelong project. My goal is to read deeply across multiple dimensions—technical, philosophical, literary, psychological, and scientific. Here's an evolving list of books I want to tackle.
 
 ---
 
-## Personal Growth and Psychology
+## 🧠 Personal Growth & Psychology
 
-Understanding human behavior and improving my mental models are ongoing priorities:
-
-1. **"Thinking, Fast and Slow" by Daniel Kahneman**  
-   This exploration of the two systems of thought will help me recognize cognitive biases.
-
-2. **"Atomic Habits" by James Clear**  
-   Small improvements compound over time—this book will help me implement better systems.
-
-3. **"Deep Work" by Cal Newport**  
-   In an age of constant distraction, focusing deeply is becoming a rare and valuable skill.
-
-4. **"Mindset" by Carol Dweck**  
-   Understanding the difference between fixed and growth mindsets is crucial for continuous learning.
+- [x] *Thinking, Fast and Slow* – Daniel Kahneman  
+- [x] *The War of Art* – Steven Pressfield  
+- [x] *How to Win Friends and Influence People* – Dale Carnegie  
+- [x] *The 7 Habits of Highly Effective People* – Stephen Covey  
+- [x] *Quiet* – Susan Cain  
+- [x] *Unmasking the Social Engineer* – Christopher Hadnagy  
+- [ ] *Emotional Intelligence* – Daniel Goleman  
+- [ ] *Influence* – Robert Cialdini  
+- [ ] *The Laws of Human Nature* – Robert Greene  
+- [ ] *Man’s Search for Meaning* – Viktor Frankl  
 
 ---
 
-## Fiction and Literature
+## 🧬 Science, Society & Critical Thinking
 
-Reading fiction develops empathy and provides necessary mental breaks:
-
-1. **"Project Hail Mary" by Andy Weir**  
-   A science-based adventure about a lone astronaut's mission to save humanity.
-
-2. **"The Three-Body Problem" by Liu Cixin**  
-   This hard science fiction novel offers a unique perspective from a Chinese author.
-
-3. **"The Night Circus" by Erin Morgenstern**  
-   A magical competition set in a mysterious circus that only appears at night.
-
-4. **"The Overstory" by Richard Powers**  
-   This Pulitzer Prize winner explores the interconnection between humans and trees.
+- [x] *The Social Animal* – David Brooks  
+- [ ] *Brief Answers to the Big Questions* – Stephen Hawking  
+- [ ] *The Elegant Universe* – Brian Greene  
+- [ ] *Cosmos* – Carl Sagan  
+- [ ] *Superintelligence* – Nick Bostrom  
+- [ ] *The Signal and the Noise* – Nate Silver  
+- [ ] *The Beginning of Infinity* – David Deutsch  
+- [ ] *Why We Sleep* – Matthew Walker  
+- [ ] *The Information* – James Gleick  
 
 ---
 
-## Big Ideas and Society
+## 📚 Literature (Classics & Modern)
 
-These books will challenge my thinking about broader topics:
-
-1. **"Sapiens: A Brief History of Humankind" by Yuval Noah Harari**  
-   Understanding our species' history provides context for modern challenges.
-
-2. **"The Beginning of Infinity" by David Deutsch**  
-   An exploration of how human knowledge grows through conjecture and criticism.
-
-3. **"Superintelligence" by Nick Bostrom**  
-   As AI advances, understanding potential paths and risks becomes increasingly important.
-
-4. **"The Righteous Mind" by Jonathan Haidt**  
-   In a polarized world, understanding the moral foundations of different viewpoints is valuable.
+- [x] *White Nights* – Fyodor Dostoevsky
+- [x] *Crime and Punishment* – Fyodor Dostoevsky  
+- [ ] *The Brothers Karamazov* – Fyodor Dostoevsky
+- [ ] *War and Peace* – Leo Tolstoy
+- [ ] *The Idiot* – Fyodor Dostoevsky  
+- [ ] *The Stranger* – Albert Camus  
+- [ ] *The Metamorphosis* – Franz Kafka  
+- [ ] *Anna Karenina* – Leo Tolstoy  
+- [ ] *1984* – George Orwell  
+- [ ] *The Count of Monte Cristo* – Alexandre Dumas  
 
 ---
 
-## Conclusion
+## 💼 Technology & Professional Development
 
-This reading list reflects my current interests and growth areas, balanced between technical knowledge, personal development, fiction for enjoyment, and broader ideas about society and humanity. I recognize I may not complete all these books, but having an ambitious target keeps me motivated.
+- [x] *Clean Code* – Robert C. Martin  
+- [ ] *Clean Architecture* – Robert C. Martin  
+- [ ] *The Pragmatic Programmer* – Dave Thomas & Andy Hunt  
+- [ ] *Designing Data-Intensive Applications* – Martin Kleppmann  
+- [ ] *Refactoring* – Martin Fowler  
+- [ ] *Soft Skills* – John Sonmez  
 
-What books are you planning to read this year? I'm always open to recommendations that might expand my horizons even further!
+---
+
+## 🧭 Philosophy & Existentialism
+
+- [x] *Thus Spoke Zarathustra* – Friedrich Nietzsche  
+- [x] *Civilization and its Discontents* – Sigmund Freud
+- [ ] *Meditations* – Marcus Aurelius  
+- [ ] *The Republic* – Plato  
+- [ ] *The Gay Science* – Nietzsche  
+- [ ] *Beyond Good and Evil* – Nietzsche  
+- [ ] *The Myth of Sisyphus* – Albert Camus  
+- [ ] *The Ethics* – Spinoza  
+- [ ] *Critique of Pure Reason* – Immanuel Kant  
+- [ ] *Tractatus Logico-Philosophicus* – Ludwig Wittgenstein  
+- [ ] *The World as Will and Representation* – Schopenhauer  
+
+---
+
+## ✅ Final Thoughts
+
+This is a living list. I'll update it as I discover new books and finish others. My aim is to cultivate a diverse reading habit that enriches my understanding of the world and myself.
+
+> If you have any recommendations aligned with my interests—especially in technology, philosophy, psychology, or classics—I'd love to hear them! Contact me at my email: crisarandosyse@gmail.com or the social media links below.
