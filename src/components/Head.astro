@@ -9,9 +9,10 @@ const { lang, title, description, image, imageAlt } = Astro.props;
 <meta http-equiv="Content-Language" content={lang} />
 
 <!-- Open Graph -->
+<meta property="og:type" content="website" />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.your-domain.com/" />
+<meta property="og:url" content=`https://cristianarando.netlify.app/${lang}` />
 <meta property="og:image" content={image} />
 <meta property="og:image:alt" content={imageAlt} />

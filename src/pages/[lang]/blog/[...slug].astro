@@ -6,6 +6,7 @@ import Head from "@/components/Head.astro";
 import RelatedPosts from "@/components/blog/RelatedPosts.astro";
 import TableofContents from "@/components/blog/TableofContents.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { Image } from "astro:assets";
 
 export async function getStaticPaths() {
   const pages = await getCollection("blog");
@@ -101,10 +102,13 @@ const metaTags = {
         <!-- Post Image -->
         {
           page.data.image.src && (
-            <img
+            <Image
               src={page.data.image.src}
               alt={page.data.image.alt}
               class="rounded-2xl aspect-video object-cover md:mb-12 md:w-1/2 mx-auto"
+              loading="lazy"
+              width={800}
+              height={450}
             />
           )
         }
