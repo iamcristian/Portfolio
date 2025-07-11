@@ -108,7 +108,7 @@
         "date": "Febrero 2024 - Diciembre 2024",
         "location": "Cochabamba, Bolivia",
         "description": "Graduado con honores. Enfocado en arquitectura de software, algoritmos y desarrollo web. Participé en múltiples hackathons y competencias de programación.",
-        "src": "/academies/posgradoumss.png"
+        "src": "/academies/posgradoumss.webp"
       },
       {
         "title": "Licenciatura en Ingeniería de Sistemas",
@@ -116,7 +116,7 @@
         "date": "Febrero 2019 - Diciembre 2023",
         "location": "Cochabamba, Bolivia",
         "description": "Graduado con honores. Enfocado en arquitectura de software, algoritmos y desarrollo web. Participé en múltiples hackathons y competencias de programación.",
-        "src": "/academies/umss.png"
+        "src": "/academies/umss.webp"
       }
     ],
     "itemsCertifications": [
