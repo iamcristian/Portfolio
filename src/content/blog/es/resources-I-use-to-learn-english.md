@@ -1,18 +1,16 @@
 ---
-title: "Recursos que Uso para Aprender Inglés"
-slug: 'en/resources-i-use-to-learn-english'
+title: Recursos que Uso para Aprender Inglés
+slug: es/resources-i-use-to-learn-english
 image:
-  {
-    "src": "/covers/learning-english.webp",
-    "alt": "Persona estudiando inglés con diversos recursos",
-  }
-author: "Cristian Arando"
-language: "es"
-tags: ["aprendizaje de idiomas", "inglés"]
+  src: /covers/learning-english.webp
+  alt: Persona estudiando inglés con diversos recursos
+author: Cristian Arando
+language: es
+tags: [aprendizaje de idiomas, inglés]
 publishDate: "2024-07-15"
-authorContact: "crisarandosyse@gmail.com"
-readTime: "4 min"
-excerpt: "Descubre los recursos más efectivos que me han ayudado a mejorar mi dominio del inglés, desde aplicaciones y sitios web hasta técnicas de inmersión y métodos de práctica."
+authorContact: crisarandosyse@gmail.com
+readTime: 4 min
+excerpt: Descubre los recursos más efectivos que me han ayudado a mejorar mi dominio del inglés, desde aplicaciones y sitios web hasta técnicas de inmersión y métodos de práctica.
 ---
 
 ## Mi Viaje de Aprendizaje de Inglés

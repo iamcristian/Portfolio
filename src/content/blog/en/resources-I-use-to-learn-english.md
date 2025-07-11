@@ -1,18 +1,16 @@
 ---
-title: "Resources I Use to Learn English"
-slug: 'en/resources-I-use-to-learn-english'
+title: Resources I Use to Learn English
+slug: en/resources-I-use-to-learn-english
 image:
-  {
-    "src": "/covers/learning-english.webp",
-    "alt": "Person studying English with various resources",
-  }
-author: "Cristian Arando"
-language: "en"
-tags: ["language learning", "English"]
+  src: /covers/learning-english.webp
+  alt: Person studying English with various resources
+author: Cristian Arando
+language: en
+tags: [language learning, English]
 publishDate: "2024-07-15"
-authorContact: "crisarandosyse@gmail.com"
-readTime: "4 min"
-excerpt: "Discover the most effective resources that helped me improve my English proficiency, from apps and websites to immersion techniques and practice methods."
+authorContact: crisarandosyse@gmail.com
+readTime: 4 min
+excerpt: Discover the most effective resources that helped me improve my English proficiency, from apps and websites to immersion techniques and practice methods.
 featured: false
 ---
 

@@ -16,7 +16,7 @@ const specificSlugs = [
 ];
 
 const recentPosts = await getCollection("blog", ({ data }) => {
-  return data.language === lang && specificSlugs.includes(data.slug);
+  return specificSlugs.includes(data.slug);
 }).then((posts) =>
   posts.sort(
     (a, b) =>

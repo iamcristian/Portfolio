@@ -1,18 +1,16 @@
 ---
-title: "Libros que Quiero Leer Este Año"
-slug: 'es/libros-que-quiero-leer'
+title: ¿Qué es el Universo?
+slug: es/what-is-the-universe
 image:
-  {
-    "src": "/covers/reading-list.webp",
-    "alt": "Pila de libros sobre una mesa de madera",
-  }
-author: "Cristian Arando"
-language: "es"
-tags: ["libros", "lectura"]
-publishDate: "2024-06-20"
-authorContact: "crisarandosyse@gmail.com"
-readTime: "3 min"
-excerpt: "Explora mi lista de lectura seleccionada para el año, con libros de temas técnicos, ficción, desarrollo personal y grandes ideas que estoy emocionado por descubrir."
+  src: /covers/universe.webp
+  alt: Universo y Tierra
+author: Cristian Arando
+language: es
+tags: [cosmología, universo]
+publishDate: "2024-01-02"
+authorContact: cristianarandosyse@gmail.com
+readTime: 5 min
+excerpt: Explora la inmensidad del universo, su edad y cómo abarca todo, desde la Tierra hasta galaxias distantes.
 ---
 
 ## Mis Objetivos de Lectura para 2024

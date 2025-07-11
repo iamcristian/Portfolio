@@ -1,18 +1,16 @@
 ---
-title: "El Arte del Pensamiento Estratégico"
-slug: 'en/strategic-thinking'
+title: El Arte del Pensamiento Estratégico
+slug: es/strategic-thinking
 image:
-  {
-    "src": "/covers/strategic-thinking.webp",
-    "alt": "Piezas de ajedrez en un tablero representando el pensamiento estratégico",
-  }
-author: "Cristian Arando"
-language: "es"
-tags: ["estrategia", "toma de decisiones"]
+  src: /covers/strategic-thinking.webp
+  alt: Piezas de ajedrez en un tablero representando el pensamiento estratégico
+author: Cristian Arando
+language: es
+tags: [estrategia, toma de decisiones]
 publishDate: "2024-08-05"
-authorContact: "crisarandosyse@gmail.com"
-readTime: "5 min"
-excerpt: "Explora los principios fundamentales del pensamiento estratégico y cómo desarrollar esta habilidad puede transformar tu enfoque para resolver problemas y tomar decisiones tanto en contextos profesionales como personales."
+authorContact: crisarandosyse@gmail.com
+readTime: 5 min
+excerpt: Explora los principios fundamentales del pensamiento estratégico y cómo desarrollar esta habilidad puede transformar tu enfoque para resolver problemas y tomar decisiones tanto en contextos profesionales como personales.
 ---
 
 ## ¿Qué Es el Pensamiento Estratégico?

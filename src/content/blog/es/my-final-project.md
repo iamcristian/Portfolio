@@ -1,22 +1,16 @@
 ---
-title: "Mi Proyecto Final: Pruebas de Penetración con OWASP API Security Top 10 2023"
-slug: "es/my-final-project"
+title: Mi Proyecto Final - Pruebas de Penetración con OWASP API Security Top 10 2023
+slug: es/my-final-project
 image:
-  {
-    "src": "/covers/my-final-project.webp",
-    "alt": "Concepto de pruebas de penetración en ciberseguridad",
-  }
-author: "Cristian Arando"
-language: "es"
-tags:
-  [
-    "ciberseguridad",
-    "pruebas de penetración"
-  ]
+  src: /covers/my-final-project.webp
+  alt: Concepto de pruebas de penetración en ciberseguridad
+author: Cristian Arando
+language: es
+tags: [ciberseguridad, pruebas de penetración]
 publishDate: "2024-09-20"
-authorContact: "crisarandosyse@gmail.com"
-readTime: "5 min"
-excerpt: "JavaScript es un lenguaje de programación versátil que juega un papel de apoyo en la industria aeroespacial, particularmente en simulación, visualización y análisis de datos."
+authorContact: crisarandosyse@gmail.com
+readTime: 5 min
+excerpt: JavaScript es un lenguaje de programación versátil que juega un papel de apoyo en la industria aeroespacial, particularmente en simulación, visualización y análisis de datos.
 featured: true
 ---
 

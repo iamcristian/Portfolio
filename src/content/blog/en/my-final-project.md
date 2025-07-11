@@ -1,22 +1,16 @@
 ---
-title: "My Final Project: Penetration Testing with OWASP API Security Top 10 2023"
-slug: "en/my-final-project"
+title: My Final Project - Penetration Testing with OWASP API Security Top 10 2023
+slug: en/my-final-project
 image:
-  {
-    "src": "/covers/my-final-project.webp",
-    "alt": "Cybersecurity penetration testing concept",
-  }
-author: "Cristian Arando"
-language: "en"
-tags:
-  [
-    "cybersecurity",
-    "penetration testing"
-  ]
+  src: /covers/my-final-project.webp
+  alt: Cybersecurity penetration testing concept
+author: Cristian Arando
+language: en
+tags: [cybersecurity, penetration testing]
 publishDate: "2024-09-20"
-authorContact: "crisarandosyse@gmail.com"
-readTime: "5 min"
-excerpt: "JavaScript is a versatile programming language that plays a supporting role in the aerospace industry, particularly in simulation, visualization, and data analysis."
+authorContact: crisarandosyse@gmail.com
+readTime: 5 min
+excerpt: JavaScript is a versatile programming language that plays a supporting role in the aerospace industry, particularly in simulation, visualization, and data analysis.
 featured: true
 ---
 

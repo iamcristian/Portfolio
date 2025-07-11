@@ -1,18 +1,16 @@
 ---
-title: "What Is the Universe?"
-slug: 'en/what-is-the-universe'
+title: What is the Universe?
+slug: en/what-is-the-universe
 image:
-  {
-  src: '/covers/universe.webp',
-  alt: "Universe and Earth",
-  }
-author: "Cristian Arando"
-language: "en"
-tags: ['cosmology', 'universe']
+  src: /covers/universe.webp
+  alt: Universe and Earth
+author: Cristian Arando
+language: en
+tags: [cosmology, universe]
 publishDate: "2024-01-02"
-authorContact: "cristianarandosyse@gmail.com"
-readTime: '5 min'
-excerpt: "Explore the vastness of the universe, its age, and how it encompasses everything from Earth to distant galaxies."
+authorContact: cristianarandosyse@gmail.com
+readTime: 5 min
+excerpt: Explore the vastness of the universe, its age, and how it encompasses everything from Earth to distant galaxies.
 ---
 
 **The universe is everything.** It includes all of space, and all the matter and energy that space contains. It even includes time itself—and, of course, it includes you.

@@ -1,18 +1,16 @@
 ---
-title: "The Art of Strategic Thinking"
-slug: 'en/strategic-thinking'
+title: The Art of Strategic Thinking
+slug: en/strategic-thinking
 image:
-  {
-    "src": "/covers/strategic-thinking.webp",
-    "alt": "Chess pieces on a board representing strategic thinking",
-  }
-author: "Cristian Arando"
-language: "en"
-tags: ["strategy", "decision making"]
+  src: /covers/strategic-thinking.webp
+  alt: Chess pieces on a board representing strategic thinking
+author: Cristian Arando
+language: en
+tags: [strategy, decision making]
 publishDate: "2024-08-05"
-authorContact: "crisarandosyse@gmail.com"
-readTime: "5 min"
-excerpt: "Explore the fundamental principles of strategic thinking and how developing this skill can transform your approach to problem-solving and decision-making in both professional and personal contexts."
+authorContact: crisarandosyse@gmail.com
+readTime: 5 min
+excerpt: Explore the fundamental principles of strategic thinking and how developing this skill can transform your approach to problem-solving and decision-making in both professional and personal contexts.
 ---
 
 ## What Is Strategic Thinking?

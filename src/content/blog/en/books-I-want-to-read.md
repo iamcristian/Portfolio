@@ -1,18 +1,16 @@
 ---
-title: "Books I Want to Read This Year"
-slug: 'en/books-i-want-to-read'
+title: Books I Want to Read This Year
+slug: en/books-i-want-to-read
 image:
-  {
-    "src": "/covers/reading-list.webp",
-    "alt": "Stack of books on a wooden table",
-  }
-author: "Cristian Arando"
-language: "en"
-tags: ["books", "reading"]
+  src: /covers/reading-list.webp
+  alt: Stack of books on a wooden table
+author: Cristian Arando
+language: en
+tags: [books, reading]
 publishDate: "2024-06-20"
-authorContact: "crisarandosyse@gmail.com"
-readTime: "3 min"
-excerpt: "Explore my curated reading list for the year, featuring books across technical subjects, fiction, personal development, and big ideas that I'm excited to discover."
+authorContact: crisarandosyse@gmail.com
+readTime: 3 min
+excerpt: Explore my curated reading list for the year, featuring books across technical subjects, fiction, personal development, and big ideas that I'm excited to discover.
 ---
 
 ## My Reading Goals for 2024

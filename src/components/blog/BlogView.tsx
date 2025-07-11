@@ -81,7 +81,7 @@ const BlogView = ({ posts, tags, t, lang }: Props) => {
               className={`btn ${
                 state.viewMode === "grid"
                   ? "btn-outline"
-                  : "bg-white text-base-100"
+                  : "bg-base-content text-base-100"
               }`}
             >
               <svg className="w-5">
@@ -95,7 +95,7 @@ const BlogView = ({ posts, tags, t, lang }: Props) => {
               className={`btn ${
                 state.viewMode === "list"
                   ? "btn-outline"
-                  : "bg-white text-base-100"
+                  : "bg-base-content text-base-100"
               }`}
             >
               <svg className="w-5">
