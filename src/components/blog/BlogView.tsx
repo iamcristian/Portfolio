@@ -5,11 +5,13 @@ interface Post {
   slug: string;
   title: string;
   excerpt: string;
-  date: string;
+  publishDate: Date;
   readTime: string;
   tags: string[];
   image: { src: string; alt: string };
   featured: boolean;
+  author: string;
+  authorContact: string;
 }
 
 interface Props {
@@ -62,9 +64,7 @@ const BlogView = ({ posts, tags, t, lang }: Props) => {
                   })
                 }
                 className={`btn ${
-                  state.selectedTags.includes(tag)
-                    ? "btn-outline"
-                    : ""
+                  state.selectedTags.includes(tag) ? "btn-outline" : ""
                 }`}
               >
                 {tag}

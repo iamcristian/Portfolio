@@ -26,7 +26,6 @@ const contentBlog = t("blog");
 
 const page = Astro.props;
 const { Content, headings } = await render(page);
-const formattedDate = page.data.publishDate.toLocaleDateString(lang);
 
 // Get all posts to find related ones
 const allPosts = await getCollection("blog");
@@ -82,7 +81,7 @@ const metaTags = {
             </svg>
             <span>
               {
-                new Date(formattedDate).toLocaleDateString(lang, {
+                page.data.publishDate.toLocaleDateString(lang, {
                   year: "numeric",
                   month: "long",
                   day: "numeric",

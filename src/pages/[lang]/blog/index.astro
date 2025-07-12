@@ -13,11 +13,14 @@ const t = useTranslations(lang);
 const contentBlog = t("blog");
 const contentBreadcrumbs = t("breadcrumbs");
 
-const allPosts = (await getCollection("blog"))
-  .filter((post) => post.data.language === lang)
+const allPosts = (
+  await getCollection("blog", ({ data }) => {
+    return data.language === lang;
+  })
+)
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
   .map((post) => ({
     ...post.data,
-    date: post.data.publishDate.toISOString(),
   }));
 
 const tags = [...new Set(allPosts.flatMap((p) => p.tags))];

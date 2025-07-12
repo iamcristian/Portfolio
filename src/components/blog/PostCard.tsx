@@ -2,7 +2,7 @@ interface Post {
   slug: string;
   title: string;
   excerpt: string;
-  date: string;
+  publishDate: Date;
   readTime: string;
   tags: string[];
   image: { src: string; alt: string };
@@ -31,7 +31,9 @@ export const PostCard = ({
     >
       {/* Image */}
       <div
-        className={`relative ${viewMode === "list" ? "w-1/3 md:w-1/5" : "aspect-video"}`}
+        className={`relative ${
+          viewMode === "list" ? "w-1/3 md:w-1/5" : "aspect-video"
+        }`}
       >
         <img
           src={post.image.src}
@@ -55,7 +57,7 @@ export const PostCard = ({
       >
         <div className="flex items-center space-x-4 text-sm">
           <span>
-            {new Date(post.date).toLocaleDateString(lang, {
+            {post.publishDate.toLocaleDateString(lang, {
               year: "numeric",
               month: "long",
               day: "numeric",

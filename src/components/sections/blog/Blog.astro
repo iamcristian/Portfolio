@@ -19,9 +19,7 @@ const recentPosts = await getCollection("blog", ({ data }) => {
   return specificSlugs.includes(data.slug);
 }).then((posts) =>
   posts.sort(
-    (a, b) =>
-      new Date(b.data.publishDate).valueOf() -
-      new Date(a.data.publishDate).valueOf()
+    (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
   )
 );
 
