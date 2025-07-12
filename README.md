@@ -67,7 +67,7 @@ Follow these steps to run the project locally:
 ### Projects
 Explore my featured projects, including full-stack applications, frontend designs, and more.
 
-![Project List](public/website-projects-screenshot.webp))
+![Project List](public/website-projects-screenshot.webp)
 
 ### Blog
 Read articles about web development, programming, and personal growth.
