@@ -107,7 +107,7 @@
         "university": "Escuela Universitaria de Posgrado UMSS",
         "date": "Febrero 2024 - Diciembre 2024",
         "location": "Cochabamba, Bolivia",
-        "description": "Graduado con honores. Enfocado en arquitectura de software, algoritmos y desarrollo web. Participé en múltiples hackathons y competencias de programación.",
+        "description": "Completed a postgraduate diploma focused on information security, covering topics such as cybersecurity, network security, and secure software development.",
         "src": "/academies/posgradoumss.webp"
       },
       {
@@ -115,7 +115,7 @@
         "university": "Universidad Mayor de San Simón",
         "date": "Febrero 2019 - Diciembre 2023",
         "location": "Cochabamba, Bolivia",
-        "description": "Graduado con honores. Enfocado en arquitectura de software, algoritmos y desarrollo web. Participé en múltiples hackathons y competencias de programación.",
+        "description": "Graduated with a Bachelor's degree in Systems Engineering, specializing in software development, database management, and network security.",
         "src": "/academies/umss.webp"
       }
     ],

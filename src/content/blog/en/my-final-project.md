@@ -1,5 +1,5 @@
 ---
-title: My Final Project - Penetration Testing with OWASP API Security Top 10 2023
+title: My Final Project - Penetration Testing with OWASP - Cristian Arando
 slug: en/my-final-project
 image:
   src: /covers/my-final-project.webp
@@ -10,7 +10,7 @@ tags: [cybersecurity, penetration testing]
 publishDate: "2024-09-20"
 authorContact: crisarandosyse@gmail.com
 readTime: 5 min
-excerpt: JavaScript is a versatile programming language that plays a supporting role in the aerospace industry, particularly in simulation, visualization, and data analysis.
+excerpt: My final project to obtain my Systems Engineering degree, a penetration testing applying OWASP in a fullstack academic system.
 featured: true
 ---
 

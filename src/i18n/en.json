@@ -107,7 +107,7 @@
         "university": "Escuela Universitaria de Posgrado UMSS",
         "date": "February 2024 - December 2024",
         "location": "Cochabamba, Bolivia",
-        "description": "Graduated with honors. Focused on software architecture, algorithms, and web development. Participated in multiple hackathons and coding competitions.",
+        "description": "Completed a postgraduate diploma focused on information security, covering topics such as cybersecurity, network security, and secure software development.",
         "src": "/academies/posgradoumss.webp"
       },
       {
@@ -115,7 +115,7 @@
         "university": "Universidad Mayor de San Simon",
         "date": "February 2019 - December 2023",
         "location": "Cochabamba, Bolivia",
-        "description": "Graduated with honors. Focused on software architecture, algorithms, and web development. Participated in multiple hackathons and coding competitions.",
+        "description": "Graduated with a Bachelor's degree in Systems Engineering, specializing in software development, database management, and network security.",
         "src": "/academies/umss.webp"
       }
     ],
