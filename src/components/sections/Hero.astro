@@ -17,7 +17,7 @@ const hero = t("hero");
       </h2>
       <p class="max-w-lg font-medium">{hero.description}</p>
       <div class="flex flex-wrap gap-4">
-        <a href={`cv_${lang}.pdf`} class="btn btn-outline" download>
+        <a href={`/cv/cv_${lang}.pdf`} class="btn btn-outline" target="_blank" rel="noopener noreferrer">
           <svg class="w-6 mr-1"><use href="#icon-download"></use></svg>
           {hero.download}
         </a>

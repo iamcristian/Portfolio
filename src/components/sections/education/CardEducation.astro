@@ -18,7 +18,12 @@ const { title, university, date, location, description, src, link } = data;
       {university && <p class="font-medium">{university}</p>}
       {
         link && (
-          <a href={link} target="_blank" rel="noopener noreferrer">
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="External link"
+          >
             <svg class="w-4 h-4">
               <use href="#icon-external-link" />
             </svg>
