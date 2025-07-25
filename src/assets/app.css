@@ -1,5 +1,10 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 @plugin "daisyui" {
-  themes: light --default, business --prefersdark, cyberpunk, forest, dracula, lofi;
+  themes: light --default, cyberpunk, forest, dracula, lofi;
+}
+@plugin "daisyui/theme" {
+  name: "business";
+  prefersdark: true;
+  --color-base-content: oklch(95% 0.003 247.858);
 }
