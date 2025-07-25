@@ -6,11 +6,14 @@ Welcome to my portfolio website! This project showcases my skills, experience, a
 
 ## 🌟 Features
 
-- **Multilingual Support**: English and Spanish versions available.
-- **Dynamic Content**: Projects, blog posts, and certifications are dynamically rendered.
+- **Multilingual Support i18n**: English and Spanish versions available.
+- **Dynamic Content**: Projects, blog posts are dynamically rendered.
 - **Responsive Design**: Optimized for desktop and mobile devices.
 - **Interactive Animations**: Smooth transitions powered by GSAP.
 - **SEO Optimized**: Metadata and sitemap integration for better visibility.
+
+![Test Lighthouse](public/test.webp)
+
 
 ## 🛠️ Technologies Used
 
@@ -46,11 +49,11 @@ Follow these steps to run the project locally:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/iamcristian/portfolio-website.git
+   git clone https://github.com/iamcristian/Portfolio.git
    ```
 2. Navigate to the project directory:
    ```sh
-   cd portfolio-website
+   cd Portfolio
    ```
 3. Install dependencies:
    ```sh
