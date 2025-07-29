@@ -8,3 +8,14 @@
   prefersdark: true;
   --color-base-content: oklch(95% 0.003 247.858);
 }
+
+/* Approach using target pseudo-class */
+.blog-content h1:target,
+.blog-content h2:target,
+.blog-content h3:target,
+.blog-content h4:target,
+.blog-content h5:target,
+.blog-content h6:target {
+  padding-top: 4rem;
+  margin-top: -4rem;
+}

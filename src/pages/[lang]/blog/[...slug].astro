@@ -35,7 +35,7 @@ const relatedPosts = allPosts
   .filter((post) => post.data.language === lang)
   .filter((post) => post.id !== page.id)
   .filter((post) =>
-    post.data.tags?.some((tag) => page.data.tags?.includes(tag))
+    post.data.tags?.some((tag) => page.data.tags?.includes(tag)),
   )
   .slice(0, 3);
 
@@ -113,11 +113,23 @@ const metaTags = {
         }
 
         <!-- Content -->
-        <article>
+        <article class="blog-content">
           <Prose>
             <Content />
           </Prose>
         </article>
+
+        <style>
+          /* Ensure headings have proper scroll offset for sticky header */
+          .blog-content :global(h1),
+          .blog-content :global(h2),
+          .blog-content :global(h3),
+          .blog-content :global(h4),
+          .blog-content :global(h5),
+          .blog-content :global(h6) {
+            scroll-margin-top: 1rem;
+          }
+        </style>
       </div>
 
       <!-- Sidebar -->
