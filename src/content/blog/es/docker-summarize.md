@@ -13,6 +13,4 @@ readTime: 35 min
 excerpt: Una guía completa sobre Docker que abarca desde conceptos básicos de contenedores hasta implementaciones avanzadas en producción, orquestación con Kubernetes y mejores prácticas para desarrolladores fullstack.
 ---
 
-## 1. Entendiendo la Contenerización
-
-La contenerización es
+## Contenido no disponible aún
