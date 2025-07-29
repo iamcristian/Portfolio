@@ -7,7 +7,9 @@ export interface Heading {
 
 const { tableOfContentText } = Astro.props;
 
-const headings = (Astro.props.headings ?? []) as Heading[];
+const headings = ((Astro.props.headings ?? []) as Heading[]).filter(
+  (heading) => heading.depth <= 3,
+);
 ---
 
 {
@@ -19,13 +21,20 @@ const headings = (Astro.props.headings ?? []) as Heading[];
         </svg>
         <h2 class="font-bold">{tableOfContentText}</h2>
       </div>
-      <ul class="space-y-2 text-sm">
-        {headings.map((heading) => (
-          <li class={`ml-${(heading.depth - 2) * 4}`}>
-            <a href={`#${heading.slug}`}>{heading.text}</a>
-          </li>
-        ))}
-      </ul>
+      <div class="max-h-96 overflow-y-auto">
+        <ul class="space-y-2">
+          {headings.map((heading) => (
+            <li class={`ml-${(heading.depth - 2) * 4}`}>
+              <a
+                href={`#${heading.slug}`}
+                class={heading.depth <= 2 ? "text-sm font-medium" : "text-sm"}
+              >
+                {heading.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   )
 }
