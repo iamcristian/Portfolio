@@ -1289,35 +1289,17 @@ git config --global alias.recent "for-each-ref --sort=-committerdate refs/heads/
 git config --global alias.cleanup "!git branch --merged | grep -v '\\*\\|main\\|develop' | xargs -n 1 git branch -d"
 ```
 
-## Conclusion
+---
 
-This comprehensive Git guide provides the foundation for professional software development workflows. Key takeaways:
+## Acknowledgments and References
 
-### Fundamental Skills
-- **Three-state architecture**: Understanding working directory, staging area, and repository
-- **Branching mastery**: Creating, managing, and merging branches effectively
-- **History management**: Using logs, diffs, and recovery techniques
+### Primary Sources
 
-### Professional Workflows
-- **Git Flow**: Structured branching for enterprise environments
-- **Trunk-based development**: Continuous integration with short-lived branches
-- **Ship/Show/Ask**: Risk-based decision making for change integration
+This comprehensive Git guide was primarily inspired by and based on the excellent work of:
 
-### Advanced Techniques
-- **Interactive rebasing**: Curating commit history for clarity
-- **Cherry-picking**: Selective change integration across branches
-- **Stashing**: Efficient context switching during development
+**📚 "Aprendiendo Git" by [@midudev](https://www.youtube.com/@midudev)**
 
-### Collaboration Excellence
-- **Remote repositories**: Effective team coordination and code sharing
-- **Conflict resolution**: Systematic approach to merge conflicts
-- **Security practices**: Protecting sensitive data and ensuring authenticity
+### Additional References
 
-### Best Practices
-- **Commit quality**: Atomic commits with clear, conventional messages
-- **Branch hygiene**: Regular cleanup and meaningful naming conventions
-- **Repository maintenance**: Performance optimization and integrity checks
-
-Git's true power emerges through disciplined usage, clear team conventions, and deep understanding of its distributed nature. Start with solid fundamentals, gradually adopt advanced techniques, and always prioritize clear communication through excellent commit practices.
-
-Remember: Git is not just version control—it's a collaboration platform that enables teams to build exceptional software together. Master these concepts, choose appropriate workflows for your context, and maintain clean, secure repositories that serve as the foundation for successful software projects.
+**📖 Official Documentation**
+- [Git Official Documentation](https://git-scm.com/doc) - Comprehensive reference
