@@ -1,21 +1,11 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 @plugin "daisyui" {
-  themes: light --default, cyberpunk, forest, dracula, lofi;
+  themes: light --default, business --prefersdark, cyberpunk, forest, dracula, lofi;
 }
 @plugin "daisyui/theme" {
   name: "business";
-  prefersdark: true;
+  default: true;
+  color-scheme: "dark";
   --color-base-content: oklch(95% 0.003 247.858);
-}
-
-/* Approach using target pseudo-class */
-.blog-content h1:target,
-.blog-content h2:target,
-.blog-content h3:target,
-.blog-content h4:target,
-.blog-content h5:target,
-.blog-content h6:target {
-  padding-top: 4rem;
-  margin-top: -4rem;
 }
