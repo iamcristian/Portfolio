@@ -1,6 +1,6 @@
 ---
 title: Git Mastery Guide - Professional Development Workflows
-slug: en/git-summarize-version-final
+slug: en/git-summarize
 image:
   src: /covers/git-summarize.webp
   alt: Git version control comprehensive guide
