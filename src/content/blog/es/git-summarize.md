@@ -1,5 +1,5 @@
 ---
-title: "Guia completa de Git: Control de versiones para equipos de desarrollo"
+title: "Guia completa de Git"
 slug: "es/git-summarize"
 image:
   src: "/covers/git-summarize.webp"

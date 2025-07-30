@@ -1,5 +1,5 @@
 ---
-title: Git Mastery Guide - Professional Development Workflows
+title: Git Mastery Guide
 slug: en/git-summarize
 image:
   src: /covers/git-summarize.webp
