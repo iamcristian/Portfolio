@@ -1,19 +1,19 @@
 {
   "meta": {
     "home": {
-      "title": "Home - Cristian Arando | Software Developer Portfolio",
+      "title": "Cristian Arando | Software Developer Portfolio",
       "description": "Hi! I am Cristian Arando, Systems Engineer with a postgraduate diploma in Information Security. Explore my portfolio.",
       "image": "/website-screenshot.webp",
       "imageAlt": "Portfolio banner"
     },
     "blog": {
-      "title": "Blog - Cristian Arando | Software Developer Portfolio",
+      "title": "Blog | Cristian Arando | Software Developer Portfolio",
       "description": "Read my latest blog posts on web development, programming, and technology.",
       "image": "/website-blog-screenshot.webp",
       "imageAlt": "Blog banner"
     },
     "projects": {
-      "title": "Projects - Cristian Arando | Software Developer Portfolio",
+      "title": "Projects | Cristian Arando | Software Developer Portfolio",
       "description": "Explore my projects showcasing my skills in web development and software engineering.",
       "image": "/website-projects-screenshot.webp",
       "imageAlt": "Projects banner"

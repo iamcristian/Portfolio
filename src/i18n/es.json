@@ -1,19 +1,19 @@
 {
   "meta": {
     "home": {
-      "title": "Inicio - Cristian Arando | Portafolio de Desarrollador de Software",
+      "title": "Cristian Arando | Portafolio de Desarrollador de Software",
       "description": "¡Hola! Soy Cristian Arando, Ingeniero de Sistemas con diplomado en Seguridad de la Información. Explora mi portafolio.",
       "image": "/website-screenshot.webp",
       "imageAlt": "Banner del portafolio"
     },
     "blog": {
-      "title": "Blog - Cristian Arando | Portafolio de Desarrollador de Software",
+      "title": "Blog | Cristian Arando | Portafolio de Desarrollador de Software",
       "description": "Lee mis últimas publicaciones sobre desarrollo web, programación y tecnología.",
       "image": "/website-blog-screenshot.webp",
       "imageAlt": "Banner del blog"
     },
     "projects": {
-      "title": "Proyectos - Cristian Arando | Portafolio de Desarrollador de Software",
+      "title": "Proyectos | Cristian Arando | Portafolio de Desarrollador de Software",
       "description": "Explora mis proyectos que muestran mis habilidades en desarrollo web e ingeniería de software.",
       "image": "/website-projects-screenshot.webp",
       "imageAlt": "Banner de proyectos"
