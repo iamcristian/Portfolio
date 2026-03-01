@@ -1,17 +1,10 @@
 ---
-const themes = [
-  { key: "light", label: "Light" },
-  { key: "dark", label: "Dark" },
-  { key: "cyberpunk", label: "Cyberpunk" },
-  { key: "forest", label: "Forest" },
-  { key: "dracula", label: "Dracula" },
-  { key: "lofi", label: "Lofi" },
-];
+import { THEMES } from "@/lib/constants";
 ---
 
 <div title="Theme selector" class="dropdown dropdown-end">
   <button tabindex="0" class="btn btn-sm btn-ghost" aria-label="Theme selector">
-    <!-- Logo -->
+    <!-- Theme icon indicator -->
     <div
       class="border-base-content/10 grid shrink-0 grid-cols-2 gap-0.5 rounded-md border p-1"
     >
@@ -20,12 +13,14 @@ const themes = [
       <div class="bg-secondary size-1 rounded-full"></div>
       <div class="bg-accent size-1 rounded-full"></div>
     </div>
-    <svg class="w-4 h-4"><use href="#icon-chevron-down"></use></svg>
+    <svg class="w-4 h-4" aria-hidden="true">
+      <use href="#icon-chevron-down"></use>
+    </svg>
   </button>
   <div tabindex="0" class="dropdown-content bg-base-300 rounded-box w-32">
     <ul class="menu menu-sm w-full">
       {
-        themes.map(({ key, label }) => (
+        THEMES.map(({ key, label }) => (
           <li>
             <button
               class="w-full flex items-center gap-2 justify-start"

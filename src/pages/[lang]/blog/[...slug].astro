@@ -2,7 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import { getCollection, render } from "astro:content";
 import Prose from "@/components/Prose.astro";
-import Head from "@/components/Head.astro";
+import Breadcrumbs from "@/components/ui/Breadcrumbs.astro";
 import RelatedPosts from "@/components/blog/RelatedPosts.astro";
 import TableofContents from "@/components/blog/TableofContents.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
@@ -44,21 +44,20 @@ const metaTags = {
   description: page.data.excerpt,
   image: page.data.image.src,
   imageAlt: page.data.image.alt,
+  publishDate: page.data.publishDate,
+  tags: page.data.tags,
 };
+
+const breadcrumbItems = [
+  { label: contentBreadcrumbs.home, href: `/${lang}` },
+  { label: contentBreadcrumbs.blog, href: `/${lang}/blog` },
+  { label: page.data.title },
+];
 ---
 
 <Layout type="blogPost" blogPost={metaTags}>
-  <!-- <Head lang={lang} blogPost={page.data} /> -->
-
   <div class="container pt-24 px-4 md:px-8 lg:px-16 mx-auto">
-    <!-- Breadcrumbs -->
-    <nav class="flex items-center space-x-2 text-sm">
-      <a href={`/${lang}`}>{contentBreadcrumbs.home}</a>
-      <svg class="w-4 h-4"><use href="#icon-chevron-right"></use></svg>
-      <a href={`/${lang}/blog`} class="">{contentBreadcrumbs.blog}</a>
-      <svg class="w-4 h-4"><use href="#icon-chevron-right"></use></svg>
-      <span>{page.data.title}</span>
-    </nav>
+    <Breadcrumbs items={breadcrumbItems} />
 
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-16">
       <!-- Main content -->

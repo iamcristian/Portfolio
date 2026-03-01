@@ -1,4 +1,19 @@
+# robots.txt for cristianarando.netlify.app
+# Allow all crawlers to access the site
+
 User-agent: *
 Allow: /
 
+# Specific paths for better crawling
+Allow: /en/
+Allow: /es/
+Allow: /en/blog/
+Allow: /es/blog/
+Allow: /en/projects/
+Allow: /es/projects/
+
+# Sitemap location
 Sitemap: https://cristianarando.netlify.app/sitemap-index.xml
+
+# Crawl delay (optional - be nice to the server)
+Crawl-delay: 1

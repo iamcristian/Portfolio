@@ -1,19 +1,39 @@
 ---
+/**
+ * Reusable Button/Link component
+ * Supports both internal links and external links with proper attributes
+ */
+
+interface Props {
+  href: string;
+  text: string;
+  icon?: string;
+  class?: string;
+  iconClass?: string;
+  external?: boolean;
+  [key: string]: unknown;
+}
+
 const {
   href,
   text,
   icon,
   class: className = "",
   iconClass = "w-4 h-4",
+  external = href.startsWith("http"),
   ...props
 } = Astro.props;
+
+const externalAttrs = external
+  ? { target: "_blank", rel: "noopener noreferrer" }
+  : {};
 ---
 
-<a href={href} class={` ${className}`} {...props}>
+<a href={href} class={className} {...externalAttrs} {...props}>
   <span>{text}</span>
   {
     icon && (
-      <svg class={iconClass}>
+      <svg class={iconClass} aria-hidden="true">
         <use href={`#${icon}`} />
       </svg>
     )

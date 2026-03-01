@@ -1,3 +1,5 @@
+type ViewMode = "grid" | "list";
+
 interface Post {
   slug: string;
   title: string;
@@ -11,10 +13,14 @@ interface Post {
 
 interface PostCardProps {
   post: Post;
-  viewMode: "grid" | "list";
-  lang: string;
+  viewMode: ViewMode;
+  lang: "en" | "es";
   featuredText: string;
 }
+
+// =============================================================================
+// COMPONENT
+// =============================================================================
 
 export const PostCard = ({
   post,
@@ -22,24 +28,26 @@ export const PostCard = ({
   lang,
   featuredText,
 }: PostCardProps) => {
+  const isListView = viewMode === "list";
+  const postUrl = `/${lang}/blog/${post.slug.split("/").pop()}`;
+
   return (
     <a
-      href={`/${lang}/blog/${post.slug.split("/").pop()}`}
-      className={`border rounded-2xl ${
-        viewMode === "list" ? "flex items-center p-4 gap-4" : ""
+      href={postUrl}
+      className={`border rounded-2xl transition-shadow hover:shadow-lg ${
+        isListView ? "flex items-center p-4 gap-4" : ""
       }`}
     >
       {/* Image */}
       <div
-        className={`relative ${
-          viewMode === "list" ? "w-1/3 md:w-1/5" : "aspect-video"
-        }`}
+        className={`relative ${isListView ? "w-1/3 md:w-1/5" : "aspect-video"}`}
       >
         <img
           src={post.image.src}
           alt={post.image.alt}
+          loading="lazy"
           className={`w-full h-full object-cover ${
-            viewMode === "list" ? "rounded-l-2xl" : "rounded-t-2xl"
+            isListView ? "rounded-l-2xl" : "rounded-t-2xl"
           }`}
         />
         {post.featured && (
@@ -50,29 +58,32 @@ export const PostCard = ({
       </div>
 
       {/* Content */}
-      <div
-        className={`${
-          viewMode === "list" ? "flex-1 space-y-2" : "p-6 space-y-4"
-        }`}
-      >
+      <div className={isListView ? "flex-1 space-y-2" : "p-6 space-y-4"}>
+        {/* Meta info */}
         <div className="flex items-center space-x-4 text-sm">
-          <span>
+          <time dateTime={post.publishDate.toISOString()}>
             {post.publishDate.toLocaleDateString(lang, {
               year: "numeric",
               month: "long",
               day: "numeric",
             })}
-          </span>
+          </time>
           <span>{post.readTime}</span>
         </div>
+
+        {/* Title */}
         <h3 className="text-xl font-bold">{post.title}</h3>
+
+        {/* Excerpt */}
         <p
           className={`text-sm leading-relaxed ${
-            viewMode === "list" ? "line-clamp-2" : "line-clamp-3"
+            isListView ? "line-clamp-2" : "line-clamp-3"
           }`}
         >
           {post.excerpt}
         </p>
+
+        {/* Tags */}
         <div className="flex flex-wrap gap-2">
           {post.tags.map((tag) => (
             <kbd key={tag} className="kbd">

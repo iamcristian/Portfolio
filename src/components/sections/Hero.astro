@@ -1,5 +1,6 @@
 ---
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { SITE_CONFIG } from "@/lib/constants";
 import Section from "@/components/ui/Section.astro";
 
 const lang = getLangFromUrl(Astro.url);
@@ -11,36 +12,49 @@ const hero = t("hero");
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
     <div class="flex flex-col justify-center space-y-6">
       <span class="text-sm font-medium">{hero.greeting}</span>
-      <h1 class="text-3xl md:text-6xl font-bold">Cristian Arando</h1>
+      <h1 class="text-3xl md:text-6xl font-bold">{SITE_CONFIG.name}</h1>
       <h2 class="text-xl md:text-3xl font-semibold">
         {hero.jobTitle}
       </h2>
       <p class="max-w-lg font-medium">{hero.description}</p>
       <div class="flex flex-wrap gap-4">
-        <a href={`/cv/cv_${lang}.pdf`} class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-          <svg class="w-6 mr-1"><use href="#icon-download"></use></svg>
+        <a
+          href={`/cv/cv_${lang}.pdf`}
+          class="btn btn-outline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="w-6 mr-1" aria-hidden="true">
+            <use href="#icon-download"></use>
+          </svg>
           {hero.download}
         </a>
-        <a href="mailto:crisarandosyse@gmail.com" class="btn btn-outline">
-          <svg class="w-6 mr-1"><use href="#icon-mail"></use></svg>
+        <a href={`mailto:${SITE_CONFIG.author.email}`} class="btn btn-outline">
+          <svg class="w-6 mr-1" aria-hidden="true">
+            <use href="#icon-mail"></use>
+          </svg>
           {hero.contact}
         </a>
         <a
-          href="https://github.com/iamcristian"
+          href={SITE_CONFIG.author.github}
           target="_blank"
           rel="noopener noreferrer"
           class="btn btn-outline"
         >
-          <svg class="w-6 mr-1"><use href="#icon-github"></use></svg>
+          <svg class="w-6 mr-1" aria-hidden="true">
+            <use href="#icon-github"></use>
+          </svg>
           GitHub
         </a>
         <a
-          href="https://linkedin.com/in/cristianarando"
+          href={SITE_CONFIG.author.linkedin}
           target="_blank"
           rel="noopener noreferrer"
           class="btn btn-outline"
         >
-          <svg class="w-6 mr-1"><use href="#icon-linkedin"></use></svg>
+          <svg class="w-6 mr-1" aria-hidden="true">
+            <use href="#icon-linkedin"></use>
+          </svg>
           LinkedIn
         </a>
       </div>
@@ -51,7 +65,9 @@ const hero = t("hero");
     class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce"
   >
     <a href="#about" aria-label="Scroll down">
-      <svg class="h-8 w-8"><use href="#icon-chevron-down"></use></svg>
+      <svg class="h-8 w-8" aria-hidden="true">
+        <use href="#icon-chevron-down"></use>
+      </svg>
     </a>
   </div>
 </Section>

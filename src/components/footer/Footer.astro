@@ -1,5 +1,6 @@
 ---
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { SITE_CONFIG, SOCIAL_LINKS } from "@/lib/constants";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -8,47 +9,32 @@ const footer = t("footer");
 
 <footer class="footer relative py-4 container px-4 md:px-0 mx-auto">
   <aside class="grid-flow-col items-center">
-    <svg class="w-8 h-8">
+    <svg class="w-8 h-8" aria-hidden="true">
       <use href="#icon-dev"></use>
     </svg>
     <p>
-      Cristian Arando
+      {SITE_CONFIG.name}
       <br />
-      {footer["thanks"]}
+      {footer.thanks}
     </p>
   </aside>
-  <nav class="justify-self-end">
+  <nav class="justify-self-end" aria-label="Social links">
     <div class="grid grid-flow-col gap-4">
-      <a
-        aria-label="linkedin link"
-        href="https://linkedin.com/in/cristianarando"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <svg class="w-8 h-8">
-          <use href="#icon-linkedin"></use>
-        </svg>
-      </a>
-      <a
-        aria-label="github link"
-        href="https://github.com/iamcristian"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <svg class="w-8 h-8">
-          <use href="#icon-github"></use>
-        </svg>
-      </a>
-      <a
-        aria-label="mail link"
-        href="mailto:crisarandosyse@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <svg class="w-8 h-8">
-          <use href="#icon-mail"></use>
-        </svg>
-      </a>
+      {
+        SOCIAL_LINKS.map((link) => (
+          <a
+            aria-label={link.ariaLabel}
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:opacity-80 transition-opacity"
+          >
+            <svg class="w-8 h-8" aria-hidden="true">
+              <use href={`#icon-${link.icon}`} />
+            </svg>
+          </a>
+        ))
+      }
     </div>
   </nav>
 </footer>

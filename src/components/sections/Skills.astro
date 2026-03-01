@@ -1,12 +1,10 @@
 ---
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
-
-import type { SkillsData } from "@/types";
 import Section from "@/components/ui/Section.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const { title, skillCategories } = t("skills") as SkillsData;
+const { title, skillCategories } = t("skills");
 ---
 
 <Section id="skills" title={title}>

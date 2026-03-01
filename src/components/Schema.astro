@@ -1,0 +1,197 @@
+---
+/**
+ * Schema.org JSON-LD structured data for SEO
+ * Helps Google understand site structure and show rich results
+ */
+import { SITE_CONFIG } from "@/lib/constants";
+
+interface BlogPostData {
+  title: string;
+  description: string;
+  image: string;
+  publishDate: Date;
+  author: string;
+  tags?: string[];
+}
+
+interface BreadcrumbItem {
+  label: string;
+  href?: string;
+}
+
+interface Props {
+  type: "website" | "blogPost" | "blogList" | "projectList";
+  blogPost?: BlogPostData;
+  breadcrumbs?: BreadcrumbItem[];
+  lang: "en" | "es";
+}
+
+const { type, blogPost, breadcrumbs, lang } = Astro.props;
+const canonicalUrl = Astro.url.href;
+const siteUrl = SITE_CONFIG.url;
+
+// Person/Author schema - reused across pages
+const authorSchema = {
+  "@type": "Person",
+  name: SITE_CONFIG.author.name,
+  email: SITE_CONFIG.author.email,
+  url: siteUrl,
+  sameAs: [SITE_CONFIG.author.github, SITE_CONFIG.author.linkedin],
+};
+
+// WebSite schema - enables sitelinks in Google
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE_CONFIG.name,
+  alternateName: "Cristian Arando Portfolio",
+  url: siteUrl,
+  description:
+    lang === "es"
+      ? "Portfolio de Cristian Arando - Desarrollador de Software"
+      : "Cristian Arando Portfolio - Software Developer",
+  author: authorSchema,
+  inLanguage: lang === "es" ? "es-ES" : "en-US",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: `${siteUrl}/{search_term_string}`,
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
+
+// ProfilePage schema for home page
+const profileSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  mainEntity: {
+    "@type": "Person",
+    name: SITE_CONFIG.author.name,
+    jobTitle:
+      lang === "es" ? "Desarrollador de Software" : "Software Developer",
+    email: SITE_CONFIG.author.email,
+    url: siteUrl,
+    sameAs: [SITE_CONFIG.author.github, SITE_CONFIG.author.linkedin],
+    knowsAbout: [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Astro",
+      "Node.js",
+      "Python",
+      "Web Development",
+    ],
+  },
+};
+
+// BlogPosting schema for individual blog posts
+const blogPostSchema = blogPost
+  ? {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: blogPost.title,
+      description: blogPost.description,
+      image: blogPost.image.startsWith("http")
+        ? blogPost.image
+        : `${siteUrl}${blogPost.image}`,
+      datePublished: blogPost.publishDate.toISOString(),
+      dateModified: blogPost.publishDate.toISOString(),
+      author: authorSchema,
+      publisher: {
+        "@type": "Person",
+        name: SITE_CONFIG.author.name,
+        url: siteUrl,
+      },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": canonicalUrl,
+      },
+      keywords: blogPost.tags?.join(", "),
+      inLanguage: lang === "es" ? "es-ES" : "en-US",
+    }
+  : null;
+
+// Blog list schema
+const blogListSchema = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  name: lang === "es" ? "Blog de Cristian Arando" : "Cristian Arando Blog",
+  description:
+    lang === "es"
+      ? "Artículos sobre desarrollo de software, tecnología y más"
+      : "Articles about software development, technology and more",
+  url: `${siteUrl}/${lang}/blog`,
+  author: authorSchema,
+  inLanguage: lang === "es" ? "es-ES" : "en-US",
+};
+
+// CollectionPage schema for projects
+const projectListSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name:
+    lang === "es" ? "Proyectos de Cristian Arando" : "Cristian Arando Projects",
+  description:
+    lang === "es"
+      ? "Colección de proyectos de desarrollo de software"
+      : "Collection of software development projects",
+  url: `${siteUrl}/${lang}/projects`,
+  author: authorSchema,
+  inLanguage: lang === "es" ? "es-ES" : "en-US",
+};
+
+// BreadcrumbList schema
+const breadcrumbSchema = breadcrumbs?.length
+  ? {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: breadcrumbs.map((item, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: item.label,
+        item: item.href ? `${siteUrl}${item.href}` : undefined,
+      })),
+    }
+  : null;
+
+// Combine schemas based on page type
+const getSchemas = () => {
+  const schemas: (
+    | typeof websiteSchema
+    | typeof profileSchema
+    | typeof blogPostSchema
+    | typeof blogListSchema
+    | typeof projectListSchema
+    | typeof breadcrumbSchema
+  )[] = [websiteSchema];
+
+  switch (type) {
+    case "website":
+      schemas.push(profileSchema);
+      break;
+    case "blogPost":
+      if (blogPostSchema) schemas.push(blogPostSchema);
+      break;
+    case "blogList":
+      schemas.push(blogListSchema);
+      break;
+    case "projectList":
+      schemas.push(projectListSchema);
+      break;
+  }
+
+  if (breadcrumbSchema) schemas.push(breadcrumbSchema);
+
+  return schemas;
+};
+
+const schemas = getSchemas();
+---
+
+{
+  schemas.map((schema) => (
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  ))
+}

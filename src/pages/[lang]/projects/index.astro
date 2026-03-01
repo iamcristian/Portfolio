@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import ProjectsView from "@/components/projects/ProjectsView";
+import Breadcrumbs from "@/components/ui/Breadcrumbs.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 export function getStaticPaths() {
@@ -15,7 +16,6 @@ const contentBreadcrumbs = t("breadcrumbs");
 const sortedProjects = [...contentProjects.items].sort((a, b) => {
   if (a.featured && !b.featured) return -1;
   if (!a.featured && b.featured) return 1;
-
   return b.year - a.year;
 });
 
@@ -23,16 +23,16 @@ const categories = [
   "All",
   ...new Set(contentProjects.items.map((p) => p.category)),
 ];
+
+const breadcrumbItems = [
+  { label: contentBreadcrumbs.home, href: `/${lang}` },
+  { label: contentBreadcrumbs.projects },
+];
 ---
 
 <Layout type="projects">
   <div class="container pt-24 px-4 md:px-8 lg:px-16 mx-auto">
-    <!-- Breadcrumbs -->
-    <nav class="flex items-center space-x-2 text-sm">
-      <a href=`/${lang}`>{contentBreadcrumbs.home}</a>
-      <svg class="w-4 h-4"><use href="#icon-chevron-right"></use></svg>
-      <span>{contentBreadcrumbs.projects}</span>
-    </nav>
+    <Breadcrumbs items={breadcrumbItems} />
 
     <ProjectsView
       client:visible

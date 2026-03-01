@@ -1,7 +1,7 @@
 ---
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
-interface Post {
+interface RelatedPost {
   id: string;
   data: {
     title: string;
@@ -11,33 +11,45 @@ interface Post {
   };
 }
 
+interface Props {
+  posts?: RelatedPost[];
+}
+
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const { relatedPosts } = t("blog");
+const { relatedPosts: relatedPostsTitle } = t("blog");
 
-const { posts = [] }: { posts?: Post[] } = Astro.props;
+const { posts = [] } = Astro.props;
+
+// Only render if there are related posts
+if (posts.length === 0) return null;
 ---
 
 <div class="container px-4 md:px-8 lg:px-16 mx-auto">
   <section class="mt-24 border-t pt-12">
-    <h2 class="text-2xl mb-8">{relatedPosts}</h2>
+    <h2 class="text-2xl mb-8">{relatedPostsTitle}</h2>
     <ul class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       {
         posts.map((post) => (
-          <li class="border rounded-xl p-6">
+          <li class="border rounded-xl p-6 hover:shadow-lg transition-shadow">
             <a
               href={`/${lang}/blog/${post.data.slug.split("/").pop()}`}
               class="block"
             >
               <h3 class="text-lg font-medium mb-2">{post.data.title}</h3>
-              {post.data.excerpt && <p class="text-sm">{post.data.excerpt}</p>}
-              <p class="mt-4 text-xs">
-                {new Date(post.data.publishDate).toLocaleDateString(lang, {
+              {post.data.excerpt && (
+                <p class="text-sm line-clamp-2">{post.data.excerpt}</p>
+              )}
+              <time
+                class="mt-4 text-xs block"
+                datetime={post.data.publishDate.toISOString()}
+              >
+                {post.data.publishDate.toLocaleDateString(lang, {
                   year: "numeric",
                   month: "long",
                   day: "numeric",
                 })}
-              </p>
+              </time>
             </a>
           </li>
         ))

@@ -1,22 +1,35 @@
 ---
-export interface Heading {
+interface Heading {
   slug: string;
   text: string;
   depth: number;
 }
 
-const { tableOfContentText } = Astro.props;
+interface Props {
+  headings: Heading[];
+  tableOfContentText: string;
+}
 
-const headings = ((Astro.props.headings ?? []) as Heading[]).filter(
-  (heading) => heading.depth <= 3,
-);
+const { headings: rawHeadings, tableOfContentText } = Astro.props;
+
+// Filter headings to only show h2 and h3 for cleaner TOC
+const headings = (rawHeadings ?? []).filter((heading) => heading.depth <= 3);
+
+// Calculate indentation based on heading depth
+function getIndentClass(depth: number): string {
+  const indentMap: Record<number, string> = {
+    2: "ml-0",
+    3: "ml-4",
+  };
+  return indentMap[depth] ?? "ml-0";
+}
 ---
 
 {
   headings.length > 0 && (
-    <nav class="p-6 rounded-xl border">
+    <nav class="p-6 rounded-xl border" aria-label="Table of contents">
       <div class="flex items-center space-x-2 mb-4">
-        <svg class="w-5 h-5">
+        <svg class="w-5 h-5" aria-hidden="true">
           <use href="#icon-table-of-contents" />
         </svg>
         <h2 class="font-bold">{tableOfContentText}</h2>
@@ -24,10 +37,12 @@ const headings = ((Astro.props.headings ?? []) as Heading[]).filter(
       <div class="max-h-96 overflow-y-auto">
         <ul class="space-y-2">
           {headings.map((heading) => (
-            <li class={`ml-${(heading.depth - 2) * 4}`}>
+            <li class={getIndentClass(heading.depth)}>
               <a
                 href={`#${heading.slug}`}
-                class={heading.depth <= 2 ? "text-sm font-medium" : "text-sm"}
+                class={`block hover:text-primary transition-colors ${
+                  heading.depth <= 2 ? "text-sm font-medium" : "text-sm"
+                }`}
               >
                 {heading.text}
               </a>

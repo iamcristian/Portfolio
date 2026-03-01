@@ -5,6 +5,7 @@ import Sprite from "@/assets/icons.svg?raw";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import Footer from "@/components/footer/Footer.astro";
 import Head from "@/components/Head.astro";
+import Schema from "@/components/Schema.astro";
 import PageTransition from "@/components/ui/PageTransition.astro";
 
 interface Props {
@@ -14,6 +15,8 @@ interface Props {
     description: string;
     image: string;
     imageAlt: string;
+    publishDate?: Date;
+    tags?: string[];
   };
 }
 
@@ -21,7 +24,15 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const { type, blogPost } = Astro.props;
 
-const meta = type === "blogPost" ? blogPost : t("meta")[type];
+const meta = type === "blogPost" ? blogPost! : t("meta")[type];
+
+// Map page types to schema types
+const schemaTypeMap = {
+  home: "website",
+  blog: "blogList",
+  projects: "projectList",
+  blogPost: "blogPost",
+} as const;
 ---
 
 <!doctype html>
@@ -36,7 +47,29 @@ const meta = type === "blogPost" ? blogPost : t("meta")[type];
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="robots" href="/robots.txt" />
     <!-- <link rel="manifest" href="/manifest.json" /> -->
-    <Head lang={lang} {...meta} />
+    <Head
+      lang={lang}
+      {...meta}
+      type={type === "blogPost" ? "article" : "website"}
+      publishDate={blogPost?.publishDate}
+      tags={blogPost?.tags}
+    />
+
+    <!-- Structured Data for SEO -->
+    <Schema
+      type={schemaTypeMap[type]}
+      lang={lang}
+      blogPost={type === "blogPost" && blogPost
+        ? {
+            title: blogPost.title,
+            description: blogPost.description,
+            image: blogPost.image,
+            publishDate: blogPost.publishDate!,
+            author: "Cristian Arando",
+            tags: blogPost.tags,
+          }
+        : undefined}
+    />
 
     <!-- For themes - theme-change library -->
     <script is:inline>
@@ -45,7 +78,7 @@ const meta = type === "blogPost" ? blogPost : t("meta")[type];
       } else
         document.documentElement.setAttribute(
           "data-theme",
-          localStorage.getItem("theme")
+          localStorage.getItem("theme"),
         );
     </script>
     <script>
@@ -55,7 +88,7 @@ const meta = type === "blogPost" ? blogPost : t("meta")[type];
   </head>
   <body class="antialiased">
     <!-- Icons -->
-    <div style="display: none;" set:html={Sprite} />
+    <div class="hidden" set:html={Sprite} />
 
     <!-- Main Layout -->
     <Header isHome={type === "home"} />
@@ -66,12 +99,3 @@ const meta = type === "blogPost" ? blogPost : t("meta")[type];
     <PageTransition />
   </body>
 </html>
-
-<style>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>

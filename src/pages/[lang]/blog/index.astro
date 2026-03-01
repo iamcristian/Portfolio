@@ -2,6 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import BlogView from "@/components/blog/BlogView";
+import Breadcrumbs from "@/components/ui/Breadcrumbs.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 export function getStaticPaths() {
@@ -24,16 +25,16 @@ const allPosts = (
   }));
 
 const tags = [...new Set(allPosts.flatMap((p) => p.tags))];
+
+const breadcrumbItems = [
+  { label: contentBreadcrumbs.home, href: `/${lang}` },
+  { label: contentBreadcrumbs.blog },
+];
 ---
 
 <Layout type="blog">
   <div class="container pt-24 px-4 md:px-8 lg:px-16 mx-auto">
-    <!-- Breadcrumbs -->
-    <nav class="flex items-center space-x-2 text-sm">
-      <a href=`/${lang}`>{contentBreadcrumbs.home}</a>
-      <svg class="w-4 h-4"><use href="#icon-chevron-right"></use></svg>
-      <span>{contentBreadcrumbs.blog}</span>
-    </nav>
+    <Breadcrumbs items={breadcrumbItems} />
 
     <BlogView
       client:visible
